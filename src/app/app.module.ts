@@ -6,16 +6,21 @@ import { AppComponent } from './app.component';
 import { LandingComponent } from './landing/landing.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MainComponent } from './main/main.component';
+import { FormsComponent } from './forms/forms.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     SidenavComponent,
-    MainComponent
+    MainComponent,
+    FormsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
