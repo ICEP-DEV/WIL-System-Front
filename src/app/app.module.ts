@@ -3,19 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MainComponent } from './main/main.component';
 import { FormsComponent } from './forms/forms.component';
 import { AppRoutingModule } from './app-routing.module';
+import { InternlifeComponent } from './internlife/internlife.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,
     SidenavComponent,
     MainComponent,
-    FormsComponent
+    FormsComponent,
+    InternlifeComponent
   ],
   imports: [
     BrowserModule,
