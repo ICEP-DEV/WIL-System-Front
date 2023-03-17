@@ -1,0 +1,144 @@
+<html>
+  <head>
+    <title>Self Help iEnabler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/itsincludes/css/its.css" /> -->
+    <script
+     
+    ></script>
+  </head>
+  <body class="w3-margin-left">
+    <div id="fra_header" class="fra_header w3-theme-l4">
+      <div class="fra_inst">Tshwane University of Technology PRODI41
+        <div class="fra_date w3-hide-small">
+    
+            Thursday, 16th March 2023
+          </div>
+      </div>
+      
+    </div>
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half itslogimg">
+        <img
+          src="https://ienabler.tut.ac.za/itsimages/InsImg.gif"
+          alt="Tshwane University of Technology PRODI41"
+        />
+      </div>
+     
+    </div>
+    <div class="login_top" id="login_top">
+      <script
+        src="/itsincludes/js/login_top.js"
+        type="text/javascript"
+      ></script>
+      <p></p>
+    </div>
+    <div class="login w3-row">
+    
+      <div id="login_left"></div>
+      <!-- <script
+        src="/itsincludes/js/login_right.js"
+        type="text/javascript"
+      ></script> -->
+      <div id="login_right" class="w3-rest">
+        <div class="w3-card-4 w3-margin-bottom" style="max-width: 500px">
+          <header class="w3-container w3-blue">
+            <h5>Registered Student: Login Credentials</h5>
+          </header>
+          <form
+            class="w3-container"
+            method="post"
+            name="frmLogin"
+            action="w99pkg.mi_validate_user"
+          >
+        
+           <br />
+            <label id="LogUsr">Student Number: </label
+            ><input
+              class="w3-input"
+              type="text"
+              name="unum"
+              size="10"
+              maxlength="9"
+              autofocus=""
+            />
+            <label>Pin:</label>
+            <input
+              class="w3-input"
+              type="password"
+              name="pin"
+              size="10"
+              maxlength="5"
+              onblur="return chkZero(this);"
+            />
+            <p>
+              (5 numeric digits.Do not start with a 0.)<input
+                type="hidden"
+                name="authorise_function"
+                value="Unknown"
+              />
+            </p>
+            <input
+              type="submit"
+              class="w3-button w3-padding-small w3-border"
+              value="Login"
+              alt="Click Here To Login"
+              onmouseover="javascript:window.status='Login'; return true;"
+              onmouseout="javascript:window.status=' ';"
+              onclick="document.frmLogin.authorise_function.value='Login';"
+            />
+           
+         
+           
+          
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="login_bottom" class="login_bottom w3-hide-small">
+      <script
+        src="/itsincludes/js/login_bottom.js"
+        type="text/javascript"
+      ></script>
+      <div class="col-sm-12">
+        
+        <div
+          class="w3-border-top w3-border-bottom w3-padding-small w3-margin-top"
+        >
+          <table border ="0" width="100%" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td
+                  valign="middle"
+                  align="center"
+                  bgcolor="#636563"
+                  height="27"
+                  class="customfooter"
+                >
+                  [&nbsp;<a href="mailto: ">Contact Us</a>&nbsp;|&nbsp;<a
+                    href=''
+                    >About Us</a
+                  >&nbsp;|&nbsp;<a
+                    href=''
+                    >Disclaimer</a
+                  >&nbsp;|&nbsp;<a
+                    href=''
+                    >Terms &amp; Conditions</a
+                  >&nbsp;|&nbsp;<a
+                    href=''
+                    >Privacy &amp; Security Statement</a
+                  >&nbsp;|&nbsp;<a
+                    href=''
+                    >Powered By</a
+                  >&nbsp;]
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
