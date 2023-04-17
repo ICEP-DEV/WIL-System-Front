@@ -17,6 +17,7 @@ import {WilService} from './wil.service';
 import { HeaderComponent } from './header/header.component'
 
 import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,15 +28,17 @@ import { LoginComponent } from './components/login/login.component';
     MainComponent,
     FormsComponent,
     InternlifeComponent,
-  
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [WilService],
 

@@ -1,10 +1,14 @@
-.navbar {
-    margin-left: 200px; /* Same as the width of the sidebar */
+
+.mainP{
+  margin-left: 200px; /* Same as the width of the sidebar */
+}
+
+  #fra_header{
     clear: both;
-   
+    padding-top: 5px;
     padding-bottom: 10px;
-    width: 100%;
-    height: 35px;
+    
+    height: 30px;
     background-color: #EAEAEA;
     font-weight: bold;
     border-top-style: solid;
@@ -13,16 +17,20 @@
     border-bottom-style: solid;
     border-bottom-color: black;
     border-bottom-width: 1px;
-
     color: #525252;
-    text-align: left;
-    float: left;
-    padding-left: 5px;
-  }
+}
+
+.fra_date {
+    color: #525252;
+    text-align: right;
+    float: right;
+    padding-right: 5px;
+}
+
 
   .w3-row{
-    margin-left: 200px; /* Same as the width of the sidebar */
     clear: both;
+    margin-top: 2%;
   }
  
   /*its code*/

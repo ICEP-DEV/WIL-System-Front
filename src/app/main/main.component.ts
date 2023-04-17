@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class MainComponent {
 
   title = 'Tshwane University of Technology PRODI41';
+  today: number = Date.now();
 }
