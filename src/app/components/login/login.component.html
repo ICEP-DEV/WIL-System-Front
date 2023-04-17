@@ -68,7 +68,7 @@
               [ngClass]="{ 'has-error': isSubmitted && formControls['student_no'].errors }"
             />
             <div *ngIf="isSubmitted && formControls['student_no'].errors">
-              <div *ngIf="formControls['student_no'].errors['required']">Email is required</div>
+              <div *ngIf="formControls['student_no'].errors['required']">Student number is required</div>
             </div>
 
             <label>Pin:</label>
