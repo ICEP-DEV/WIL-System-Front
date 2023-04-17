@@ -20,13 +20,14 @@ export class LoginComponent {
 
 ngOnInit(): void{
   this.loginForm = this.formBuilder.group({
-    student_no: new FormControl('', [Validators.required,]),
-    itsPin: new FormControl('', [Validators.required,]),
+    userType: new FormControl('', [Validators.required]),
+    admin_no: new FormControl(''),
+    student_no: new FormControl(''),
+    registrar_no: new FormControl(''),
+    itsPin: new FormControl('', [Validators.required]),
   })
 
 }
-
-
 
 get formControls() { return this.loginForm.controls; }
 
@@ -35,28 +36,58 @@ signIn(){
   if(this.loginForm.invalid){
     return;
   }
-  this.service.login(this.loginForm.value).subscribe({
-    next: res =>{
-      var myobject: any = {
-        token: "", student: {}
-      };
 
-      myobject = res;
-      console.log(myobject);
+  const userType = this.loginForm.value.userType;
+  if (userType == "admin") {
+    this.service.login({userType, admin_no: this.loginForm.value.admin_no, itsPin: this.loginForm.value.itsPin}).subscribe({
+      next: res =>{
+        var myobject: any = {
+          token: "", admin: {}
+        };
 
-      if (myobject) {
-       ;
-        
-        localStorage.setItem("user", JSON.stringify(myobject.data));
-       // localStorage.setItem("auth-token", myobject.token);
-     //
+        myobject = res;
+        console.log(myobject);
+
+        if (myobject) {
+          localStorage.setItem("user", JSON.stringify(myobject.data));
+        }
       }
-    }
-  })
-  
-  this.router.navigateByUrl('/');
+    })
+  } else if (userType === "student") {
+    this.service.login({userType, student_no: this.loginForm.value.student_no, itsPin: this.loginForm.value.itsPin}).subscribe({
+      next: res =>{
+        var myobject: any = {
+          token: "", student: {}
+        };
 
+        myobject = res;
+        console.log(myobject);
+
+        if (myobject) {
+          localStorage.setItem("user", JSON.stringify(myobject.data));
+        }
+      }
+    })
+  } else if (userType === "registrar") {
+    this.service.login({userType, registrar_no: this.loginForm.value.registrar_no, itsPin: this.loginForm.value.itsPin}).subscribe({
+      next: res =>{
+        var myobject: any = {
+          token: "", registrar: {}
+        };
+
+        myobject = res;
+        console.log(myobject);
+
+        if (myobject) {
+          localStorage.setItem("user", JSON.stringify(myobject.data));
+          localStorage.setItem("auth-token", myobject.token);
+          console.log(myobject.token);
+          
+        }
+      }
+    })
+  } else {
+    console.log("Invalid user type");
+  }
 }
 }
-
-

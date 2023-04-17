@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- <link rel="stylesheet" type="text/css" href="/itsincludes/css/its.css" /> -->
-    <script
-     
-    ></script>
+    <script></script>
   </head>
   <body class="w3-margin-left">
     <div id="fra_header" class="fra_header w3-theme-l4">
-      <div class="fra_inst">Tshwane University of Technology PRODI41
+      <div class="fra_inst">
+        Tshwane University of Technology PRODI41
         <div class="fra_date w3-hide-small">
-    
-           {{today | date: 'fullDate'}}
-          </div>
+          {{ today | date : "fullDate" }}
+        </div>
       </div>
-      
     </div>
     <div class="w3-row w3-hide-small">
       <div class="w3-half itslogimg">
@@ -26,7 +23,6 @@
           alt="Tshwane University of Technology PRODI41"
         />
       </div>
-     
     </div>
     <div class="login_top" id="login_top">
       <script
@@ -36,7 +32,6 @@
       <p></p>
     </div>
     <div class="login w3-row">
-    
       <div id="login_left"></div>
       <!-- <script
         src="/itsincludes/js/login_right.js"
@@ -47,67 +42,173 @@
           <header class="w3-container w3-blue">
             <h5>Registered Student: Login Credentials</h5>
           </header>
-          <form [formGroup]="loginForm"  (ngSubmit)="signIn()"
+
+          <form
+            [formGroup]="loginForm"
+            (ngSubmit)="signIn()"
             class="w3-container"
             method="post"
             name="frmLogin"
-            action="w99pkg.mi_validate_user"
+   
           >
-        
-           <br />
-            <label   id="LogUsr">Student Number: </label
-            ><input
-            type = "number"
-              class="w3-input"
-              type="text"
-              name="unum"
-              size="10"
-              maxlength="9"
-              autofocus=""
-              formControlName="student_no"
-              [ngClass]="{ 'has-error': isSubmitted && formControls['student_no'].errors }"
-            />
-            <div *ngIf="isSubmitted && formControls['student_no'].errors">
-              <div *ngIf="formControls['student_no'].errors['required']">Student number is required</div>
-            </div>
+            <!-- <label id="userType">User Type:</label>
+            <select formControlName="userType">
+              <option value="student">Student</option>
+              <option value="registrar">Registrar</option>
+              <option value="admin">Admin</option>
+            </select> -->
 
-            <label>Pin:</label>
-            <input
-              class="w3-input"
-              type="password"
-              name="pin"
-              size="10"
-              maxlength="5"
-              formControlName="itsPin"
-              [ngClass]="{ 'has-error': isSubmitted && formControls['itsPin'].errors }"
-            />
-            <div *ngIf="isSubmitted && formControls['itsPin'].errors">
-              <div *ngIf="formControls['itsPin'].errors['required']">Pin is required</div>
+            <label id="userType" class="radio-inline">
+              <input type="radio" formControlName="userType" value="student" checked>Student
+            </label>
+            <label class="radio-inline">
+              <input type="radio" formControlName="userType" value="registrar">Registrar
+            </label>
+            <label class="radio-inline">
+              <input type="radio" formControlName="userType" value="admin">Admin
+            </label>
+            <br /><br/>
+   <!-- ------------------STUDENT------------------- -->
+            <div *ngIf="formControls['userType'].value === 'student'">
+              <label id="LogUsr">Student Number: </label
+              ><input
+                type="number"
+                class="w3-input"
+                type="text"
+                name="unum"
+                size="10"
+                maxlength="9"
+                autofocus=""
+                formControlName="student_no"
+                [ngClass]="{
+                  'has-error': isSubmitted && formControls['student_no'].errors
+                }"
+              />
+              <div *ngIf="isSubmitted && formControls['student_no'].errors">
+                <div *ngIf="formControls['student_no'].errors['required']">
+                  Student number is required
+                </div>
+              </div>
+
+              <label>Pin:</label>
+              <input
+                class="w3-input"
+                type="password"
+                name="pin"
+                size="10"
+                maxlength="5"
+                formControlName="itsPin"
+                [ngClass]="{
+                  'has-error': isSubmitted && formControls['itsPin'].errors
+                }"
+              />
+              <div *ngIf="isSubmitted && formControls['itsPin'].errors">
+                <div *ngIf="formControls['itsPin'].errors['required']">
+                  Pin is required
+                </div>
+              </div>
             </div>
-            
+            <!-- ------------------REGISTRAR------------------- -->
+
+
+            <div *ngIf="formControls['userType'].value === 'registrar'">
+              <label id="LogReg">RegIstrar Number: </label
+              ><input
+                type="number"
+                class="w3-input"
+                type="text"
+                name="unum"
+                size="10"
+                maxlength="9"
+                autofocus=""
+                formControlName="registrar_no"
+                [ngClass]="{
+                  'has-error': isSubmitted && formControls['registrar_no'].errors
+                }"
+              />
+              <div *ngIf="isSubmitted && formControls['registrar_no'].errors">
+                <div *ngIf="formControls['registrar_no'].errors['required']">
+                  Registrar number is required
+                </div>
+              </div>
+
+              <label>Pin:</label>
+              <input
+                class="w3-input"
+                type="password"
+                name="pin"
+                size="10"
+                maxlength="5"
+                formControlName="itsPin"
+                [ngClass]="{
+                  'has-error': isSubmitted && formControls['itsPin'].errors
+                }"
+              />
+              <div *ngIf="isSubmitted && formControls['itsPin'].errors">
+                <div *ngIf="formControls['itsPin'].errors['required']">
+                  Pin is required
+                </div>
+              </div>
+            </div>
+   <!-- ------------------ADMIN------------------- -->
+
+   <div *ngIf="formControls['userType'].value === 'admin'">
+    <label id="LogAdmin">Admin Number: </label
+    ><input
+      type="number"
+      class="w3-input"
+      type="text"
+      name="unum"
+      size="10"
+      maxlength="9"
+      autofocus=""
+      formControlName="admin_no"
+      [ngClass]="{
+        'has-error': isSubmitted && formControls['admin_no'].errors
+      }"
+    />
+    <div *ngIf="isSubmitted && formControls['admin_no'].errors">
+      <div *ngIf="formControls['admin_no'].errors['required']">
+        Registrar number is required
+      </div>
+    </div>
+
+    <label>Pin:</label>
+    <input
+      class="w3-input"
+      type="password"
+      name="pin"
+      size="10"
+      maxlength="5"
+      formControlName="itsPin"
+      [ngClass]="{
+        'has-error': isSubmitted && formControls['itsPin'].errors
+      }"
+    />
+    <div *ngIf="isSubmitted && formControls['itsPin'].errors">
+      <div *ngIf="formControls['itsPin'].errors['required']">
+        Pin is required
+      </div>
+    </div>
+  </div>
+
+  <!-- /////////////////////////////////////////////// -->
             <input
               type="submit"
               class="w3-button w3-padding-small w3-border"
               value="Login"
               alt="Click Here To Login"
-            
             />
-           
-         
-           
-          
           </form>
         </div>
       </div>
     </div>
     <div id="login_bottom" class="login_bottom w3-hide-small">
-     
       <div class="col-sm-12">
-        
         <div
           class="w3-border-top w3-border-bottom w3-padding-small w3-margin-top"
         >
-          <table border ="0" width="100%" cellspacing="0" cellpadding="0">
+          <table border="0" width="100%" cellspacing="0" cellpadding="0">
             <tbody>
               <tr>
                 <td
@@ -118,21 +219,12 @@
                   class="customfooter"
                 >
                   [&nbsp;<a href="mailto: ">Contact Us</a>&nbsp;|&nbsp;<a
-                    href=''
+                    href=""
                     >About Us</a
-                  >&nbsp;|&nbsp;<a
-                    href=''
-                    >Disclaimer</a
-                  >&nbsp;|&nbsp;<a
-                    href=''
+                  >&nbsp;|&nbsp;<a href="">Disclaimer</a>&nbsp;|&nbsp;<a href=""
                     >Terms &amp; Conditions</a
-                  >&nbsp;|&nbsp;<a
-                    href=''
-                    >Privacy &amp; Security Statement</a
-                  >&nbsp;|&nbsp;<a
-                    href=''
-                    >Powered By</a
-                  >&nbsp;]
+                  >&nbsp;|&nbsp;<a href="">Privacy &amp; Security Statement</a
+                  >&nbsp;|&nbsp;<a href="">Powered By</a>&nbsp;]
                 </td>
               </tr>
             </tbody>
