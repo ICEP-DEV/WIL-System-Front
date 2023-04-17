@@ -38,15 +38,18 @@ signIn(){
   this.service.login(this.loginForm.value).subscribe({
     next: res =>{
       var myobject: any = {
-        token: "", user: {}
+        token: "", student: {}
       };
 
       myobject = res;
       console.log(myobject);
 
       if (myobject) {
-        localStorage.setItem("user", JSON.stringify(myobject.user));
-        localStorage.setItem("auth-token", myobject.token);
+       ;
+        
+        localStorage.setItem("user", JSON.stringify(myobject.data));
+       // localStorage.setItem("auth-token", myobject.token);
+     //
       }
     }
   })
@@ -55,3 +58,5 @@ signIn(){
 
 }
 }
+
+
