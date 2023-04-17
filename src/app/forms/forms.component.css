@@ -1,4 +1,78 @@
-h1{
+form{
     margin-left: 200px; /* Same as the width of the sidebar */
     clear: both;
 }
+
+.top{
+    display: flex;
+}
+
+.formtype{
+    margin-left: 50%;
+}
+
+fieldset{
+    margin-top: 1%;
+}
+fieldset h3,fieldset p{
+    color: #AD0A27;
+}
+p{
+    color: #AD0A27;
+}
+h3{
+    color: #AD0A27; 
+}
+
+form input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    width: 40%;
+    margin-top: 1%;
+}
+
+.pcode{
+    margin: 2%;
+}
+
+.date{
+    margin: 2%; 
+}
+
+.pOfStudy{
+    margin-left: 7%;
+}
+
+    
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+
+.aploadL{
+    background-color: #CAE3FB;
+    border-radius: 10px;
+}
+
+.aploadL input{
+    margin-left: 50%;
+}
+
+.aploadL label{
+    font-style: bold;
+}
+
+.Nbtn{
+    border-radius: 10px;
+    margin-left: 80px;
+    background-color: #AD0A27;
+    color: #ffff;
+}
+
+
+

@@ -1,1 +1,74 @@
-<p>internlife works!</p>
+
+   <link rel="stylesheet" href="/src/app/forms/forms.component.css">
+   <form action="">
+    <div class="re-ad">
+        <img src="./assets/logoTUTC.png" alt="">
+        <h1 class="admission">Admission/2023</h1>
+    </div>    
+        <h1>Application To Change Your Choice Of Qualification</h1>
+        <h1 class="h3B"> Higher Certificate, NH Certificate, N Diploma, Diploma Or Bachelor's Degree</h1>
+        <h1>
+          If you complete this form, all previous qualification choices will be cancelled,<br>
+          even if you have already been accepted in qualification.
+        </h1>
+
+        <p>Please submit this form with the following</p>
+        <p>
+          -A certified copy of your ID or passport <br>
+          -A certified copy of your statement of symbols/National Senior Certificate <br>
+          -Email: admission@tut.ac.za <br>
+          -Please note that you will be only selected for your 2nd choice if you have not been selected for your 1st choice <br>
+           and only if the qualification can still accommodate additional students at that stage.
+        </p>
+
+        <input type="text" placeholder="Student Number"><br>
+        <input type="text" placeholder="ID or Passport Number"><br>
+        <input type="text" placeholder="Choice Of Qualification: Choice 1"><br>
+        <input type="text" placeholder="Choice Of Qualification: Choice 2">
+        <h4>Type Of Enrollment:</h4>
+        <label>Day Class</label><input type="checkbox"><br>
+        <label>Evening class</label><input type="checkbox"><br>
+        <label>Block Course</label><input type="checkbox"><br>
+        
+        <h4>Do you require financial aid</h4>
+        <label>Yes</label><input type="checkbox" ><br>
+        <label>No</label><input type="checkbox" ><br>
+        <h4>Campus</h4>
+        <label>Pretoria,Soshanguve,GaRankuwa </label><input type="checkbox" ><br>
+        <label>Polokwane,Emalahleni,Mbombela</label><input type="checkbox" ><br>
+        
+        <h4>PERSONAL DETAILS:</h4>
+          <input type="text" placeholder="Title">
+          <input type="text" placeholder="Initials">
+          <input type="text" placeholder="Surname:"><br>
+          <input type="text" placeholder="Postal Address:"><br>
+          <input type="text" placeholder="Contact Details:"><br>
+          <input type="text" placeholder="Email Address:"><br>
+          <input type="text" placeholder="Student Signature">
+          <input class ="date" type="date" placeholder="Date"><br>
+          <button class="SubmitBtn">Submit</button>
+   </form>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="gg" *ngFor="let data of mydata" >
+    <p>{{data.student_no}}</p>
+</div>

@@ -17,43 +17,60 @@ export class SidenavComponent {
     console.log('Downloading PDF ...');
     const doc = new jsPDF();
     
-    doc.setFontSize(12)
     
-    doc.text('Faculty of Information and Communication Technology \n\n',60,10)
-    doc.text('_______________________________________________,\n\n',70,12.5)
-    doc.text('TO WHOM IT MAY CONCERN Dear Sir/Madam,\n\n',60,15)
+    doc.setFontSize(14)
+    
+    
+    //doc.addImage('logoTUTC', 'png', 10, 10, 50, 50, )
+    doc.text('Faculty of Information and Communication Technology \n\n',70,10)
+    doc.text('TO WHOM IT MAY CONCERN Dear Sir/Madam,\n\n',70,15)
+    
     
     doc.text('May 2022',10,20)
-    doc.text('RE: Work Integrated Learning/Industrial exposure Tshwane University of Technology do uplift the \n  ',10,25)
-    doc.text('students standards. This effort is intended to give students an opportunity to be exposed to real work \n',10,30) 
-    doc.text('situations and environment. During this period the students who are pursuing a National Diploma \n ',10,35) 
-    doc.text('Information Communication Technology-Business Applications qualification need to be exposed to \n ',10,40) 
-    doc.text('practical projects and work under the direct supervision of the roles such as: \n\n',10,45);
-    doc.text('1. Business Analysts',20,50)
-    doc.text('2. Systems Analysts',80,50)
-    doc.text('3. Systems Testers',20,55)
-    doc.text('4. Project managers',80,55,) 
-    doc.text('5.  Database administrator\n\n',20,60,) 
-    doc.text('to gain practical experience and add value to the organization in which they are placed. The students ',10,65,) 
-    doc.text('require a compulsory training for at least six (6) months in the company to complete their national \n',10,70)
-    doc.text('diploma qualification. Students require further training to enhance and sharpen their expertise and \n',10,75)
-    doc.text(' knowledge learnt in class. It is with pleasure to note that your involvement with their training would \n',10,80)
-    doc.text('give them a chance to achieve this objective and to add value to your organization. The risks associated\n',10,85)
-    doc.text(' with hiring new staff are minimized when employing a person whom is not only known but also \n',10,90)
-    doc.text('tried and proven.Personal development and motivation are enhanced, leading to improved academic \n',10,95)
-    doc.text('performance. Our coupled efforts will provide access to staff and facilities of a large education \n',10,100)
-    doc.text('institution, and enables employers to become actively involved in the education process. Remuneration \n',10,105)
-    doc.text('arrangements are entirely between the student and the organization. References of organizations that\n',10,110)
-    doc.text('are part of our Industry Exposure Program are available on request.\n',10,115)
-  
-    doc.text('Student No: 220163415',10,120)
-    doc.text('Student Surname and Initials: Mohlolo, M.J.',10,125)
-    doc.text('ID Number: 1903085822086',10,130)
-    doc.text('National Diploma: Information Communication Technology-Business Applications',10,135)
+    doc.text('RE: Work Intergrated Learning or Industrial Exposure',10,30)
+    doc.text('The letter certify that Surname and initials(student num) is a potential',10,45)
+    doc.text('graduate for National Diploma in IT: Software Development from the Tshwane University',10,50)
+    doc.text('of Technology.',10,55)
+    doc.text('',10,60)
+    doc.text('It is my pleasure to recommend surname and initials for a work integrated learning',10,65)
+    doc.text('exposure as it is a requirement for the student to complete the diploma',10,70)
+    doc.text('',10,75)
+    doc.text('The major fileds of study in this diploma are:',10,80)
+    doc.text('* Software Development',10,85)
+    doc.text('* Mobile Development',10,90)
+    doc.text('* Business Analysis and Modelling',10,95)
+    doc.text('* Software Testing',10,100)
+    doc.text('* Database Development and Administration',10,105)
+    doc.text('',10,110)
+    doc.text('For the experiential training to add value to the student, we suggest that the students be ',10,115)
+    doc.text('assigned tasks and responsiblities that are aligned to the field of study. it is to be noted',10,120)
+    doc.text('that the above mentioned fields of studies are only a guideline in this regard, any other',10,125)
+    doc.text('information Technology(IT) oriented projects and task may also be accepted.',10,130)
+    doc.text('The duration of the industry exposure should be a minimum of 6 months.',10,135)
     doc.text('',10,140)
-    doc.text('Your co-operation is highly valued.',10,145)
+    doc.text('The student has consistently demostrated an ability to rise to any xhallenges that she',10,145)
+    doc.text('may face in her academic studies or any other endeavour.',10,150)
+    doc.text('',10,155)
+    doc.text('In conclusion, I would like to',10,160)
+    doc.text('state my strong recommendation for surname and initials you have any further',10,165)
+    doc.text('questions regarding his ability or this recommendation, please do not hesitate to',10,170)
+    doc.text('contact me using the information on this letter head.',10,175)
+    doc.text('',10,180)
+    doc.text('',10,185)
+    doc.text('',10,190)
+    doc.text('Your co-operation is highly valued',10,195)
+    doc.text('',10,200)
 
-    doc.text('_________________________\n\n',10,155)
+    
+
+    
+
+    doc.text('_________________________\n\n',10,205)
+    doc.text('Mr N.F Smith',10,210)
+    doc.text('WIL Admin',10,215)
+    doc.text('Email :  smith@tut.ac.za',10,220)
+    doc.text('Tel: 012 621 9997',10,225)
+
 
     doc.save('Recommendation Letter');
     

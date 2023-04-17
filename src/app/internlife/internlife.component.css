@@ -1,4 +1,57 @@
-p{
+form{
     margin-left: 200px; /* Same as the width of the sidebar */
     clear: both;
+}
+.re-ad{
+    display: flex;
+}
+h1{
+    text-align: center;
+}
+
+.h3B{
+    color: #AD0A27;
+}
+
+/*Form Style*/
+form{
+    background-color: white;
+    margin-left: 200px; /* Same as the width of the sidebar */
+    clear: both;
+}
+
+form input{   
+    margin-top: 6px;
+    margin-left: 2px;
+    height: 25px;
+    width: 400px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    width: 40%;
+    margin-top: 1%;
+}
+
+form h3{
+    text-align: center;
+}
+
+.SubmitBtn{
+    margin-left: 70%;
+    margin-top: 20px;
+    background-color: #AD0A27;
+    color: #FFFF;
+    border-radius: 10PX;
+    height: 35px;
+    width: 100px;
+}
+
+.date{
+    margin: 2%; 
+}
+
+.admission{
+    margin-left: 45%;
+    
 }
