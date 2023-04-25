@@ -50,7 +50,9 @@ signIn(){
 
         if (myobject) {
           localStorage.setItem("user", JSON.stringify(myobject.data));
+          localStorage.setItem("auth-token", myobject.token);
         }
+        this.router.navigate(['/']);
       }
     })
   } else if (userType === "student") {
@@ -65,7 +67,9 @@ signIn(){
 
         if (myobject) {
           localStorage.setItem("user", JSON.stringify(myobject.data));
+          localStorage.setItem("auth-token", myobject.token);
         }
+        this.router.navigate(['/']);
       }
     })
   } else if (userType === "registrar") {
@@ -84,6 +88,7 @@ signIn(){
           console.log(myobject.token);
           
         }
+        this.router.navigate(['/']);
       }
     })
   } else {
