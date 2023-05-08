@@ -6,11 +6,19 @@ import { DatePipe } from '@angular/common';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RecommendationComponent } from './components/recommendation/recommendation.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    RecommendationComponent,
+    SidenavComponent,
+    WILRegistrationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
