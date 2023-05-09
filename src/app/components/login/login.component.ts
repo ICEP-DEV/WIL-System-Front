@@ -69,7 +69,7 @@ signIn(){
           localStorage.setItem("user", JSON.stringify(myobject.data));
           localStorage.setItem("auth-token", myobject.token);
         }
-        this.router.navigate(['/']);
+        this.router.navigate(['/recommendation']);
       }
     })
   } else if (userType === "registrar") {
