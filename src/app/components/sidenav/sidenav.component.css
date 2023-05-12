@@ -14,13 +14,15 @@
 
 .sidebar a {
   display: block;
+  
   color: black;
   margin-top: 5px;
-  padding: 15px;
+  padding: 10px;
   text-decoration: none;
   font-size: 20px;
   background-color: white;
   border-radius: 31px;
+  width: 280px;
 }
 
 .sidebar a.active {
@@ -48,6 +50,7 @@
   .sidebar a {
     padding: 10px;
     font-size: 16px;
+    width: 100%;
   }
 }
 

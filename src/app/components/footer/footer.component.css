@@ -1,4 +1,4 @@
-.footer{
+/* .footer{
     margin-left: 918px;
   
     padding-left: 200px;
@@ -14,7 +14,35 @@
      width: 800px;
     height: 358px; 
     transform: scale(1);
+} */
+
+.footer {
+    margin-left:35% ;
+    padding-top: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 31px;
+    width: 50%;
+    background-color: #f8f9fa;
+    
+    /* text-align: center; */
+  }
+  
+  /* .footer img {
+    max-width: 100%;
+    height: auto;
+  } */
+  
+
+
+  @media (max-width: 768px) {
+    .footer {
+      /* margin-left: 0; */
+      padding: 2%;
+    }
 }
+  
 
 /* @media screen and (min-width: 400px) {
     .footer img{

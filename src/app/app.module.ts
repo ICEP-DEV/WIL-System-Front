@@ -19,6 +19,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SidenavComponent,
     WILRegistrationComponent,
     FooterComponent
+    
   ],
   imports: [
     BrowserModule,
