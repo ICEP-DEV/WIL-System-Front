@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
+import { EpInformationComponent } from './components/ep-information/ep-information.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
-  {path: 'wil-registration',component:WILRegistrationComponent}
+  {path: 'wil-registration',component:WILRegistrationComponent},
+  {path: 'ep-information', component:EpInformationComponent}
 ];
 
 @NgModule({

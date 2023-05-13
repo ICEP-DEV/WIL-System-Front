@@ -1,0 +1,135 @@
+/* .content h2 {
+ font-size: 2vw; 
+  color: rgb(87, 85, 85);
+  adding-left: 15%; 
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.content h3 {
+  font-size: 30px;
+  color: black;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 130px;
+  padding: 10px;
+  padding-left: 180px;
+  width: 500px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+}
+
+.content p {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 150px;
+}
+
+.content button {
+  background-color: #0055c9;
+  color: white;
+  margin-top: 50px;
+  margin-left: 300px;
+  /* padding-left: 180px; 
+  width: 350px;
+  height: 70px;
+  border-radius: 31px;
+  border: 0ch;
+  font-size: 30px;
+} */
+
+
+.content {
+    margin-left: 5%;
+    padding: 5%;
+    
+  }
+  
+  .content h2 {
+    font-size: 2vw;
+    /* padding-left: 10%; */
+    color: rgb(87, 85, 85);
+  }
+  
+  .content h3 {
+    font-size: 1.5vw;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    margin-left: 3%;
+    padding: 1vw;
+    padding-left: 4vw;
+    width: 50%;
+    border-radius: 2vw;
+    background-color: #D9D9D9;
+  }
+  
+.formBox{
+    border-radius: 26px;
+    background-color: #D9D9D9;
+padding: 2vw;
+width: 60%;
+margin-bottom: 20vh;
+}
+
+.formBox h4{
+    margin-left: 4vh;
+    
+}
+
+.form-control{
+    
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid black;  
+    background-color: #D9D9D9;
+    width: 90%;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+
+
+
+  .content img{
+    position:fixed ;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    margin-top: 40vh;
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      margin-left: 0;
+      padding: 6%;
+    }
+  
+    .content h2 {
+      font-size: 4vw;
+      padding-left: 2%;
+    }
+  
+    .content h3 {
+      font-size: 3vw;
+      margin-top: 10%;
+      margin-left: 2%;
+      width: 80%;
+      padding: 2%;
+      padding-right: 1vw;
+    }
+  
+   
+    
+    .content img{
+      position:static;
+   left: 0;
+    width: 100%;
+    margin-left: 8%;
+    }
+  }
+  
+    
+  

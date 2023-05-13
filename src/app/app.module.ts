@@ -10,6 +10,7 @@ import { RecommendationComponent } from './components/recommendation/recommendat
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { EpInformationComponent } from './components/ep-information/ep-information.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './components/footer/footer.component';
     RecommendationComponent,
     SidenavComponent,
     WILRegistrationComponent,
-    FooterComponent
+    FooterComponent,
+    EpInformationComponent
     
   ],
   imports: [
