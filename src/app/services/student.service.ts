@@ -7,13 +7,24 @@ import { Observable } from 'rxjs'
   providedIn: 'root'
 })
 export class StudentService {
-  private baseUrl = 'http://localhost:8080/api/info'
+  private baseUrl = 'http://localhost:8080/api';
+  // private BaseUrl = 'http://192.168.27.46:8080/api'
+
   constructor(private http: HttpClient) { }
 
 
 
 recLetter(student_no:any): Observable<any>
 {
-  return this.http.get<any>(`${this.baseUrl}/` +student_no);
+  
+  // return this.http.get<any>(`${this.baseUrl}/` +student_no);
+  return this.http.get<any>(`${this.baseUrl}/info/` +student_no);
 }
+
+epForm(data: any): Observable<any>
+{
+  return this.http.post<any>(`${this.baseUrl}/forms`, data );
 }
+
+}
+

@@ -12,6 +12,8 @@ import { WILRegistrationComponent } from './components/wil-registration/wil-regi
 import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 
+import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { EpInformationComponent } from './components/ep-information/ep-informati
     SidenavComponent,
     WILRegistrationComponent,
     FooterComponent,
-    EpInformationComponent
+    EpInformationComponent,
+    PlacementLetterComponent
     
   ],
   imports: [
