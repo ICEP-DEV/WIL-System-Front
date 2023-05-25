@@ -32,8 +32,8 @@
         Now, please  <span style="color: #0055C9">UPLOAD PLACEMENT LETTER </span>document in .pdf extension.</p>
      
 
-    
-      <button routerLink="/ep-information">Complete the form </button>
+       <input type="file" (change)="onFileSelected($event)" />
+      <button (click)="uploadFile()">upload </button>
       
     
         <img  src="../../../assets/footer 1.png" alt=""/>
