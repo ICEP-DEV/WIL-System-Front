@@ -1,0 +1,39 @@
+.main{
+    margin-left: 15%;
+    font-family: 'Montserrat'
+}
+
+h3{
+   text-align: center;
+   margin-top: 2%;
+}
+label{
+    margin-top: 50px;
+}
+
+.sendbtn{
+    text-align: center;
+}
+
+input{
+    background-color: #0055C9;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    bottom: 0;
+}
