@@ -6,6 +6,10 @@ import { RecommendationComponent } from './components/recommendation/recommendat
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
+import { ReAdmissionComponent } from './components/re-admission/re-admission.component';
+import { DeclarationComponent } from './components/declaration/declaration.component';
+import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
+import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 
 
 const routes: Routes = [
@@ -16,6 +20,10 @@ const routes: Routes = [
   {path: 'wil-registration',component:WILRegistrationComponent},
   {path: 'ep-information', component:EpInformationComponent},
   {path: 'placement-letter', component:PlacementLetterComponent},
+  {path: 're-admission', component:ReAdmissionComponent},
+  {path: 'declaration', component:DeclarationComponent},
+  {path: 'success-respond', component:SuccessRespondComponent},
+  {path: 'registration-data', component:RegistrationDataComponent}
 ];
 
 @NgModule({

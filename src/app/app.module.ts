@@ -13,6 +13,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
+import { ReAdmissionComponent } from './components/re-admission/re-admission.component';
+import { DeclarationComponent } from './components/declaration/declaration.component';
+import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
+import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { PlacementLetterComponent } from './components/placement-letter/placemen
     WILRegistrationComponent,
     FooterComponent,
     EpInformationComponent,
-    PlacementLetterComponent
+    PlacementLetterComponent,
+    ReAdmissionComponent,
+    DeclarationComponent,
+    SuccessRespondComponent,
+    RegistrationDataComponent
     
   ],
   imports: [
