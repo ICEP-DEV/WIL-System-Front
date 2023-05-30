@@ -33,6 +33,7 @@ import { EpInformationComponent } from './components/ep-information/ep-informati
 
 
 const routes: Routes = [
+  { path: '', component: RecommendationComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Regulations', component: RegulationsComponent },
   { path: 'Placement Information', component: PlacementinfoComponent },
