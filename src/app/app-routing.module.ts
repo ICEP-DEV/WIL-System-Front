@@ -1,6 +1,30 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+
+import { HomeComponent } from './components/home/home.component';
+import { RegulationsComponent } from './components/regulations/regulations.component';
+import { PlacementinfoComponent } from './components/placementinfo/placementinfo.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { SystemSupportComponent } from './components/system-support/system-support.component';
+
+//
+import { NotificationsComponent } from './components/notifications/notifications.component';
+import { AssessmentsComponent } from './components/assessments/assessments.component';
+import { LogEntriesComponent } from './components/log-entries/log-entries.component';
+import { EvaluationsComponent } from './components/evaluations/evaluations.component';
+import { Ass1Component } from './components/ass1/ass1.component';
+import { Ass2Component } from './components/ass2/ass2.component';
+
+//placement information
+import { AddmentorComponent } from './components/addmentor/addmentor.component';
+import { ChangementorComponent } from './components/changementor/changementor.component';
+import { AddworkComponent } from './components/addwork/addwork.component';
+import { ChangeworkComponent } from './components/changework/changework.component';
+import { PlacementdetailsComponent } from './components/placementdetails/placementdetails.component';
+
+//sidenav 
+//import { CommonModule } from '@angular/common';
 import { LoginComponent } from './components/login/login.component';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
@@ -12,8 +36,30 @@ import { SuccessRespondComponent } from './components/success-respond/success-re
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 
 
+
+
 const routes: Routes = [
-  {path: '', component:LoginComponent},
+  { path: '', component: RecommendationComponent },
+  { path: 'Home', component: HomeComponent },
+  { path: 'Regulations', component: RegulationsComponent },
+  { path: 'Placement Information', component: PlacementinfoComponent },
+  {path: 'Activities',component: ActivitiesComponent},
+  {path: 'System Support',component: SystemSupportComponent},
+  
+  {path: 'Notifications',component: NotificationsComponent},
+  {path: 'assessments',component: AssessmentsComponent},
+  {path: 'evaluations',component: EvaluationsComponent},
+  {path: 'log-entries',component: LogEntriesComponent},
+  {path: 'ass1',component: Ass1Component},
+  {path: 'ass2',component: Ass2Component},
+
+  {path: 'addmentor',component: AddmentorComponent},
+  {path: 'changementor',component: ChangementorComponent},
+  {path: 'addwork',component: AddworkComponent},
+  {path: 'changework',component: ChangeworkComponent},
+  {path: 'placementd',component: PlacementdetailsComponent},
+
+  //{path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
@@ -23,16 +69,14 @@ const routes: Routes = [
   {path: 're-admission', component:ReAdmissionComponent},
   {path: 'declaration', component:DeclarationComponent},
   {path: 'success-respond', component:SuccessRespondComponent},
-  {path: 'registration-data', component:RegistrationDataComponent}
+  {path: 'registration-data', component:RegistrationDataComponent},
+  {path: 'Internlife', component: HomeComponent}
+
+
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    RouterModule.forRoot(routes),
-    
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

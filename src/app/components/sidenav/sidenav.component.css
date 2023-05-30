@@ -4,6 +4,8 @@
   position: fixed;
   height: 100%;
   overflow: auto;
+  font-family: 'Montserrat';
+  top: 0;
 }
 
 .sidebar img {
@@ -29,10 +31,12 @@
   color: white;
 }
 
+
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
+
 
 @media screen and (max-width: 768px) {
   .sidebar {
