@@ -39,7 +39,7 @@ import { RegistrationDataComponent } from './components/registration-data/regist
 
 
 const routes: Routes = [
-  { path: '', component: RecommendationComponent },
+ 
   { path: 'Home', component: HomeComponent },
   { path: 'Regulations', component: RegulationsComponent },
   { path: 'Placement Information', component: PlacementinfoComponent },
@@ -59,7 +59,7 @@ const routes: Routes = [
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
 
-  //{path: '', component:LoginComponent},
+  {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
