@@ -1,4 +1,6 @@
-
+body{
+  font-family: "Montserrat";
+}
 
 .content {
     margin-left: 5%;
@@ -19,7 +21,7 @@
     margin-left: 14%;
     padding: 1vw;
     padding-left: 3vw;
-    width: 30%;
+    width: 35%;
     border-radius: 2vw;
     background-color: #D9D9D9;
   }
@@ -27,7 +29,7 @@
   .content p {
     font-size: 1.5vw;
     /* padding-left: 5%; */
-    
+   
     
     margin-top: 8vh;
   }
@@ -35,11 +37,12 @@
   .content h4{
     margin-left: 4%;
     font-weight: 200;
+    font-weight: bold;
   }
   
   .content button {
     margin-top: 5vh;
-    margin-left: 13%;
+    margin-left: 15%;
     margin-bottom: 30vh;
     width: 32%;
     height: 4vw;
