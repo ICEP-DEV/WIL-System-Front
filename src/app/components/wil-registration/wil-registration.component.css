@@ -1,17 +1,17 @@
 
-
+body{
+  font-family: "Montserrat";
+}
 .content {
   margin-left: 5%;
   padding: 5%;
-  font-family: 'Montserrat'
+  
 }
-
 .content h2 {
   font-size: 2vw;
   /* padding-left: 10%; */
   color: rgb(87, 85, 85);
 }
-
 .content h3 {
   font-size: 1.5vw;
   margin-top: 10vh;
@@ -23,20 +23,16 @@
   border-radius: 2vw;
   background-color: #D9D9D9;
 }
-
 .content p {
   font-size: 1.5vw;
   /* padding-left: 5%; */
-  
-  
+  font-weight: bold;
   margin-top: 8vh;
 }
-
 .content h4{
   margin-left: 4%;
   font-weight: 200;
 }
-
 .content button {
   margin-top: 5vh;
   margin-left: 15%;
@@ -46,28 +42,24 @@
   font-size: 2vw;
   border-radius: 31px;
   border: 0ch;
-  background-color: #0055c9;
+  background-color: #0055C9;
   color: white;
 }
-
 .content img{
   position:fixed ;
   bottom: 0;
   right: 0;
   width: 70%;
 }
-
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
     padding: 6%;
   }
-
   .content h2 {
     font-size: 4vw;
     padding-left: 2%;
   }
-
   .content h3 {
     font-size: 3vw;
     margin-top: 10%;
@@ -76,7 +68,6 @@
     padding: 2%;
     padding-right: 1vw;
   }
-
   .content p {
     font-size: 2.5vw;
     padding-left: 2%;
@@ -89,7 +80,6 @@
   .content svg{
     width: 5%;
   }
-
   .content button {
     margin-top: 10%;
     margin-left: 8%;
@@ -98,7 +88,6 @@
     font-size: 3vw;
     margin-bottom: 20%;
   }
-
   .content img{
     position:static;
  left: 0;
@@ -106,5 +95,3 @@
   margin-left: 8%;
   }
 }
-
-  

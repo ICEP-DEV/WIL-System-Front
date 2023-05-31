@@ -1,3 +1,6 @@
+body{
+  font-family: "Montserrat";
+}
 .content {
   margin-right: 30%;
     padding: 5%;
@@ -59,6 +62,15 @@ margin-left: 9%;
   }
 .formBox th{
   color: rgb(87, 85, 85);
+  background-color: #D9D9D9;
+}
+
+.formBox td{
+  background-color: #D9D9D9;
+}
+
+.formBox label{
+  background-color: #D9D9D9;
 }
 
 .alert{

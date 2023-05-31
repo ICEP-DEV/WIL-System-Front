@@ -1,302 +1,392 @@
-<app-sidenav></app-sidenav>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width0" />
-    <style></style>
-  </head>
+<body>
+  <app-sidenav></app-sidenav>
 
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3">
-          <app-sidenav></app-sidenav>
-        </div>
-        <div class="col-md-9">
-          <div class="content">
-            <form
-              class="text-center custom-form"
-              [formGroup]="empForm"
-              (ngSubmit)="onSubmit()"
-            >
-              <h2>Work Integrated Learning Environment</h2>
-              <h3>Work-Integrated Registration Form</h3>
-              <!--  -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-9">
+        <div class="content">
+          <form
+            class="text-center custom-form"
+            [formGroup]="empForm"
+            (ngSubmit)="onSubmit()"
+          >
+            <h2>Work Integrated Learning Environment</h2>
+            <h3>Work-Integrated Registration Form</h3>
+            <!--  -->
 
-              <div class="formBox">
-                <h4>EMPLOYER PLACEMENT INFORMATION</h4>
-                <h4 >(Please complete in full)</h4>
-                <br />
+            <div class="formBox">
+              <h4>EMPLOYER PLACEMENT INFORMATION</h4>
+              <h4>(Please complete in full)</h4>
+              <br />
 
-                <input
-                  type="text"
-                  class="form-control"
-                  id="approvedEmployer"
-                  placeholder="Name of approved employer"
-                  formControlName="approvedEmployer"
-                  [required] = "true"
-                  
-                 
-                />
-                <div *ngIf="f['approvedEmployer'].touched && f['approvedEmployer'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['approvedEmployer'].errors && f['approvedEmployer'].errors ['required']">Name of approved employer is required.</div>  
-                  <div *ngIf="f['approvedEmployer'].errors && f['approvedEmployer'].errors['pattern']">Name Should be letters only</div>  
-              </div>
-               
-               
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="contactPerson"
-                  placeholder="Company's Contact Person"
-                  formControlName="contactPerson"
-                  required
-                />
-                <div *ngIf="f['contactPerson'].touched && f['contactPerson'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['contactPerson'].errors && f['contactPerson'].errors ['required']">Company's Contact Person is required.</div>  
-                  <div *ngIf="f['contactPerson'].errors && f['contactPerson'].errors['pattern']">Company's Contact Person Should be letters only</div>  
-              </div>
-                
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="Company’s telephone number"
-                  formControlName="telNumber"
-                 
-                />
-                <div *ngIf="f['telNumber'].touched && f['telNumber'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['telNumber'].errors && f['telNumber'].errors ['required']">Mobile Number is required.</div>  
-                  <div *ngIf="f['telNumber'].errors && f['telNumber'].errors['pattern']">Please, Enter 10 digit Mobile Number.</div>  
+              <input
+                type="text"
+                class="form-control"
+                id="approvedEmployer"
+                placeholder="Name of approved employer"
+                formControlName="approvedEmployer"
+                [required]="true"
+              />
+              <div
+                *ngIf="
+                  f['approvedEmployer'].touched && f['approvedEmployer'].invalid
+                "
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['approvedEmployer'].errors &&
+                    f['approvedEmployer'].errors['required']
+                  "
+                >
+                  Name of approved employer is required.
+                </div>
+                <div
+                  *ngIf="
+                    f['approvedEmployer'].errors &&
+                    f['approvedEmployer'].errors['pattern']
+                  "
+                >
+                  Name Should be letters only
+                </div>
               </div>
 
-                 
-                
-                
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emp_email"
-                  placeholder="Email Address"
-                  formControlName="emp_email"
-                  >
-                  <div *ngIf="f['emp_email'].touched && f['emp_email'].invalid" class="alert alert-danger">  
-                    <div *ngIf="f['emp_email'].errors && f['emp_email'].errors['required']">Email Address is required.</div>  
-                    <div *ngIf="f['emp_email'].errors && f['emp_email'].errors['pattern']">Please enter a valid email address.</div>  
+              <input
+                type="tel"
+                class="form-control"
+                id="contactPerson"
+                placeholder="Company's Contact Person"
+                formControlName="contactPerson"
+                required
+              />
+              <div
+                *ngIf="f['contactPerson'].touched && f['contactPerson'].invalid"
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['contactPerson'].errors &&
+                    f['contactPerson'].errors['required']
+                  "
+                >
+                  Company's Contact Person is required.
                 </div>
-               
-                <input
-                  type="text"
-                  class="form-control"
-                  id="physicalAddress"
-                  placeholder="Physical Address Where Training Takes Place"
-                  formControlName="physicalAddress"
-                  required
-                />
-                <div *ngIf="f['physicalAddress'].touched && f['physicalAddress'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['physicalAddress'].errors && f['physicalAddress'].errors ['required']">Physical Address is required.</div> 
+                <div
+                  *ngIf="
+                    f['contactPerson'].errors &&
+                    f['contactPerson'].errors['pattern']
+                  "
+                >
+                  Company's Contact Person Should be letters only
                 </div>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  id="postalAddress"
-                  placeholder="Postal Address Where Training Takes Place"
-                  formControlName="postalAddress"
-                />
-                <div *ngIf="f['postalAddress'].touched && f['postalAddress'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['postalAddress'].errors && f['postalAddress'].errors ['required']">Postal address is required.</div> 
-                </div>
-
-                <input
-                  type="text"
-                  class="form-control"
-                  id="postalCode"
-                  placeholder="Postal code"
-                  formControlName="postalCode"
-                  required
-                  pattern="^0[1-9]|[1-9]\d$"
-                />
-                <div *ngIf="f['postalCode'].touched && f['postalCode'].invalid" class="alert alert-danger">  
-                  <div *ngIf="f['postalCode'].errors && f['postalCode'].errors['required']">Postal code is required.</div>
-                  <div *ngIf="f['postalCode'].errors && f['postalCode'].errors['pattern']">Please, Enter 4 digit postal code</div>
-
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="city"
-                  placeholder="City"
-                  formControlName="city"
-                  required
-                />
-                <div *ngIf="f['city'].touched && f['city'].invalid" class="alert alert-danger">  
-                <div *ngIf="f['city'].errors && f['city'].errors['required']">City is required.</div>
-                </div>
-                <br /><br />
-                <h4 style="margin-left: 2%;">PERIOD OF STUDY</h4>
-                <br>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>PERIOD</th>
-                      <th>LAST DATE FOR WIL REPORT TO BE SUBMITTED</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr></tr>
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="January - June"
-                        />
-                        January - June
-                      </label>
-                      <td>31 July</td>
-                    </tr>
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="February - July"
-                        />
-                        February - July
-                      </label>
-                      <td>31 August</td>
-                    </tr>
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="March - August"
-                        />
-                        March - August
-                      </label>
-                      <td>30 September</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="April - September"
-                        />
-                        April - September
-                      </label>
-                      <td>31 October</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="May - October"
-                        />
-                        May- October
-                      </label>
-                      <td>30 November</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="June - November"
-                        />
-                        June - November
-                      </label>
-                      <td>15 January</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="July - Decemberr"
-                        />
-                        July - December
-                      </label>
-                      <td>31 January</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="August - January"
-                        />
-                        August - January
-                      </label>
-                      <td>28 February</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="September - February"
-                        />
-                        September - February
-                      </label>
-                      <td>31 March</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="October - March"
-                        />
-                          October - March
-                      </label>
-                      <td>30 April</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="November - April"
-                        />
-                        November - April
-                      </label>
-                      <td>31 May</td>
-                    </tr>
-
-                    <tr>
-                      <label>
-                        <input
-                          type="radio"
-                          formControlName="studyPeriod"
-                          value="December - May"
-                        />
-                        December - May
-                      </label>
-                      <td>30 June</td>
-                    </tr>
-
-                  </tbody>
-                </table>
               </div>
 
-              <button type="submit" [disabled]="!empForm.valid">Next</button>
-            </form>
-            <img src="../../../assets/footer 1.png" alt="" />
-          </div>
+              <input
+                type="text"
+                class="form-control"
+                id="email"
+                placeholder="Company’s telephone number"
+                formControlName="telNumber"
+              />
+              <div
+                *ngIf="f['telNumber'].touched && f['telNumber'].invalid"
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['telNumber'].errors && f['telNumber'].errors['required']
+                  "
+                >
+                  Mobile Number is required.
+                </div>
+                <div
+                  *ngIf="
+                    f['telNumber'].errors && f['telNumber'].errors['pattern']
+                  "
+                >
+                  Please, Enter 10 digit Mobile Number.
+                </div>
+              </div>
+
+              <input
+                type="email"
+                class="form-control"
+                id="emp_email"
+                placeholder="Email Address"
+                formControlName="emp_email"
+              />
+              <div
+                *ngIf="f['emp_email'].touched && f['emp_email'].invalid"
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['emp_email'].errors && f['emp_email'].errors['required']
+                  "
+                >
+                  Email Address is required.
+                </div>
+                <div
+                  *ngIf="
+                    f['emp_email'].errors && f['emp_email'].errors['pattern']
+                  "
+                >
+                  Please enter a valid email address.
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="form-control"
+                id="physicalAddress"
+                placeholder="Physical Address Where Training Takes Place"
+                formControlName="physicalAddress"
+                required
+              />
+              <div
+                *ngIf="
+                  f['physicalAddress'].touched && f['physicalAddress'].invalid
+                "
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['physicalAddress'].errors &&
+                    f['physicalAddress'].errors['required']
+                  "
+                >
+                  Physical Address is required.
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="form-control"
+                id="postalAddress"
+                placeholder="Postal Address Where Training Takes Place"
+                formControlName="postalAddress"
+              />
+              <div
+                *ngIf="f['postalAddress'].touched && f['postalAddress'].invalid"
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['postalAddress'].errors &&
+                    f['postalAddress'].errors['required']
+                  "
+                >
+                  Postal address is required.
+                </div>
+              </div>
+
+              <input
+                type="text"
+                class="form-control"
+                id="postalCode"
+                placeholder="Postal code"
+                formControlName="postalCode"
+                required
+                pattern="^0[1-9]|[1-9]\d$"
+              />
+              <div
+                *ngIf="f['postalCode'].touched && f['postalCode'].invalid"
+                class="alert alert-danger"
+              >
+                <div
+                  *ngIf="
+                    f['postalCode'].errors && f['postalCode'].errors['required']
+                  "
+                >
+                  Postal code is required.
+                </div>
+                <div
+                  *ngIf="
+                    f['postalCode'].errors && f['postalCode'].errors['pattern']
+                  "
+                >
+                  Please, Enter 4 digit postal code
+                </div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="City"
+                formControlName="city"
+                required
+              />
+              <div
+                *ngIf="f['city'].touched && f['city'].invalid"
+                class="alert alert-danger"
+              >
+                <div *ngIf="f['city'].errors && f['city'].errors['required']">
+                  City is required.
+                </div>
+              </div>
+              <br /><br />
+              <h4 style="margin-left: 2%">PERIOD OF STUDY</h4>
+              <br />
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>PERIOD</th>
+                    <th>LAST DATE FOR WIL REPORT TO BE SUBMITTED</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="January - June"
+                      />
+                      January - June
+                    </label>
+                    <td>31 July</td>
+                  </tr>
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="February - July"
+                      />
+                      February - July
+                    </label>
+                    <td>31 August</td>
+                  </tr>
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="March - August"
+                      />
+                      March - August
+                    </label>
+                    <td>30 September</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="April - September"
+                      />
+                      April - September
+                    </label>
+                    <td>31 October</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="May - October"
+                      />
+                      May- October
+                    </label>
+                    <td>30 November</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="June - November"
+                      />
+                      June - November
+                    </label>
+                    <td>15 January</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="July - Decemberr"
+                      />
+                      July - December
+                    </label>
+                    <td>31 January</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="August - January"
+                      />
+                      August - January
+                    </label>
+                    <td>28 February</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="September - February"
+                      />
+                      September - February
+                    </label>
+                    <td>31 March</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="October - March"
+                      />
+                      October - March
+                    </label>
+                    <td>30 April</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="November - April"
+                      />
+                      November - April
+                    </label>
+                    <td>31 May</td>
+                  </tr>
+
+                  <tr>
+                    <label>
+                      <input
+                        type="radio"
+                        formControlName="studyPeriod"
+                        value="December - May"
+                      />
+                      December - May
+                    </label>
+                    <td>30 June</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <button type="submit" [disabled]="!empForm.valid">Next</button>
+          </form>
+          <img src="../../../assets/footer 1.png" alt="" />
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</body>

@@ -34,6 +34,7 @@ import { ReAdmissionComponent } from './components/re-admission/re-admission.com
 import { DeclarationComponent } from './components/declaration/declaration.component';
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
+import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 
 
 
@@ -70,7 +71,8 @@ const routes: Routes = [
   {path: 'declaration', component:DeclarationComponent},
   {path: 'success-respond', component:SuccessRespondComponent},
   {path: 'registration-data', component:RegistrationDataComponent},
-  {path: 'Internlife', component: HomeComponent}
+  {path: 'Internlife', component: HomeComponent},
+  {path: 're-admission-form', component:ReAdmissionFormComponent}
 
 
 ];

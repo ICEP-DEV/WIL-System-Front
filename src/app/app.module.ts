@@ -43,6 +43,7 @@ import { ReAdmissionComponent } from './components/re-admission/re-admission.com
 import { DeclarationComponent } from './components/declaration/declaration.component';
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
+import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { RegistrationDataComponent } from './components/registration-data/regist
     SuccessRespondComponent,
     RegistrationDataComponent,
     
-    PracticeComponent
+    PracticeComponent,
+          ReAdmissionFormComponent
   ],
   imports: [
     BrowserModule,

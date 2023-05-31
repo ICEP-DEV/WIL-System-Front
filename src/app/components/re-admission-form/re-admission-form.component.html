@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width0" />
+    <style></style>
+  </head>
+  <body>
+    <app-sidenav></app-sidenav>
+    <div class="work_Learning">Work Integrated Learning Environment</div>
+    <div class="readmission_form">
+      <div class="admission_Form">Re-Admission Form</div>
+    </div>
+    <div class="completing_Form">You are completing re-admission form</div>
+    <div class="form_box">
+      <div class="flex">
+        <form class="admission_form" [formGroup]="reAdmissionForm"
+        (ngSubmit)="onSubmit()">
+          <div class="Choice_Qualification">CHOICE OF QUALIFICATON</div>
+          <input class="choice_1" type="text" placeholder="Write your choice of qualification here" formControlName = "firstChoice">
+          <div class="Type_enrollment">CLASSES OF PREFERENCE</div>
+          <div class="Day_Classes">
+            <input
+              type="radio"
+              
+              value="Day Classes"
+              id="day_classes"
+              formControlName ="enrollType"
+            />
+            Day Classes
+          </div>
+          <div class="Evening_Classes">
+            <input
+              type="radio"
+             
+              value="Evening Classes"
+              id="evening_classes"
+              formControlName ="enrollType"
+            />
+            Evening Classes
+          </div>
+          <div class="Block_Classes">
+            <input
+              type="radio"
+              
+              value="Block Classes"
+              id="block_classes"
+              formControlName ="enrollType"
+            />
+            Block Classes
+          </div>
+          <br /><br /><br />
+          <h2>FINANCIAL AID</h2>
+          <p>Do you require financial aid?</p>
+          <div class="option_1">
+            <input
+              type="radio"
+           
+              value="Yes, i require financial aid"
+              id="req_finance"
+              formControlName ="finacialAid"
+            />
+            Yes, i require financial aid
+          </div>
+          <div class="option_2">
+            <input
+              type="radio"
+             
+              value="No, i do not require financial aid"
+              id="req_finance1"
+              formControlName ="finacialAid"
+            />
+            No, i do not require financial aid
+          </div>
+          <div class="campuses_1">CAMPUS</div>
+          <div class="select_campuses">Please select your campus</div>
+          <div class="block_2">
+            <input
+              type="radio"
+              
+              value="Pretoria"
+              id="pretoria_campuses"
+              formControlName ="campus"
+            />
+            Pretoria campuses<br /><br />
+            <input
+              type="radio"
+              
+              value="Polokwane"
+              id="polokwane_campuses"
+              formControlName ="campus"
+            />
+            Polokwane campuses<br /><br />
+            <input
+              type="radio"
+              
+              value="Mbombela"
+              id="mbombela_campuses"
+              formControlName ="campus"
+            />
+            Mbombela campuses<br /><br />
+            <input
+              type="radio"
+              
+              value="Emalahleni"
+              id="campus"
+              formControlName ="campus"
+            />
+            Emalahleni campuses<br /><br />
+          </div>
+        </form>
+      </div>
+    </div>
+    <button type="submit">Next</button>
+    <img class="pic" src="../../../assets/footer 1.png" alt="" />
+    <!-- <app-footer></app-footer> -->
+  </body>
+</html>

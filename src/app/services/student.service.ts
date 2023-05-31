@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs'
+import { ReAdmissionComponent } from '../components/re-admission/re-admission.component';
 
 
 @Injectable({
@@ -29,6 +30,11 @@ epForm(data: any): Observable<any>
 uploadPlacementLetter(data: any): Observable<any> 
 {
   return this.http.post<any>(`${this.baseUrl}/uploadFolder`, data )
+}
+
+ReAdmission(data: any):Observable<any> 
+{
+  return this.http.post<any>(`${this.baseUrl}/admform`, data )
 }
 
 }
