@@ -28,12 +28,13 @@ import { LoginComponent } from './components/login/login.component';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
+import { InternlifeComponent } from './internlife/internlife.component';
 
 
 
 
 const routes: Routes = [
-  { path: '', component: RecommendationComponent },
+  { path: '', component: InternlifeComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Regulations', component: RegulationsComponent },
   { path: 'Placement Information', component: PlacementinfoComponent },
@@ -59,7 +60,7 @@ const routes: Routes = [
  
   {path: 'wil-registration',component: WILRegistrationComponent},
   {path: 'ep-information', component: EpInformationComponent},
-  {path: 'Internlife', component: HomeComponent}
+  {path: '', component: InternlifeComponent}
 
 
 ];

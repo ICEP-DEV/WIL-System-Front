@@ -36,6 +36,7 @@ import { WILRegistrationComponent } from './components/wil-registration/wil-regi
 import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 import { PracticeComponent } from './practice/practice.component';
+import { InternlifeComponent } from './internlife/internlife.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { PracticeComponent } from './practice/practice.component';
     WILRegistrationComponent,
     FooterComponent,
     EpInformationComponent,
-    PracticeComponent
+    PracticeComponent,
+    InternlifeComponent
   ],
   imports: [
     BrowserModule,
