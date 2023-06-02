@@ -20,6 +20,7 @@ import { AddmentorComponent } from './addmentor/addmentor.component';
 import { ChangementorComponent } from './changementor/changementor.component';
 import { ChangeworkComponent } from './changework/changework.component';
 import { AddworkComponent } from './addwork/addwork.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AddworkComponent } from './addwork/addwork.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // Add AppRoutingModule here
+    AppRoutingModule,
+    FormsModule // Add AppRoutingModule here
   ],
   providers: [],
   bootstrap: [AppComponent]
