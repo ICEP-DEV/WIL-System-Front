@@ -1,0 +1,83 @@
+body{
+  font-family: "Montserrat";
+}
+.heading{
+	margin-left: 15%;
+}
+
+.heading h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.heading{
+	margin-left: 15%;
+    /* font-family: 'Montserrat'; */
+}
+
+.heading h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.main{
+    margin-left: 15%;
+    /* font-family: 'Montserrat' */
+}
+
+h3{
+   text-align: center;
+   margin-top: 2%;
+}
+label{
+   margin-top: 1%;
+}
+
+.sendbtn{
+    text-align: center;
+}
+
+input{
+    background-color: #0055C9;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container {
+    margin-top: 2%;
+}
+
+.footer{
+    margin-left:15.5%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+      margin-left: 5%;
+    }
+  
+    .main {
+      margin-left: 5%;
+    }
+  
+    input {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+    .container {
+      margin-top: 5%;
+    }
+  
+    .footer {
+      margin-left: 5.5%;
+    }
+  }
