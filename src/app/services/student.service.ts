@@ -8,9 +8,8 @@ import { ReAdmissionComponent } from '../components/re-admission/re-admission.co
   providedIn: 'root'
 })
 export class StudentService {
-  // private baseUrl = 'http://localhost:8080/api';
+  private baseUrl = 'http://localhost:8080/api';
   // private BaseUrl = 'http://192.168.27.46:8080/api'
-  private baseUrl = 'http://192.168.27.52/api'
 
   constructor(private http: HttpClient) { }
 
@@ -31,12 +30,20 @@ epForm(data: any): Observable<any>
 uploadPlacementLetter(data: any): Observable<any> 
 {
   return this.http.post<any>(`${this.baseUrl}/uploadFolder`, data )
-}
+};
 
 ReAdmission(data: any):Observable<any> 
 {
   return this.http.post<any>(`${this.baseUrl}/admform`, data )
+};
+
+uploadSystemDocumentation(data: any): Observable<any>
+{
+ return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
+
+
+
 
 }
 

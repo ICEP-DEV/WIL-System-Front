@@ -17,14 +17,14 @@ export class ReAdmissionFormComponent {
   tempStudentInfo: any
   studentNo: any
 
-  reAdminForm={
-    student_no: '',
-    firstChoice: '',
-    enrollType: '',
-    finacialAid: '',
-    campus: '',
+  // reAdminForm={
+  //   student_no: '',
+  //   firstChoice: '',
+  //   enrollType: '',
+  //   finacialAid: '',
+  //   campus: '',
 
-  }
+  // }
 
 
   constructor(private formBuilder: FormBuilder, private router: Router, private route: ActivatedRoute, private studentService: StudentService) { }
@@ -52,9 +52,9 @@ export class ReAdmissionFormComponent {
 
 
   errorMessage: any
-  submitForm(){
-    console.log(this.reAdminForm);
-  }
+  // submitForm(){
+  //   console.log(this.reAdminForm);
+  // }
 
   onSubmit(): void {
    console.log( this.reAdmissionForm)
@@ -69,7 +69,7 @@ export class ReAdmissionFormComponent {
       (response) => {
         // Handle success response
         console.log(response);
-        this.router.navigate(['/placement-letter']);
+        this.router.navigate(['/declaration']);
       },
       (error) => {
         // Handle error response

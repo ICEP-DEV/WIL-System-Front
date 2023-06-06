@@ -15,8 +15,8 @@
   </head>
   <body>
     <app-sidenav></app-sidenav>
-    <img  src="InsImg.gif"
-    alt="" /> <br>
+
+    <br>
     <div class="work_Learning">Work Integrated Learning Environment</div>
  
     <div class="readmission_form">
@@ -26,33 +26,33 @@
   
   <div class= "form_box">
     <div class= "flex">
-   <form class="admission_form" id="form">
+   <form  [formGroup]="reAdmissionForm"class="admission_form" id="form">
     <div class="Choice_Qualification">CHOICE OF QUALIFICATON</div>
     <div class="choice_1">
-  <input type="text" class="choice_Of_Qua" placeholder="Write your choice of qualification here" required> 
+  <input type="text" formControlName="firstChoice"class="choice_Of_Qua" placeholder="Write your choice of qualification here" required> 
      </div>	 
     <div class="Type_enrollment">CLASSES OF PREFERENCE </div>
        <div class="Day_Classes">
-         <input type="radio" name="classes" value="Day Classes" id="day_classes"> 
+         <input type="radio" formControlName ="enrollType"  value="Day Classes" id="day_classes"> 
           Day Classes
          </div>
        <div class="Evening_Classes">
-       <input type="radio" name="classes" value="Evening Classes" id="evening_classes" >
+       <input type="radio" formControlName ="enrollType"  value="Evening Classes" id="evening_classes" >
        Evening Classes
        </div>
      <div class="Block_Classes">
-      <input type="radio" name="classes"value="Block Classes" id="block_classes">
+      <input type="radio" formControlName ="enrollType" value="Block Classes" id="block_classes">
        Block Classes
      </div><br><br><br> 
 
        <h2>FINANCIAL AID</h2>
       <p>Do you require financial aid?</p>
   <div class="option_1">
-    <input type="radio" name="finance" value="financial aid" id="req_finance" >
+    <input type="radio" formControlName ="finacialAid"  value="Yes, i require financial aid" id="req_finance" >
        Yes, i require financial aid
   </div>
   <div class="option_2">
-  <input type="radio" name="finance" value="finacial aid" id="req_finance1">
+  <input type="radio" formControlName ="finacialAid"  value="No, i do not require financial aid" id="req_finance1">
        No, i do not require financial aid?  
   </div>
   
@@ -60,19 +60,19 @@
    <div class = "select_campuses">Please select your campus</div>
 
  <div class = "block_2">
- <input type="radio" name="campuses" value="Pretoria campuses" id="pretoria_campuses">
+ <input type="radio" formControlName ="campus" value="Pretoria campuses" id="pretoria_campuses">
    Pretoria campuses<br><br>
- <input type="radio" name="campuses" value="Polokwane campuses" id="polokwane_campuses">
+ <input type="radio" formControlName ="campus" value="Polokwane campuses" id="polokwane_campuses">
    Polokwane campuses<br><br>
- <input type="radio" name="campuses" value="Mbombela campuses" id="mbombela_campuses">
+ <input type="radio" formControlName ="campus" value="Mbombela campuses" id="mbombela_campuses">
    Mbombela campuses<br><br>
- <input type="radio" name="campuses" value="Emalahleni campuses" id="emalahleni_campuses" >
+ <input type="radio" formControlName ="campus" value="Emalahleni campuses" id="emalahleni_campuses" >
   Emalahleni campuses<br><br>
 </div>
 </form>
 </div>
 </div> 
-     <button id="form" form="form" value="submit" (click)="submitForm()">Next</button>
+     <button id="form" form="form" value="submit" (click)="onSubmit()">Next</button>
    <div class="imgFooter">
     <img src="../../../assets/footer 1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
    <!-- <app-footer></app-footer> -->
