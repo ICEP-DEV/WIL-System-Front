@@ -1,0 +1,22 @@
+.navbar {
+   margin-left: -12%;
+   font-size: 20px;
+  }
+  button.navbar-toggler{
+margin-right: 90%;
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 17vh; /* Adjust the margin between nav links */
+  }
+
+  .active{
+    background: #FFB300;
+    border-radius: 31px;
+}
+
+.nav-link.active {
+    color: white;
+  }
+
+  

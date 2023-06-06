@@ -30,12 +30,20 @@ epForm(data: any): Observable<any>
 uploadPlacementLetter(data: any): Observable<any> 
 {
   return this.http.post<any>(`${this.baseUrl}/uploadFolder`, data )
-}
+};
 
 ReAdmission(data: any):Observable<any> 
 {
   return this.http.post<any>(`${this.baseUrl}/admform`, data )
+};
+
+uploadSystemDocumentation(data: any): Observable<any>
+{
+ return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
+
+
+
 
 }
 

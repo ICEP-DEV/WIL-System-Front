@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -44,6 +45,8 @@ import { DeclarationComponent } from './components/declaration/declaration.compo
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -81,11 +84,14 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
     RegistrationDataComponent,
     
     PracticeComponent,
-          ReAdmissionFormComponent
+          ReAdmissionFormComponent,
+          SystemDocumentationComponent,
+          NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // Add AppRoutingModule here
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
