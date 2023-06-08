@@ -37,6 +37,7 @@ import { RegistrationDataComponent } from './components/registration-data/regist
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
 
 
 
@@ -77,6 +78,7 @@ const routes: Routes = [
   {path: 'Internlife', component: HomeComponent},
   {path: 're-admission-form', component:ReAdmissionFormComponent},
   {path: 'system-documentation', component:SystemDocumentationComponent},
+  {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
   {path: 'navbar', component:NavbarComponent}
 
 

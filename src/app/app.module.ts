@@ -47,6 +47,7 @@ import { RegistrationDataComponent } from './components/registration-data/regist
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     PracticeComponent,
           ReAdmissionFormComponent,
           SystemDocumentationComponent,
-          NavbarComponent
+          NavbarComponent,
+          SysDocSubmittedComponent
   ],
   imports: [
     BrowserModule,

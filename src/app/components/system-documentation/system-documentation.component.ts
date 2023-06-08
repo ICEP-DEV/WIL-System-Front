@@ -14,9 +14,19 @@ export class SystemDocumentationComponent {
 constructor(private studentService: StudentService, private router: Router) {}
 
 onFileSelected(event: any) {
-  this.selectedFile = event.target.files[0];
-  
+  const file: File = event.target.files[0];
+  const allowedExtensions = /(\.pdf)$/i; // Regular expression to match PDF files
+
+  if (!allowedExtensions.exec(file.name)) {
+    // Display an error message
+    this.message = 'Only PDF files are allowed.';
+    return;
+  }
+
+  this.selectedFile = file;
+  this.message = undefined; // Clear any previous error messages
 }
+
   uploadFile() {
     if (this.selectedFile) {
       const formData = new FormData();
@@ -27,7 +37,7 @@ onFileSelected(event: any) {
         console.log(this.message);
         
         this.selectedFile = null
-        // this.router.navigate(['/re-admission']);
+         this.router.navigate(['/sys-doc-submitted']);
         },
         (error) => {
           console.log(error);

@@ -13,10 +13,26 @@ export class PlacementLetterComponent {
 
 constructor(private studentService: StudentService, private router: Router) {}
 
-onFileSelected(event: any) {
-  this.selectedFile = event.target.files[0];
+// onFileSelected(event: any) {
+//   this.selectedFile = event.target.files[0];
   
+// }
+
+
+onFileSelected(event: any) {
+  const file: File = event.target.files[0];
+  const allowedExtensions = /(\.pdf)$/i; // Regular expression to match PDF files
+
+  if (!allowedExtensions.exec(file.name)) {
+    // Display an error message
+    this.message = 'Only PDF files are allowed.';
+    return;
+  }
+
+  this.selectedFile = file;
+  this.message = undefined; // Clear any previous error messages
 }
+
   uploadFile() {
     if (this.selectedFile) {
       const formData = new FormData();
