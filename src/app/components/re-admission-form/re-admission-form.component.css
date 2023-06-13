@@ -238,6 +238,14 @@ body{
   font-size: 14px;
   text-align: left;
   }
+  .btnForm{
+    top: 110%;
+    width: 923px;
+    height: 80px;
+    /* background: black; */
+    position: absolute;
+    left: 600px;
+  }
    button{
     background-color:#0055C9;
     color:#FFFFFF;
@@ -247,10 +255,10 @@ body{
     font-size:32px;
     font-weight:Bold;
     text-align:center;
-    left:52%;
+    left:40%;
     position: absolute;
     border:none;
-    top:120%;
+    top:20%;
     
   }  
  
@@ -345,7 +353,12 @@ body{
    .flex .block_2 {
      margin-left: 0;
    }
-   
+    .btnForm {
+      width: 90%;
+      height: 530px;
+      top: 500px;
+      left: 5%;;
+  }
    button {
      top: 120%;
      left: 40%;
