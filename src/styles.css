@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300");
+:root {
+    /* --main-darklg: #1d2635;
+    --main-dark: #ffffff;
+    --primary-color: #2fec6e;
+    --main-light: #eeeeee; */
+    font-family: "Montserrat";
+    
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }

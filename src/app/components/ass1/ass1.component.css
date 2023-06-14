@@ -1,0 +1,75 @@
+body{
+    font-family: "Montserrat";
+  }
+.heading{
+	margin-left: 15%;
+}
+
+.heading h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main{
+    margin-top: 5%;
+    margin-left: 20%;
+    /* font-family: 'Montserrat' */
+}
+.header{
+    display: flex;
+    margin-left: 25%;
+}
+
+.assH{
+    margin-right: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.assH h2{
+    background-color: #F5002F;
+	color:#ffff;
+	text-align: center;
+	border-radius: 10px;
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+.supervison{
+    background-color:#D9D9D9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 2.5);
+    margin-right: 40%;
+  }
+
+.supervison h2{
+    text-align: center;
+}
+
+.supervison p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.assbtn{
+    margin-right: 40%;
+}
+
+.Submitass{
+    background-color: #0055C9;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 35%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    bottom: 0;
+}
