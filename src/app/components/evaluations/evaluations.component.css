@@ -1,6 +1,13 @@
+body{
+  font-family: "Montserrat";
+}
 .heading{
 	margin-left: 15%;
 }
+
+.gg{
+  margin-left: 25%;
+} 
 
 .heading h1{
 	text-align: center;
@@ -10,7 +17,7 @@
 .main{
     margin-top: 5%;
     margin-left: 15%;
-    font-family: 'Montserrat'
+    /* font-family: 'Montserrat' */
 }
 .header{
    text-align: center;
@@ -19,7 +26,6 @@
 .supervison h2{
     text-align: center;
 }
-
 
 .dropbtn{
     background-color: #ffff;
@@ -99,7 +105,7 @@
 
   .footer{
     margin-left:15.5%;
-    margin-top: 6%;
+   
     bottom: 0;
 }
   

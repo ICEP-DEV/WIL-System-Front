@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
@@ -28,13 +29,23 @@ import { LoginComponent } from './components/login/login.component';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
-import { InternlifeComponent } from './internlife/internlife.component';
+import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
+import { ReAdmissionComponent } from './components/re-admission/re-admission.component';
+import { DeclarationComponent } from './components/declaration/declaration.component';
+import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
+import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
+import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+
+
+import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
+import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
+
 
 
 
 
 const routes: Routes = [
-  { path: '', component: InternlifeComponent },
+  //{ path: '', component: RecommendationComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Regulations', component: RegulationsComponent },
   { path: 'Placement Information', component: PlacementinfoComponent },
@@ -54,13 +65,16 @@ const routes: Routes = [
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
 
-  //{path: '', component:LoginComponent},
+  {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
   {path: 'wil-registration',component: WILRegistrationComponent},
   {path: 'ep-information', component: EpInformationComponent},
-  {path: '', component: InternlifeComponent}
+  {path: 'Internlife', component: HomeComponent},
+
+  {path: 'Submit Evaluation', component: SubmittedEvaluationComponent},
+  {path: 'Submit Query', component: SubmittedQueryComponent}
 
 
 ];

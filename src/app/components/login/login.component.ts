@@ -14,9 +14,7 @@ export class LoginComponent {
   isSubmitted  =  false;
   today: number = Date.now();
 
-  constructor(private formBuilder: FormBuilder,private router: Router, private route:ActivatedRoute, private service:LoginService) {
-   
-   }
+  constructor(private formBuilder: FormBuilder,private router: Router, private route:ActivatedRoute, private service:LoginService) { }
 
 ngOnInit(): void{
   this.loginForm = this.formBuilder.group({

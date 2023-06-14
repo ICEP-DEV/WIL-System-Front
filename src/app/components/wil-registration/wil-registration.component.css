@@ -1,56 +1,17 @@
-/* .content h2 {
- font-size: 2vw; 
-  color: rgb(87, 85, 85);
-  adding-left: 15%; 
-  font-size: 2rem;
-  margin-left: 2rem;
+body{
+  font-family: "Montserrat";
 }
-
-.content h3 {
-  font-size: 30px;
-  color: black;
-  margin-top: 100px;
-  margin-bottom: 50px;
-  margin-left: 130px;
-  padding: 10px;
-  padding-left: 180px;
-  width: 500px;
-  border-radius: 30px;
-  background-color: #d9d9d9;
-}
-
-.content p {
-  font-weight: bold;
-  font-size: 24px;
-  padding-left: 150px;
-}
-
-.content button {
-  background-color: #0055c9;
-  color: white;
-  margin-top: 50px;
-  margin-left: 300px;
-  /* padding-left: 180px; 
-  width: 350px;
-  height: 70px;
-  border-radius: 31px;
-  border: 0ch;
-  font-size: 30px;
-} */
-
-
 .content {
   margin-left: 5%;
   padding: 5%;
-  font-family: 'Montserrat'
+  
 }
-
 .content h2 {
   font-size: 2vw;
-  /* padding-left: 10%; */
+  padding-left: 10%;
   color: rgb(87, 85, 85);
+  margin-left: -10%;
 }
-
 .content h3 {
   font-size: 1.5vw;
   margin-top: 10vh;
@@ -58,24 +19,21 @@
   margin-left: 3%;
   padding: 1vw;
   padding-left: 4vw;
-  width: 50%;
+  width: 55%;
   border-radius: 2vw;
   background-color: #D9D9D9;
 }
-
 .content p {
   font-size: 1.5vw;
-  /* padding-left: 5%; */
+   padding-left: 5%;
   font-weight: bold;
-  
   margin-top: 8vh;
 }
-
 .content h4{
   margin-left: 4%;
   font-weight: 200;
+  font-weight: bold;
 }
-
 .content button {
   margin-top: 5vh;
   margin-left: 15%;
@@ -85,28 +43,24 @@
   font-size: 2vw;
   border-radius: 31px;
   border: 0ch;
-  background-color: #0055c9;
+  background-color: #0055C9;
   color: white;
 }
-
 .content img{
   position:fixed ;
   bottom: 0;
   right: 0;
   width: 70%;
 }
-
 @media (max-width: 768px) {
   .content {
     margin-left: 0;
     padding: 6%;
   }
-
   .content h2 {
     font-size: 4vw;
     padding-left: 2%;
   }
-
   .content h3 {
     font-size: 3vw;
     margin-top: 10%;
@@ -115,7 +69,6 @@
     padding: 2%;
     padding-right: 1vw;
   }
-
   .content p {
     font-size: 2.5vw;
     padding-left: 2%;
@@ -128,7 +81,6 @@
   .content svg{
     width: 5%;
   }
-
   .content button {
     margin-top: 10%;
     margin-left: 8%;
@@ -137,13 +89,10 @@
     font-size: 3vw;
     margin-bottom: 20%;
   }
-
   .content img{
     position:static;
  left: 0;
   width: 100%;
   margin-left: 8%;
   }
-}
-
-  
+} 

@@ -1,3 +1,6 @@
+body{
+  font-family: "Montserrat";
+}
 .heading{
 	margin-left: 15%;
 }
@@ -18,7 +21,7 @@
 }
 .main{
     margin-left: 15%;
-    font-family: 'Montserrat'
+    /* font-family: 'Montserrat' */
 }
 
 h3{
@@ -29,12 +32,21 @@ label{
    margin-top: 1%;
 }
 
-.sendbtn{
-    text-align: center;
+.container {
+    margin-top: 2%;
 }
 
-input{
-    background-color: #0055C9;
+.footer{
+    margin-left:15.5%;
+    bottom: 0;
+}
+
+.submitbtn{
+  text-align: center;
+}
+
+.submitbtn button{
+  background-color: #0055C9;
     color: white;
     width: 280px;
     height: 50px;
@@ -44,15 +56,6 @@ input{
     cursor: pointer;
     margin-top: 2%;
     margin-bottom: 2%;
-}
-
-.container {
-    margin-top: 2%;
-}
-
-.footer{
-    margin-left:15.5%;
-    bottom: 0;
 }
 
 @media screen and (max-width: 768px) {

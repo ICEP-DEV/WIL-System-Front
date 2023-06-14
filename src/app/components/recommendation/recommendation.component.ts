@@ -98,7 +98,7 @@ formattedDate = `${this.scurrentDate.getDate()}/${this.scurrentDate.toLocaleStri
     doc.text('The major fileds of study in this diploma are:',10,115)
     doc.text(`*  ${this.tempInfo.data[0].roles} `,10,120)
     doc.text('* Mobile Development',10,125)
-    doc.text(`*  ${this.tempInfo.data[1].roles} `,10,130)
+    doc.text(`*  ${this.tempInfo.data[0].roles} `,10,130)
     doc.text('* Software Testing',10,135)
     //doc.text('* Database Development and Administration',10,130)
     doc.text('',10,135)

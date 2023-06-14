@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { StudentService } from 'src/app/services/student.service';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -39,6 +40,15 @@ import { PracticeComponent } from './practice/practice.component';
 import { InternlifeComponent } from './internlife/internlife.component';
 
 
+import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
+import { ReAdmissionComponent } from './components/re-admission/re-admission.component';
+import { DeclarationComponent } from './components/declaration/declaration.component';
+import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
+import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
+import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
+import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,8 +78,16 @@ import { InternlifeComponent } from './internlife/internlife.component';
     WILRegistrationComponent,
     FooterComponent,
     EpInformationComponent,
+    PlacementLetterComponent,
+    ReAdmissionComponent,
+    DeclarationComponent,
+    SuccessRespondComponent,
+    RegistrationDataComponent,
+    
     PracticeComponent,
-    InternlifeComponent
+          ReAdmissionFormComponent,
+          SubmittedEvaluationComponent,
+          SubmittedQueryComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +98,7 @@ import { InternlifeComponent } from './internlife/internlife.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [DatePipe,],
+  providers: [DatePipe,StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
