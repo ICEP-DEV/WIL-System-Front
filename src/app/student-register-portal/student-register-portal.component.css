@@ -1,4 +1,4 @@
-bodbody{
+body{
     font-family: "Montserrat";
   }
 .heading{
@@ -14,38 +14,20 @@ bodbody{
     margin-left: 15%;
     /* font-family: 'Montserrat' */
 }
-
+.main h3 {
+    font-size: 1.5vw;
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    margin-left: 37%;
+    padding: 1vw;
+    padding-left: 4vw;
+    width: 25%;
+    border-radius: 2vw;
+    background-color: #D9D9D9;
+}
+  
 .footer{
     margin-left:15.5%;
     margin-top: 6%;
     bottom: 0;
-}y{
-    font-family: "Montserrat";
-  }
-  .heading{
-      margin-left: 15%;
-      /*font-family: 'Montserrat';*/
-  }
-  
-  .heading h1{
-      text-align: center;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  }
-  
-  
-  .footer{
-      margin-left:15.5%;
-      margin-top: 6%;
-      bottom: 0;
-  }
-  
-  @media screen and (max-width: 768px) {
-      .heading {
-        margin-left: 5%;
-      }
-    
-   
-      .footer {
-        margin-left: 5.5%;
-      }
-    }
+}
