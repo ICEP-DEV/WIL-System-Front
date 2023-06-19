@@ -1,11 +1,20 @@
 <body>
 <div class="sidebar">
+
   <img  src="../../../assets/InsImg.gif"
   alt=""
 /> <br>
 <a routerLink="/recommendation">Recommendation Letter</a><br>
 <a routerLink="/wil-registration">WIL Registration</a><br>
 <a routerLink="/Home">Life as an intern</a>
+
+    <img  src="../../../assets/InsImg.gif"
+    alt=""
+  /> <br>
+  <a routerLink="/recommendation" routerLinkActive="active">Recommendation Letter</a><br>
+  <a routerLink="/wil-registration"  routerLinkActive="activeP">WIL Registration</a><br>
+  <a routerLink="/Home"  routerLinkActive="activeP">Life as an intern</a>
+  <!-- <a [ngClass]="{'active': isActive}" (click)="setActive(true)" >Link</a> -->
 </div>
   
 </body>

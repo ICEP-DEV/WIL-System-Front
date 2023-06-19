@@ -38,12 +38,15 @@ import { EpInformationComponent } from './components/ep-information/ep-informati
 
 
 
+
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
 import { ReAdmissionComponent } from './components/re-admission/re-admission.component';
 import { DeclarationComponent } from './components/declaration/declaration.component';
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+import { InternlifeComponent } from './internlife/internlife.component';
+
 
 
 @NgModule({
@@ -75,13 +78,15 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
     WILRegistrationComponent,
     FooterComponent,
     EpInformationComponent,
+
     PlacementLetterComponent,
     ReAdmissionComponent,
     DeclarationComponent,
     SuccessRespondComponent,
     RegistrationDataComponent,
     ReAdmissionFormComponent,
-          
+    InternlifeComponent,
+
   ],
   imports: [
     BrowserModule,
