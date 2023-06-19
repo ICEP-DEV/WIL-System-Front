@@ -46,6 +46,7 @@ import { SuccessRespondComponent } from './components/success-respond/success-re
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 import { InternlifeComponent } from './internlife/internlife.component';
+import { StudentRegisterPortalComponent } from './student-register-portal/student-register-portal.component';
 
 
 
@@ -86,6 +87,7 @@ import { InternlifeComponent } from './internlife/internlife.component';
     RegistrationDataComponent,
     ReAdmissionFormComponent,
     InternlifeComponent,
+    StudentRegisterPortalComponent,
 
   ],
   imports: [
