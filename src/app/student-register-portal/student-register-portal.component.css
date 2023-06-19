@@ -1,4 +1,25 @@
-body{
+bodbody{
+    font-family: "Montserrat";
+  }
+.heading{
+	margin-left: 15%;
+}
+
+.heading h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.main{
+    margin-left: 15%;
+    /* font-family: 'Montserrat' */
+}
+
+.footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    bottom: 0;
+}y{
     font-family: "Montserrat";
   }
   .heading{
