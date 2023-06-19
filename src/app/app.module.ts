@@ -35,7 +35,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
-import { PracticeComponent } from './practice/practice.component';
+
 
 
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
@@ -44,6 +44,7 @@ import { DeclarationComponent } from './components/declaration/declaration.compo
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+
 
 @NgModule({
   declarations: [
@@ -79,9 +80,8 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
     DeclarationComponent,
     SuccessRespondComponent,
     RegistrationDataComponent,
-    
-    PracticeComponent,
-          ReAdmissionFormComponent
+    ReAdmissionFormComponent,
+          
   ],
   imports: [
     BrowserModule,
