@@ -1,0 +1,30 @@
+body{
+    font-family: "Montserrat";
+  }
+  .heading{
+      margin-left: 15%;
+      /*font-family: 'Montserrat';*/
+  }
+  
+  .heading h1{
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  .footer{
+      margin-left:15.5%;
+      margin-top: 6%;
+      bottom: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+      .heading {
+        margin-left: 5%;
+      }
+    
+   
+      .footer {
+        margin-left: 5.5%;
+      }
+    }
