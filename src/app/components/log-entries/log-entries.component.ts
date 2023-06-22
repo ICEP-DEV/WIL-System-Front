@@ -8,25 +8,5 @@ import { Component } from '@angular/core';
 })
 export class LogEntriesComponent {
 
-  displayEntry:string ='';
-
-getLogEntryies(){
-
-  console.log( this.displayEntry);
-
- 
-
   
-}
-
-displaySubmmitedEntry:string ='';
-
-submitLogEntry(){
-
-  console.log();
-
- this.displayEntry;
-
-}
-
 }

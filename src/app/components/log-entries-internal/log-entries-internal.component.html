@@ -1,0 +1,86 @@
+<body>
+    <app-sidenav></app-sidenav>
+  <div class="heading">
+    <h1>Life as an intern</h1>
+  </div>
+  
+  <app-topnav></app-topnav>
+  <br><br>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="main" onload="">
+ 
+         <div class="header">
+
+              <h2 style="text-align: left;">Log Entries</h2>
+
+         </div>
+
+
+
+          <br><br>
+
+  <div class="loginfo">
+
+    <p id="line1">WORKBOOK REPORT OF TASKS COMPLETED BY STUDENT</p>
+
+       <br><br>
+    
+  </div>
+
+         <p id="line2">DESCRIPTION OF TASKS COMPLETED BY STUDENTS</p>
+           <br><br>
+
+<div class="container" >
+    <textarea  id="textarea"  rows="25" cols="100"  [(ngModel)] ='log_description'  ></textarea>
+       <div *ngIf="isTextareaEmpty" style="margin-left: 200px;">
+           Textarea cannot be empty
+          </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<div id="instructions3" class="instructions"> 
+    <h5   style =" font-size: 20px ;font-style: bold; color:red;">INSRUCTIONS: <label style="color: black;">Record your tasks at text field above.</label><h5>
+<br> <br>
+
+<div></div>
+
+
+<label style="font-size: 20px; color: black;">Click <label style="font-size: 20px ; font-style: bold; color: blue;"> SAVE LOG </label> to record an even.</label>
+<br><br>
+
+<label  style="font-size: 20px; color: black;">Click <label style="font-size: 20px ; font-style: bold; color: blue;"> SUBMIT LOG </label> to submit an entry for the entire month.</label>
+
+<br><br>
+
+
+  <div class="buttons">
+ 
+<button  (click)="validateTextarea('/log-entries-saved')"  class="button" id="btnSaveLog1"  >Save Log</button> 
+
+  <button (click)="validateTextarea('/log-entries-submitted')" class="button" id="btnSubLog1" style="margin-left:40% ;" type="submit" >Submit Log</button> 
+  </div>
+  <br>
+
+
+
+
+  <div class="footer">
+    <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+   
+</div>
+  
+
+
+

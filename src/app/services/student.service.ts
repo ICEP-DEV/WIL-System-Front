@@ -37,5 +37,13 @@ ReAdmission(data: any):Observable<any>
   return this.http.post<any>(`${this.baseUrl}/admform`, data )
 }
 
+logentries: any;
+
+entries(data: any): Observable<any>
+{
+ return this.http.post<any>(`${this.baseUrl}/logbook`, data)
+};
+
+
 }
 

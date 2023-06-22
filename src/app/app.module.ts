@@ -44,6 +44,10 @@ import { DeclarationComponent } from './components/declaration/declaration.compo
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+import { LogEntriesInternalComponent } from './components/log-entries-internal/log-entries-internal.component';
+import { LogEntriesSubmittedComponent } from './components/log-entries-submitted/log-entries-submitted.component';
+import { LogEntriesSavedComponent } from './components/log-entries-saved/log-entries-saved.component';
+import { LogEntriesAprrovalStatusComponent } from './components/log-entries-aprroval-status/log-entries-aprroval-status.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +85,11 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
     RegistrationDataComponent,
     
     PracticeComponent,
-          ReAdmissionFormComponent
+          ReAdmissionFormComponent,
+          LogEntriesInternalComponent,
+          LogEntriesSubmittedComponent,
+          LogEntriesSavedComponent,
+          LogEntriesAprrovalStatusComponent
   ],
   imports: [
     BrowserModule,
