@@ -1,43 +1,52 @@
 <body>
+    <app-sidenav></app-sidenav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
 
-<div class="heading">
-    <h1>Life as an intern</h1>
-</div>
-<app-sidenav></app-sidenav>
-<app-topnav></app-topnav>
-<div class="main">
-    <div class="header">
-        <img src=".\assets\noti_icon.png" style="height: 50px; width: 50px;">
-        <h3>Notifications</h3>
+            </div>
+            <div class="col-md-9">
+                <h2>Life as an Intern</h2>
+                <app-navbar></app-navbar>
+                <div class="content">
+
+                    <h3>Notifications</h3>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Icon</th>
+                                <th scope="col">Subject</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                        <path
+                                            d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                    </svg></th>
+                                    <td>{{ notificationMessages }}</td>
+                                <td>{{ notificationDate | date }}</td>
+                                <td>{{ notificationDate | date:'shortTime' }}</td>
+                            </tr>
+
+                          
+                        </tbody>
+                    </table>
+
+
+
+                    <img src="../../../assets/footer 1.png" alt="" />
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
-    <hr>
-    <div class="noti1">
-        <img src=".\assets\icons8-message-48.png" style="margin-left: 20%;">
-    </div>
-    <hr>
-    <div class="noti1">
-        <img src=".\assets\icons8-message-48.png" style="margin-left: 20%;">
-    </div>
-    <hr>
-    <div class="noti1">
-    </div>
-    <div class="noti1">
-        <img src=".\assets\icons8-message-48.png" style="margin-left: 20%;">
-    </div>
-    <hr>
-    <div class="noti1">
-        <img src=".\assets\icons8-message-48.png" style="margin-left: 20%;">
-    </div>
-    <hr>
-    <div class="noti1">
-        <img src=".\assets\icons8-message-48.png" style="margin-left: 20%;">
-    </div>
-    <hr>
-</div>
-<div class="footer">
-    <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
-</div>
-    
 </body>
-
-

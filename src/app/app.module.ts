@@ -30,7 +30,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { DatePipe } from '@angular/common';
 
 import { LoginComponent } from './components/login/login.component';
-
+import { NotificationService } from 'src/app/services/notification.service';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
@@ -48,6 +48,10 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
+import { ApplicantsComponent } from './components/applicants/applicants.component';
+import { AdminViewComponent } from './components/admin-view/admin-view.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +92,11 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
           ReAdmissionFormComponent,
           SystemDocumentationComponent,
           NavbarComponent,
-          SysDocSubmittedComponent
+          SysDocSubmittedComponent,
+          AdminHomeComponent,
+          AdminNavbarComponent,
+          ApplicantsComponent,
+          AdminViewComponent
   ],
   imports: [
     BrowserModule,
@@ -100,7 +108,7 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [DatePipe,],
+  providers: [DatePipe,NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

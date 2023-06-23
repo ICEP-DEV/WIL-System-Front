@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { StudentService } from 'src/app/services/student.service';
+import { NotificationService } from 'src/app/services/notification.service'
 
 @Component({
   selector: 'app-system-documentation',
@@ -11,7 +12,7 @@ export class SystemDocumentationComponent {
   selectedFile: File | null = null;
   message: string | undefined;
 
-constructor(private studentService: StudentService, private router: Router) {}
+constructor(private studentService: StudentService, private router: Router,  private notificationService: NotificationService,) {}
 
 onFileSelected(event: any) {
   const file: File = event.target.files[0];
@@ -35,7 +36,9 @@ onFileSelected(event: any) {
         (response) => {
         this.message = response.message;
         console.log(this.message);
-        
+
+         // Notify the NotificationComponent about the submission
+        this.notificationService.notifySubmissionComplete('system-documentation');
         this.selectedFile = null
          this.router.navigate(['/sys-doc-submitted']);
         },

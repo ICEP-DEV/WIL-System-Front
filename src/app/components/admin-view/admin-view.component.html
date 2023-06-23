@@ -1,0 +1,56 @@
+<body>
+    <div class="container">
+   
+        <img  src="../../../assets/logoTUTC.png"
+        alt="">
+        <h2>Life as an Intern</h2>
+         <app-admin-navbar></app-admin-navbar>  
+         <h3><span style="color:#FFB300; font-weight: bold;">Profile of:</span> initials and surname and student_number</h3>  
+         <p><span style="color: #F5002F; font-weight: bold;">Instructions:</span><br> 
+
+            Please keep the following points in mind while processing applications for the WIL-Module:<br>
+            <br>
+            1.Incomplete Form: Ensure that the application form is fully completed without any missing information.<br>
+            2.Missing Attachments: Verify that all required attachments are included with the application.<br>
+            3.False Information: Thoroughly review the application to identify any instances of false or misleading information.<br>
+            4.Company Verification: Confirm that the company where the applicant is placed has been properly verified.
+            <br><br>
+            Please note that failure to meet any of these requirements will result in disqualification of the student from registering 
+            for the WIL-Module.</p>
+            <br>
+<h3 style="color: #080808; font-weight: bold;">Work-Integrated Registration form</h3>
+<h1 style="color: #FFB300;; font-weight: bold;">Placement Information</h1>
+<form>  
+    <div class="form-label">
+    <label for="com-name">Company Name</label>  <br>
+    <label for="con-person">Contact Person </label> <br>
+    <label for="com-name">Telephone Number </label>  <br>
+    <label for="com-name">Email Address</label>  <br>
+    <label for="com-name">City</label>  <br>
+    <label for="com-name">Postal Adress</label>  <br> 
+              
+            </div>
+            <div class="form-input">
+                <input *ngIf="studentInfo" type="text" id="companyName" name="companyName" [(ngModel)]="studentInfo.approvedEmployer" readonly><br>
+            <input *ngIf="studentInfo" type="text" id="contactPerson" name="contactPerson" [(ngModel)]="studentInfo.contactPerson" readonly> <br/>  
+            <input *ngIf="studentInfo" type="text" id="telNumber" name="telNumber" [(ngModel)]="studentInfo.telNumber" readonly>  <br/>
+            <input *ngIf="studentInfo" type="text" id="emp_email" name="emp_email" [(ngModel)]="studentInfo.emp_email" readonly> <br/>
+            <input *ngIf="studentInfo" type="text" id="telNumber" name="city" [(ngModel)]="studentInfo.city" readonly>  <br/>
+            <input *ngIf="studentInfo" type="text" id="telNumber" name="postalAddress" [(ngModel)]="studentInfo.postalAddress" readonly> <br/>
+        </div>
+        <h4 style="color: #FFB300;; font-weight: bold;">Period of Study</h4>
+
+        <div class="form-label">
+        <label for="com-name">Period of Study</label>  <br> 
+    </div>
+    <div class="form-period">
+        <input *ngIf="studentInfo" type="text" id="telNumber" name="studyPeriod" [(ngModel)]="studentInfo.studyPeriod" readonly>  <br/>
+  
+    </div>
+
+</form>  
+  <h4 style="color: #FFB300;; font-weight: bold;">Employment Letter</h4>
+
+
+      </div>   
+</body>
