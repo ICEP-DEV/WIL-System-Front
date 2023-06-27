@@ -7,7 +7,10 @@ import { StudentService } from 'src/app/services/student.service';
   styleUrls: ['./placement-letter.component.css']
 })
 export class PlacementLetterComponent {
-
+  studentInfo: any;
+  tempInfo:any
+  tempStudentInfo:any
+  studentNo= 0
   selectedFile: File | null = null;
   message: string | undefined;
 
@@ -17,6 +20,12 @@ constructor(private studentService: StudentService, private router: Router) {}
 //   this.selectedFile = event.target.files[0];
   
 // }
+ngOnInit(): void {
+  this.tempStudentInfo = localStorage.getItem('user')
+
+  var studInfo = JSON.parse((this.tempStudentInfo))
+  this.studentNo = studInfo.student_no
+}
 
 
 onFileSelected(event: any) {
@@ -37,13 +46,14 @@ onFileSelected(event: any) {
     if (this.selectedFile) {
       const formData = new FormData();
       formData.append('avatar', this.selectedFile, this.selectedFile.name);
+      formData.append('student_no', this.studentNo.toString()); //
       this.studentService.uploadPlacementLetter(formData).subscribe(
         (response) => {
         this.message = response.message;
         console.log(this.message);
         
         this.selectedFile = null
-        this.router.navigate(['/re-admission']);
+       this.router.navigate(['/re-admission']);
         },
         (error) => {
           console.log(error);

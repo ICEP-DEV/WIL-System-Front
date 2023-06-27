@@ -44,7 +44,9 @@ h3 {
   }
 
 
-
+.form{
+  
+}
   .form-label label{
     margin-left: 2%;
     background-color: #F5F3F3;
@@ -55,19 +57,19 @@ h3 {
     
   }
   .form-input{
-    margin-top: -43.4%;
+    margin-top: -41%;
     margin-left: 27%;
-    
+    width: 95%;
   }
   .form-input input{
     
     
     font-size: 1.1vw;
-    padding: 3%;
+    padding: 2.2%;
     border: none;
     outline: none;
     border-bottom: 1px solid #D9D9D9;
-    width:96%
+    width:100%
   }
   h4{
     margin-top: 12%;
@@ -78,6 +80,7 @@ h3 {
     
     margin-top: -7%;
     margin-left: 27%;
+    width: 98%;
     
    
     
@@ -88,5 +91,44 @@ h3 {
     border-bottom: 1px solid #D9D9D9;
     width:96%;
     font-size: 1.1vw;
-    padding: 2.4%;
+    padding: 2%;
   }
+
+.file h1{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+
+.file p{
+  margin-top: -10.3%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+.download {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  margin-top: -7.5%;
+  width: 90vw;
+  
+}
+
+button{
+  width: 18vw;
+  margin-left: 130vh;
+  padding: 0.8vw;
+  font-size: 1.1vw;
+  border-radius: 2vw;
+  border: none;
+    background-color: #D9D9D9;
+}
+

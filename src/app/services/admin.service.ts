@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs'
 
 @Injectable({
@@ -21,7 +21,19 @@ willInfo(data:any): Observable<any>
 }
 
 getwillInfoById(student_no: any):Observable<any>{
-  console.log('Received Student Number:', student_no);
+  //console.log('Received Student Number:', student_no);
   return this.http.get<any>(`${this.baseUrl}/willInfoById/` +student_no);
 }
+
+getPlacementLetter(student_no: string, fileName: string): Observable<any> {
+  return this.http.get<any>(`${this.baseUrl}/placementLetter/${student_no}/${fileName}`, { responseType: 'blob' as 'json' });
+}
+
+getStudents(student_no:string): Observable<any> {
+  console.log(student_no);
+  return this.http.get<any>(`${this.baseUrl}/students/${student_no}`);
+
+  
+}
+
 }
