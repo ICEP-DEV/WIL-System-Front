@@ -10,7 +10,7 @@ body{
     width:35%
 }
 
-h2{
+.heading h2{
     font-size: 2vw;
     font-weight: bold;
     /* padding-left: 10%; */
@@ -44,9 +44,8 @@ h3 {
   }
 
 
-.form{
-  
-}
+ 
+
   .form-label label{
     margin-left: 2%;
     background-color: #F5F3F3;
@@ -132,3 +131,224 @@ button{
     background-color: #D9D9D9;
 }
 
+.admission h3{
+  margin-top: 10%;
+}
+
+.choice h1{
+  margin-top: 4%; 
+}
+.choice h2{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+.choice p{
+  margin-top: -7.1%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+
+/*  */
+.class h1{
+  margin-top: 4%;
+}
+
+.class h2{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+.class p{
+  margin-top: -7.1%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+/*  */
+.campus h1{
+  margin-top: 4%;
+}
+.campus h2{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+.campus p{
+  margin-top: -7.1%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+/*  */
+.finacial h1{
+  margin-top: 4%;
+}
+.finacial h2{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+.finacial p{
+  margin-top: -7.1%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+/*  */
+.declaration {
+  margin-bottom: 10%;
+}
+.signed h1{
+  margin-top: 4%;
+}
+.signed h2{
+  margin-left: 2%;
+  background-color: #F5F3F3;
+  width:25%;
+  font-size: 1.1vw;
+  padding: 2%;
+  border-right:1px solid rgb(49, 48, 48);
+}
+.signed p{
+  margin-top: -7.1%;
+    margin-left: 27%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #D9D9D9;
+  width:94%;
+  font-size: 1.1vw;
+  padding: 2%;
+}
+.approve{
+  width: 7vw;
+  margin-top: 8%;
+  margin-left: 2%;
+}
+.approve button{
+  margin-top: 8%;
+  margin-left: 2%;
+  width: 7vw;
+  border-radius: 2vw;
+  border: none;
+  background-color: #55B75E;
+  color: white;
+}
+.parent-container .modal-dialog {
+  max-width: 35vw; 
+  margin-top: 25vh;
+ 
+  border-radius: 8vw;
+}
+
+.modal-dialog {
+  max-width: 35vw; 
+  margin-top: 25vh ;
+  border-width: 8vw;
+  border-color: aqua;
+  box-shadow: 2px 2px 4px rgb(87, 85, 85);
+}
+.modal-title{
+margin-left: 20vh;
+color: #55B75E;
+font-weight: bold;
+font-size: 1.5vw;
+}
+.app-stud{
+  font-weight: bold;
+  margin-left: 15vh;
+  margin-top: 1vh;
+}
+
+.app-stud span{
+  margin-left: 12vh;
+}
+
+.app-info{
+  margin-top: 2vh;
+  margin-left: 8vh;
+}
+.app-info span{
+  
+  margin-left: 18vh;
+}
+
+.modal-header,
+.modal-footer {
+  border: none; 
+}
+
+.modal-footer{
+  margin-top: -6vh;
+  margin-bottom: 4vh;
+}
+.modal-footer button:nth-child(1) {
+  background-color:#CC3250;
+  color: white;
+  /* margin-left: -22%; */
+  margin-right: 26%;
+  padding: 0.5vw;
+  width: 6vw;
+
+}
+
+.modal-footer button:nth-child(2) {
+  background-color:#55B75E;
+  color: white;
+  margin-right: 20%;
+  padding: 0.5vw;
+  width: 6vw;
+}
+
+
+
+
+
+.reject{
+  
+  margin-top: -4vh;
+}
+.reject button{
+  margin-top: -14vh;
+  margin-left: 18%;
+  width: 7vw;
+  border-radius: 2vw;
+  border: none;
+  background-color: #CC3250;
+  color: white;
+}
+.footer img{
+  position:fixed ;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}

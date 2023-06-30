@@ -1,0 +1,32 @@
+<body>
+    <div class="container">
+   
+        <img  src="../../../assets/logoTUTC.png"
+        alt="">
+        <h2>Life as an Intern</h2>
+         <app-admin-navbar></app-admin-navbar>  
+         <div class="app-stud">
+            <p>
+              Applicant: <span>{{ studentNo }}</span>
+            </p>
+          </div>
+          <h4>Please check reasons for rejection</h4>
+          <form>
+            <div class="confirm" id="reject">
+                <input type="checkbox" id="Incomplete" name="Incomplete" value="Incomplete">
+                <label for="Incomplete">Incomplete Forms</label><br>
+                <input type="checkbox" id="Missing" name="Missing" value="Missing">
+                <label for="Missing"> Missing Documents</label><br>
+                <input type="checkbox" id="Company" name="Company" value="Company">
+                <label for="Company">Company Not Verified</label><br><br>
+            </div>
+
+
+           
+            <!-- <input type="submit" value="Submit"> -->
+          </form>
+          <textarea rows="4" cols="50" name="comment" form="reject"></textarea>
+      </div>   
+</body>
+
+

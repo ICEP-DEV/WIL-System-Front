@@ -32,8 +32,11 @@ getPlacementLetter(student_no: string, fileName: string): Observable<any> {
 getStudents(student_no:string): Observable<any> {
   console.log(student_no);
   return this.http.get<any>(`${this.baseUrl}/students/${student_no}`);
-
   
 }
 
+getformById(student_no: any):Observable<any>{
+  console.log('Received Student Number:', student_no);
+  return this.http.get<any>(`${this.baseUrl}/admissionForm/` +student_no);
+}
 }

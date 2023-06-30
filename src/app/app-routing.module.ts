@@ -38,9 +38,12 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+
 
 
 
@@ -88,6 +91,8 @@ const routes: Routes = [
 {path: 'applicants', component:ApplicantsComponent},
 {path: 'admin-view/:studentNumber', component:AdminViewComponent},  // Add dynamic route parameter
 { path: '', redirectTo: '/applicants', pathMatch: 'full' },
+{path: 'admin-reject/:student_no', component:AdminRejectComponent},
+{ path: '', redirectTo: '/admin-view', pathMatch: 'full' },
 ];
 
 @NgModule({

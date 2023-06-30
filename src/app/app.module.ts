@@ -52,6 +52,7 @@ import { AdminHomeComponent } from './components/admin-home/admin-home.component
 import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,8 @@ import { AdminViewComponent } from './components/admin-view/admin-view.component
           AdminHomeComponent,
           AdminNavbarComponent,
           ApplicantsComponent,
-          AdminViewComponent
+          AdminViewComponent,
+          AdminRejectComponent
   ],
   imports: [
     BrowserModule,

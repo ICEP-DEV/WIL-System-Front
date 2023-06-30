@@ -14,6 +14,7 @@ export class AdminViewComponent {
   student_no: string = ''
   students: any[] = [];
   studentInfo: any = {};
+  admissionInfo: any = {};
   fileName: string = '';
 constructor(private route: ActivatedRoute, private adminService: AdminService){
   
@@ -25,7 +26,7 @@ ngOnInit() {
     this.student_no = params['studentNumber']
     this.getStudentInfo();
     this.getFileName();
-    
+    this.getReAdmission()
   });
 }
 
@@ -46,21 +47,7 @@ getStudentInfo() {
   );
 }
 
-// downloadPlacementLetter(student_no: string, fileName: string) {
-//   this.adminService.getPlacementLetter(student_no, fileName).subscribe(
-//     (fileResponse) => {
-//       const blob = new Blob([fileResponse], { type: 'application/pdf' });
-//       const url = window.URL.createObjectURL(blob);
-//       window.open(url);
-//       URL.revokeObjectURL(url);
-//       console.log(fileResponse);
-      
-//     },
-//     (error) => {
-//       console.log(error);
-//     }
-//   );
-// }
+
 
 
 getFileName() {
@@ -94,6 +81,25 @@ downloadPlacementLetter() {
     },
     (error) => {
       console.log(error);
+    }
+  );
+}
+
+getReAdmission() {
+  
+
+  this.adminService.getformById(this.student_no).subscribe(
+    
+    response => {
+      console.log('read:', this.student_no);
+      console.log(response.data);
+      
+      this.admissionInfo = response.data[0];
+      
+     
+    },
+    error => {
+      console.log('Error:', error);
     }
   );
 }

@@ -1,11 +1,15 @@
 <body>
   <div class="container">
     <img src="../../../assets/logoTUTC.png" alt="" />
-    <h2>Life as an Intern</h2>
+    <div class="heading">
+      <h2>Life as an Intern</h2>
+    </div>
+
     <app-admin-navbar></app-admin-navbar>
     <h3>
       <span style="color: #ffb300; font-weight: bold">Profile of:</span>
-      {{studentInfo.initials}} {{studentInfo.surname}} {{studentInfo.student_no}}
+      {{ studentInfo.initials }} {{ studentInfo.surname }}
+      {{ studentInfo.student_no }}
     </h3>
     <p>
       <span style="color: #f5002f; font-weight: bold">Instructions:</span><br />
@@ -113,28 +117,120 @@
     </form>
     <h4 style="color: #ffb300; font-weight: bold">Employment Letter</h4>
 
-   
-  <!-- <button (click)="getFileName()">Get File Name</button>
-
-  <div *ngIf="fileName">
-    <p>File Name: {{ fileName }}</p>
-    <button (click)="downloadPlacementLetter()">Download Placement Letter</button>
-  </div> -->
-  
-  <div  *ngIf="fileName">
-    <div class="file">
-      <h1 >Document Name</h1> <br />
-      <p>{{ fileName }}</p>
-      
-      
+    <div *ngIf="fileName">
+      <div class="file">
+        <h1>Document Name</h1>
+        <br />
+        <p>{{ fileName }}</p>
+      </div>
+      <div class="download">
+        <button (click)="downloadPlacementLetter()">
+          Download Placement Letter
+        </button>
+      </div>
     </div>
-    <div class="download">
-      <button (click)="downloadPlacementLetter()">Download Placement Letter</button>
+
+    <div class="admission">
+      <h3 style="color: #080808; font-weight: bold">
+        Work-Integrated Registration form
+      </h3>
+      <div class="choice">
+        <h1 style="color: #ffb300; font-weight: bold">
+          Choice of Qualification
+        </h1>
+        <h2>Qualification Name</h2>
+        <p>{{ admissionInfo.firstChoice }}</p>
+      </div>
+      <!--  -->
+      <div class="class">
+        <h1 style="color: #ffb300; font-weight: bold">Class of Preference</h1>
+        <h2>Preference</h2>
+        <p>{{ admissionInfo.enrollType }}</p>
+      </div>
+      <!--  -->
+      <div class="campus">
+        <h1 style="color: #ffb300; font-weight: bold">Campus</h1>
+        <h2>Campus Name</h2>
+        <p>{{ admissionInfo.campus }}</p>
+      </div>
+      <!--  -->
+      <div class="finacial">
+        <h1 style="color: #ffb300; font-weight: bold">Finacial Aid</h1>
+        <h2>Finacial Aid?</h2>
+        <p>{{ admissionInfo.finacialAid }}</p>
+      </div>
+    </div>
+
+    <div class="declaration">
+      <!-- <h3 style="color: #080808; font-weight: bold">
+        Declaration
+      </h3>
+      <div class="signed">
+        <h1 style="color: #ffb300; font-weight: bold">Signed Declaration</h1>
+        <h2>Yes or No?</h2>
+        <p>dgg</p>
+      </div> -->
+
+      <div
+        class="approve"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <button>Approve</button>
+
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             Launch demo modal
+             </button> -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">CONFIRMATION</h5>
+
+                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+              </div>
+              <div class="modal-body">
+                <div class="app-stud">
+                  <p>
+                    Applicant: <span>{{ studentInfo.student_no }}</span>
+                  </p>
+                </div>
+                <div class="app-info">
+                  <p>
+                    Are you sure that you have verified the student's <br />
+                    Application documents and have verified with<br />
+                    <span>company?</span>
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btnN" data-bs-dismiss="modal">
+                  Not sure
+                </button>
+                <button type="button" class="btnY">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <div class="reject">
+        <button [routerLink]="['/admin-reject', studentInfo.student_no ]">Reject</button>
+      </div>
+    </div>
+    <br />
+    <div class="footer">
+      <img  src="../../../assets/footer 1.png" alt=""/>
     </div>
     
-  </div>
-  
-    
-
   </div>
 </body>
