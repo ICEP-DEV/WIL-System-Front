@@ -30,13 +30,15 @@ export class InternActivitiesComponent {
     this.WilCoService.getRegisteredStu(this.tempdata).subscribe((data) => {
       this.tempdata = data;
       this.regStuddata = data.result;
-      console.log(data.result);
+      // console.log(data.result);
     });
   }
 
   studentProfile(profile:any){
 
-    localStorage.setItem("profile",profile.student_no+" "+profile.name+"  "+profile.surname);
+    localStorage.setItem("studentNo",profile.student_no);
+    localStorage.setItem("studName",profile.name+"  "+profile.surname);
+   
    // console.log(profile)
     this.route.navigate(["/StudentActivities"])
 

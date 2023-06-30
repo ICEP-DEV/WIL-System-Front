@@ -3,7 +3,7 @@
 <div class="main">
     <div class="instr">
        <h4 style="color: #FFB300;">Profile of:</h4>
-       <h4 style="color: black; margin-left: 1%;">{{profile}}</h4>
+       <h4 style="color: black; margin-left: 1%;">{{studentNo}}  {{studName}}</h4>
     </div>
         <div class="progressbar">
             <h4 style="color: #FFB300; margin-top: 2%;">Progress Status:</h4><br>
@@ -66,7 +66,7 @@
             <td>Log Book</td>
             <td>Not Completed</td>
             <td>Not Completed</td>
-            <td><button> View</button></td>
+            <td><button href=".\assets\TestP.pdf" (click)="newtabpdf()"> View</button></td>
             <td>
                 <select (click) = "d_SubTot()" id="logbook" style="border-radius: 15px;">
                     <option value="">Rate Work</option>
@@ -83,7 +83,7 @@
             <td>Assignment 1</td>
             <td>Not Completed</td>
             <td>Not Completed</td>
-            <td><button> View</button></td>
+            <td><button (click)="newtabpdf()"> View</button></td>
             <td>
                 <select (click) = "d_SubTot()" id="assignment" style="border-radius: 15px;">
                     <option value="">Rate Work</option>
@@ -100,7 +100,7 @@
             <td>System Documentation</td>
             <td>Not Completed</td>
             <td>Not Completed</td>
-            <td><button> View</button></td>
+            <td><button (click)="newtabpdf()"> View</button></td>
             <td>
                 <select (click) = "d_SubTot()" id="systemDoc" style="border-radius: 15px;">
                     <option value="">Rate Work</option>
@@ -134,7 +134,7 @@
         <tr style="margin-top: 2%;">
           <td>Supervisor Evaluation</td>
           <td>Not Completed</td>
-          <td><button>View</button></td>
+          <td><button (click)="newtabpdf()">View</button></td>
           <td>
               <select (click) = "e_SubTot()" id="Super_rate" style="border-radius: 15px;">
                   <option value="">Rate Work</option>
@@ -150,7 +150,7 @@
          <tr>
           <td style="margin-top: 1%;">Co-Workers Evaluation</td>
           <td>Not Completed</td>
-          <td><button>View</button></td>
+          <td><button (click)="newtabpdf()">View</button></td>
           <td>
               <select (click) = "e_SubTot()" id="co_W_rate" style="border-radius: 15px;">
                   <option value="">Rate Work</option>

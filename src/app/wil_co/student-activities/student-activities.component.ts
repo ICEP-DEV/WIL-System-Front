@@ -19,7 +19,8 @@ export class StudentActivitiesComponent {
   sysdata:any;
   
 
-  profile: any;
+  studentNo: any;
+  studName: any;
 
   tempStudentInfo: any; //switch to staff number
 
@@ -30,7 +31,10 @@ export class StudentActivitiesComponent {
     const studInfo = JSON.parse(this.tempStudentInfo);
     this.student_no = studInfo.student_no; //Use this to get the logged in Wil_Co
 
-    this.profile = localStorage.getItem('profile')?.toString();
+    this.studentNo = localStorage.getItem('studentNo')?.toString();
+    this.studName = localStorage.getItem('studName')?.toString();
+    console.log(this.studentNo);
+    console.log(this.studName);
     ///////////////////Registered students//////////////////////////
     // this.WilCoService.getRegisteredStu(this.tempdata).subscribe((data) => {
     //   this.tempdata = data;
@@ -46,10 +50,10 @@ export class StudentActivitiesComponent {
     
 
     ///////////////////Placement Deatils//////////////////////////
-    this.WilCoService.getPlacement(this.tempdata).subscribe((data) => {
+      this.WilCoService.getPlacement(Number(this.studentNo)).subscribe((data) => {
       this.tempdata = data;
       this.Placementdata = data.result;
-      console.log(data.result);
+      // console.log(data.result);
       
     });
 
@@ -57,24 +61,16 @@ export class StudentActivitiesComponent {
       this.WilCoService.getMentor(this.tempdata).subscribe((data) => {
       this.tempdata = data;
       this.Mentordata = data.result;
-      console.log(data.result);
+      // console.log(data.result);
     });
 
     // ///////////////////Documentation Details//////////////////////////
-    this.WilCoService.systemDoc(this.tempdata).subscribe((data: Blob) => {
+      this.WilCoService.systemDoc(this.tempdata).subscribe((data) => {
       this.tempdata = data;
-      this.sysdata = this.tempdata.data;
-      console.log(data)
+      this.sysdata = data.result;
+      // console.log(data.result)
     });
   
-    
-    
-    
-    
-    
-    
-    
-
     // ///////////////////Student EVALUATION//////////////////////////
     // this.WilCoService.getEvaluation(this.tempdata).subscribe((data) => {
     //   this.tempdata = data;
@@ -82,7 +78,11 @@ export class StudentActivitiesComponent {
     // });
     
   }
-  
+
+  newtabpdf(){
+    window.open("http://192.168.27.46:8080/api/sysDoc");
+  }
+
   
   e_SubTot(){
     

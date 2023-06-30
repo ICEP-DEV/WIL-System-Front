@@ -20,19 +20,21 @@ export class WilCoService {
       return this.http.get<any>(`${this.baseUrl}/getNameSur`, data )
     }
 
-    getPlacement( data: any):Observable<any> 
+    getPlacement( data: Number):Observable<any> 
     {
-      return this.http.get<any>(`${this.baseUrl}/getWorkInfo`, data )
+      return this.http.get<any>(`${this.baseUrl}/getWorkInfo/`+ data )
     }
 
     getMentor( data: any):Observable<any> 
     {
-      return this.http.get<any>(`${this.baseUrl}/getMentorInfo`, data )
+      return this.http.get<any>(`${this.baseUrl}/getMentorInfo/`+ data )
     }
 
-    systemDoc(baseUrl: string): Observable<Blob> {
-      return this.http.get(`${this.baseUrl}/sysDoc`, { responseType: 'blob' });
+    systemDoc( data: any):Observable<any> 
+    {
+      return this.http.get<any>(`${this.baseUrl}/sysDoc/`, data )
     }
+
   // getDocumentations( data: any):Observable<any> 
   // {
   //   return this.http.get<any>(`${this.baseUrl}/`, data )

@@ -36,10 +36,6 @@ export class EvaluationsComponent {
     const studInfo = JSON.parse(this.tempStudentInfo);
     this.student_no = studInfo.student_no;
 
-    this.studentService.getQuestions(this.tempdata).subscribe((data) => {
-      this.tempdata = data;
-      this.mydata = this.tempdata.data;
-    });
   }
 
   ChangeEvaluation(evaluation: Event) {
