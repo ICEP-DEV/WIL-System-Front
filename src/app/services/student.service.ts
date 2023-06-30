@@ -21,27 +21,27 @@ recLetter(student_no:any): Observable<any>
 {
   
   // return this.http.get<any>(`${this.baseUrl}/` +student_no);
-  return this.http.get<any>(`${this.baseUrl}/info/` +student_no);
+  return this.http.get<any>(`${this.BaseUrl}/info/` +student_no);
 }
 
 epForm(data: any): Observable<any>
 {
-  return this.http.post<any>(`${this.baseUrl}/forms`, data );
+  return this.http.post<any>(`${this.BaseUrl}/forms`, data );
 }
 
 uploadPlacementLetter(data: any): Observable<any> 
 {
-  return this.http.post<any>(`${this.baseUrl}/uploadFolder`, data )
+  return this.http.post<any>(`${this.BaseUrl}/uploadFolder`, data )
 }
 
 ReAdmission(data: any):Observable<any> 
 {
-  return this.http.post<any>(`${this.baseUrl}/admform`, data )
+  return this.http.post<any>(`${this.BaseUrl}/admform`, data )
 }
 //////////////Evaluation///////////////
 getQuestions( data: any):Observable<any> 
 {
-  return this.http.get<any>(`${this.baseUrl}/intern`, data )
+  return this.http.get<any>(`${this.BaseUrl}/intern`, data )
 }
 
 

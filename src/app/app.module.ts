@@ -48,6 +48,15 @@ import { RegistrationDataComponent } from './components/registration-data/regist
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
+import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
+import { WilActivitiesComponent } from './wil_co/wil-activities/wil-activities.component';
+import { WilRegulationsComponent } from './wil_co/wil-regulations/wil-regulations.component';
+import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp.component';
+import { WilInternsComponent } from './wil_co/wil-interns/wil-interns.component';
+import { WilTopnavComponent } from './wil_co/wil-topnav/wil-topnav.component';
+import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
+import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
+import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +96,16 @@ import { SubmittedQueryComponent } from './components/submitted-query/submitted-
     PracticeComponent,
           ReAdmissionFormComponent,
           SubmittedEvaluationComponent,
-          SubmittedQueryComponent
+          SubmittedQueryComponent,
+          WilHomeComponent,
+          WilActivitiesComponent,
+          WilRegulationsComponent,
+          WilSystemSuppComponent,
+          WilInternsComponent,
+          WilTopnavComponent,
+          InternActivitiesComponent,
+          StudentActivitiesComponent,
+          WilAssessmentsComponent
   ],
   imports: [
     BrowserModule,

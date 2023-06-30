@@ -103,10 +103,12 @@ body{
     height: 50px;
   }
 
-  .footer{
-    margin-left:15.5%;
-   
+  .footerimg{
+    position:fixed ;
     bottom: 0;
-}
+    right: 0;
+    margin-top: 3%;
+    width: 70%;
+  }
   
   

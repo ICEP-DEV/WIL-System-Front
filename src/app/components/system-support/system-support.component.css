@@ -58,6 +58,12 @@ label{
     margin-bottom: 2%;
 }
 
+.footerimg{
+  position:fixed ;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+}
 @media screen and (max-width: 768px) {
     .heading {
       margin-left: 5%;

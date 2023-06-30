@@ -16,3 +16,10 @@ h3{
     margin-top: 2.5%;
     margin-left: 2%;
 }
+
+.footerimg{
+    position:fixed ;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}

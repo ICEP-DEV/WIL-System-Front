@@ -40,6 +40,15 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
 
+///////////////////////WIL_CO/////////////////////////////////////
+import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
+import { WilRegulationsComponent } from './wil_co/wil-regulations/wil-regulations.component';
+import { WilInternsComponent } from './wil_co/wil-interns/wil-interns.component';
+import { WilActivitiesComponent } from './wil_co/wil-activities/wil-activities.component';
+import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp.component';
+import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
+import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
+import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
 
 
 
@@ -74,7 +83,20 @@ const routes: Routes = [
   {path: 'Internlife', component: HomeComponent},
 
   {path: 'Submit Evaluation', component: SubmittedEvaluationComponent},
-  {path: 'Submit Query', component: SubmittedQueryComponent}
+  {path: 'Submit Query', component: SubmittedQueryComponent},
+
+  ///////////////////////WIL_CO_ROUTING/////////////////////////////////////
+  { path: 'w_Home', component: WilHomeComponent },
+  { path: 'w_Regulations', component: WilRegulationsComponent },
+  { path: 'w_Interns', component: WilInternsComponent },
+  {path: 'w_Activities',component: WilActivitiesComponent},
+  {path: 'w_System Support',component: WilSystemSuppComponent},
+
+  {path: 'I_activities',component: InternActivitiesComponent},
+  {path: 'StudentActivities',component: StudentActivitiesComponent},
+  {path: 'wilAssessments',component: WilAssessmentsComponent},
+
+
 
 
 ];

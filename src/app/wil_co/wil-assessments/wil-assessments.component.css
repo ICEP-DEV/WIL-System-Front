@@ -1,0 +1,56 @@
+.Header {
+    text-align: center;
+    margin-top: 2%;
+  }
+  
+  .main {
+    margin-top: 2%;
+    margin-left: 15%;
+    /* font-family: 'Montserrat' */
+  }
+  
+  .View_aploaded button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #FFB300;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .aploadAss button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #0055C9;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .footerimg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+  }
+  
+  /* Media screen with max width 768px */
+  @media screen and (max-width: 768px) {
+    .main {
+      margin-left: 5%;
+    }
+  
+    .View_aploaded button,
+    .aploadAss button {
+      width: 100%;
+    }
+  }
+  

@@ -16,16 +16,14 @@
         <label>Address: willenvironmentsupport@tut.domain</label><br>
         <label>Send a query:</label><br>
         
-        <textarea id="queryMessage" cols="175" rows="12" placeholder="WRITE YOUR QUERY HERE (if there is any!)" [(ngModel)]="query"></textarea><br>
+        <textarea id="queryMessage" cols="160" rows="12" placeholder="WRITE YOUR QUERY HERE (if there is any!)" [(ngModel)]="query"></textarea><br>
         
         <div style="margin-top: 2%;" class="submitbtn">
             <button type="submit" routerLink="/Submit Query" (click)="submitQuery()" *ngIf="query.trim() !== ''">Submit Query</button>
         </div>
     </div>
+    <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
 </div>
 
 </div>
-<!-- <div class="footer">
-    <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
-</div> -->
 </body>
