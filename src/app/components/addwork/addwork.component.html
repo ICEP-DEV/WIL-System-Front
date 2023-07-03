@@ -1,13 +1,97 @@
 <body>
-<div class="heading">
-    <h1>Life as an intern</h1>
-</div>
-<app-sidenav></app-sidenav>
-<app-topnav></app-topnav>
-<div class="main">
-    <p>addwork works!</p>
-</div>
-<div class="footer">
-    <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
-</div>
-</body>
+    <div class="heading">
+        <h1>Life as an intern</h1>
+    </div>
+    <app-sidenav></app-sidenav>
+    <app-topnav></app-topnav>
+    <div class="main">
+        <div class="header">
+            <h3 style="font-family: 'Montserrat'">Placement Information</h3>
+        </div>
+        <div class="rect">
+          <p>Workstation/Division</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class ="myInput">
+    
+            <div class="mb-3">
+                <label for="company_name" class="form-label">Company Name:</label>
+                <input 
+                  id="company_name"
+                  type="text"
+                  class="form-control"
+                  required
+                  [(ngModel)]="compName"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="add_role" class="form-label">Role:</label>
+                <input 
+                  id="add_role"
+                  type="text"
+                  class="form-control"
+                  required
+                  [(ngModel)]="role"
+                />
+                
+              </div>
+              <div class="mb-3">
+                <label for="Department_name" class="form-label">Department Name:</label>
+                <input 
+                  id="Department_name"
+                  type="text"
+                  class="form-control"
+                  required
+                  [(ngModel)]="dep_name"
+                />
+                
+              </div>
+              
+          <div class="mb-3">
+            <label for="Select_province" class="form-label">SELECT PROVINCE:</label>
+            <select
+            id="Select_province"
+              class="drop"
+              [(ngModel)]="province"
+              required
+              Placeholder="--SELECT PROVINCE--"
+              
+            >
+              <option value="" disabled selected hidden  >--SELECT PROVINCE--</option>
+              <option>Easten Cape</option>
+              <option>Free State</option>
+              <option>Gauteng</option>
+              <option>KwaZulu-Natal</option>
+              <option>Mpumalanga</option>
+              <option>Northern Cape</option>
+              <option>North West</option>
+              <option>Western Cape</option>
+            </select>
+          </div>
+          
+          <div class="mb-3">
+            <label for="add_city" class="form-label">City:</label>
+            <input id="add_city" type="text" class="form-control" [(ngModel)]="city" required />
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label" for="add_suburb">Suburb:</label>
+            <input  id="add_suburb" type="email" class="form-control" [(ngModel)]="suburb" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="add_address">Address:</label>
+            <input id="add_address" type="address" class="form-control" [(ngModel)]="address" required autocomplete="street-address"/>
+          </div>
+          <div>
+          <button (click)="validateAndRedirect()" class="save">Save</button>
+          </div>
+      </div>
+    
+    </div>
+    <div class="footer">
+        <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+    </div>
+    </body>

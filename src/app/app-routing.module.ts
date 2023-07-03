@@ -22,6 +22,8 @@ import { ChangementorComponent } from './components/changementor/changementor.co
 import { AddworkComponent } from './components/addwork/addwork.component';
 import { ChangeworkComponent } from './components/changework/changework.component';
 import { PlacementdetailsComponent } from './components/placementdetails/placementdetails.component';
+import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
+import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
 
 //sidenav 
 //import { CommonModule } from '@angular/common';
@@ -41,6 +43,7 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
 
 
 
@@ -66,6 +69,8 @@ const routes: Routes = [
   {path: 'addwork',component: AddworkComponent},
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
+  {path: 'mentor-invited',component:MentorInvitedComponent},
+  {path: 'workPlace-saved',component: WorkPlaceSavedComponent},
 
   {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
@@ -86,6 +91,7 @@ const routes: Routes = [
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},
+{path: 'mentee_list', component:MenteeListComponent},
 {path: 'admin-view/:studentNumber', component:AdminViewComponent},  // Add dynamic route parameter
 { path: '', redirectTo: '/applicants', pathMatch: 'full' },
 ];

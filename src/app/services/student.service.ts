@@ -42,6 +42,15 @@ uploadSystemDocumentation(data: any): Observable<any>
  return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
 
+saveMetorData(data: any) {
+  console.log(data);
+  return this.http.post(this.baseUrl + '/mentor', data);
+}
+
+saveWorkstation(data: any) {
+  console.log(data);
+  return this.http.post(this.baseUrl + '/workInfo', data);
+}
 
 
 
