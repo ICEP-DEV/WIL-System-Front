@@ -54,7 +54,8 @@ h2{
   table tr:nth-child(odd) {
     background-color: #ffffff; /* White color for odd rows */
   }
-  table th{
+table th
+ {
     background-color: rgb(243, 241, 241);
     height: 50px;
     border-bottom: 1px solid black;
@@ -63,18 +64,17 @@ h2{
     
   }
 
-  p {
+p {
     font-size: 24px;
+    color: orange;
   }
- .everything{
+.everything
+{
   margin-left:10%;
- }
+}
 
- .inst{
-  color: red;
- }
-
- button {
+ button 
+{
   width: 15%;
   height: 3vw;
   border: 0ch;
@@ -85,6 +85,17 @@ h2{
   color: #ffffff;
 }
 
-.men{
-  color: orange;
-}
+.progress-bar {
+    width: 20%;
+    height: 40px;
+    background-color: #bebbbb;
+    
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color:blue;
+    transition: width 0.3s;
+  }
+  

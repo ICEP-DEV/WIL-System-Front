@@ -1,0 +1,53 @@
+<body>
+    <div class="container">
+      <img src="../../../assets/logoTUTC.png" alt="" />
+      <div class="heading">
+        <h1>Life as an intern</h1>
+    </div>
+    <app-admin-navbar></app-admin-navbar>
+    <div class="everything">
+        <div class="header">
+            <h3 style="font-family: 'Montserrat'">Invitation</h3>
+        </div>
+    <div>
+        <p>Profile of: </p> 
+    </div>
+    
+    <br>
+    <br>
+    <div>
+        <p>Progress Status:</p>
+        <div class="progress-bar">
+            <div class="progress" [style.width]="progressPercentage + '%'"></div>
+          </div>
+    </div>
+    <br>
+    <br>
+    
+       <p class="men">Log Entries</p>
+    
+       <div>
+    
+        <table>
+            <thead>
+              <tr>
+                <th>Month</th>
+                <th>Date Submitted</th>
+                <th>Submission status</th>
+                <th>Action</th>
+                <!-- Add more columns as needed -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of data">
+                <td>{{ item.column1 }}</td>
+                <td>{{ item.column2 }}</td>
+                <td>{{ item.column3 }}</td>
+                <td><button>View</button></td>
+                <!-- Add more columns as needed -->
+              </tr>
+            </tbody>
+          </table>      
+      </div>
+    
+    </div>

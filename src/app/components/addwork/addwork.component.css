@@ -4,10 +4,9 @@ body{
 .heading{
 	margin-left: 15%;
 }
-
-.heading h1{
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.heading h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 

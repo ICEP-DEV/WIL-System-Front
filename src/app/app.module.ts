@@ -55,6 +55,8 @@ import { AdminViewComponent } from './components/admin-view/admin-view.component
 import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
 import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
 import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
+import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
+import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
 
 @NgModule({
   declarations: [
@@ -102,7 +104,9 @@ import { MenteeListComponent } from './components/mentee-list/mentee-list.compon
           AdminViewComponent,
           MentorInvitedComponent,
           WorkPlaceSavedComponent,
-          MenteeListComponent
+          MenteeListComponent,
+          MenteeLogsComponent,
+          MenteeRatingComponent
   ],
   imports: [
     BrowserModule,

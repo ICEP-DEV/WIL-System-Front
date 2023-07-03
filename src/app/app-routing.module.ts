@@ -43,7 +43,10 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+//mentor
 import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
+import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
+import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
 
 
 
@@ -88,10 +91,14 @@ const routes: Routes = [
   {path: 'system-documentation', component:SystemDocumentationComponent},
   {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
   {path: 'navbar', component:NavbarComponent},
+  
+  //Mentor
+  {path: 'mentee_logs', component:MenteeLogsComponent},
+  {path: 'mentee_list', component:MenteeListComponent},
+  {path: 'mentee_rating', component:MenteeRatingComponent},
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},
-{path: 'mentee_list', component:MenteeListComponent},
 {path: 'admin-view/:studentNumber', component:AdminViewComponent},  // Add dynamic route parameter
 { path: '', redirectTo: '/applicants', pathMatch: 'full' },
 ];
