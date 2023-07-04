@@ -1,0 +1,28 @@
+h3{
+    margin-left: 25%;
+}
+label{
+    margin-top: 50px;
+}
+
+.sytemSupp{
+    margin-left: 5%;
+}
+
+input{
+    background-color: #0055C9;
+    color: white;
+    width: 280px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 19%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container {
+    margin-top: 2%;
+}
