@@ -57,6 +57,7 @@ import { WorkPlaceSavedComponent } from './components/work-place-saved/work-plac
 import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
 import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
 import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
+import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.
           WorkPlaceSavedComponent,
           MenteeListComponent,
           MenteeLogsComponent,
-          MenteeRatingComponent
+          MenteeRatingComponent,
+          StudentEvaluationComponent
   ],
   imports: [
     BrowserModule,

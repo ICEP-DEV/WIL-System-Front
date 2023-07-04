@@ -49,5 +49,42 @@
             </tbody>
           </table>      
       </div>
+
+      <br>
+      <br>
+        <br>
+        <button (click)="sendLogEntries()" class="bt">Send Log ENtries</button>
+        <br>
+        <br>
+        <br>
+        <p>Evaluation</p>
+
+        <div>
+    
+          <table>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Action</th>
+                  <th>Status</th>
+                  <!-- Add more columns as needed -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mentee Evaluation</td>
+                  <td><button class ="comp" routerLink="/student_evaluation">Complete</button></td>
+                  <td>{{evaluateStatus}}</td>
+                </tr>
+              </tbody>
+            </table>      
+        </div>
     
     </div>
+    </div>
+
+    <div class="footer">
+      <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+  </div>
+        
+</body>

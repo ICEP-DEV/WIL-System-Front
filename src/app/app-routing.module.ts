@@ -47,6 +47,7 @@ import { AdminViewComponent } from './components/admin-view/admin-view.component
 import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
 import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
 import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
+import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
 
 
 
@@ -96,6 +97,7 @@ const routes: Routes = [
   {path: 'mentee_logs', component:MenteeLogsComponent},
   {path: 'mentee_list', component:MenteeListComponent},
   {path: 'mentee_rating', component:MenteeRatingComponent},
+  {path: 'student_evaluation', component:StudentEvaluationComponent},
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},

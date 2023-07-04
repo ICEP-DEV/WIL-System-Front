@@ -14,6 +14,8 @@ export class MenteeLogsComponent {
   surname:any='';
   data: any[] = [];
   progressPercentage: number =50; //placeholder
+  evaluatedLogs:any[] = [];
+  evaluateStatus: string = 'Not Completed';
 
   constructor(private logEntries: MentorService) { }
 
@@ -39,6 +41,15 @@ export class MenteeLogsComponent {
         console.error('Error fetching data:', error);
       }
     );
+  }
+
+  sendLogEntries() {
+    this.logEntries.sendEntries(this.evaluatedLogs).subscribe((response) => {
+      console.log('POST request succesful', response);
+    }),
+      (error: any) => {
+        console.error('POST request unsuccesful', error);
+      };
   }
 
 

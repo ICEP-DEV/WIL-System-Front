@@ -20,4 +20,7 @@ export class MentorService {
   getlogEntries(): Observable<any> {
     return this.http.get<any>(this.baseUrl);
   }
+
+  sendEntries(data: any){
+    return this.http.post(this.baseUrl ,data);}
 }

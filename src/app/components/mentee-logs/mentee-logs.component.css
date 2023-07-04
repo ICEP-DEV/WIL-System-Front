@@ -16,9 +16,7 @@ body{
 
 }
 
- img{
-    width:35%
-}
+ 
 
 h2{
     font-size: 2vw;
@@ -64,25 +62,39 @@ table th
     
   }
 
+table tr{
+  height: 70px;
+}
+
 p {
     font-size: 24px;
     color: orange;
+    font-weight: bold;
   }
 .everything
 {
   margin-left:10%;
 }
 
- button 
+ .bt 
 {
-  width: 15%;
-  height: 3vw;
+  width: 25%;
+  height: 2vw;
   border: 0ch;
   border-radius: 31px;
   background-color: orange;
   font-size: 24px;
+  font-weight: bold;
 
   color: #ffffff;
+}
+
+.comp{
+  width: 70%;
+  height: 2vw;
+  border-radius: 30px;
+  background-color: #bebbbb;
+  border:0;
 }
 
 .progress-bar {
@@ -99,3 +111,8 @@ p {
     transition: width 0.3s;
   }
   
+  .footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    width:100%;
+  }
