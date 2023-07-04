@@ -42,7 +42,10 @@ uploadSystemDocumentation(data: any): Observable<any>
  return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
 
-
+saveReport(data:any){
+  console.log(data);
+  return this.http.post(this.baseUrl + '/studReport',data);
+}
 
 
 }

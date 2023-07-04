@@ -38,6 +38,9 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { ReportComponent } from './components/report/report.component';
+import { ReportSaveComponent } from './components/report-save/report-save.component';
+import { ReportSubmitComponent } from './components/report-submit/report-submit.component';
 
 
 
@@ -79,7 +82,10 @@ const routes: Routes = [
   {path: 're-admission-form', component:ReAdmissionFormComponent},
   {path: 'system-documentation', component:SystemDocumentationComponent},
   {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
-  {path: 'navbar', component:NavbarComponent}
+  {path: 'navbar', component:NavbarComponent},
+  {path: 'report', component:ReportComponent},
+  {path: 'report-save', component:ReportSaveComponent},
+  {path: 'report-submit', component:ReportSubmitComponent}
 
 
 ];

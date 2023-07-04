@@ -1,0 +1,85 @@
+
+
+
+
+.heading{
+	margin-left: 15%;
+}
+
+.heading h1{
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+  h2 {
+  
+    margin-left: 50%;
+  }
+  
+  
+  #line1{
+  
+   margin-left: 45%; 
+  }
+  #line2 {
+  
+    margin-left: 22%;
+  }
+  
+  
+  .instructions{
+    margin-left: 22%;
+  
+  }
+  #months{
+  
+  right: 0;
+  width: 20%;
+  height: 10%;
+  position: absolute;
+ 
+  
+  }
+  .button{
+  
+    background-color: #0055C9;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 0%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .container {
+    position: relative;
+    margin-left: 8%;
+    margin-right: 27%;
+  
+  }
+  
+  #textarea {
+    
+    border: 1px solid black;
+    resize: none;
+    width: 83%;
+    height: 100%;
+    margin-left: 20%;
+  
+  
+  }
+  h5{
+      display: inline;
+  }
+  
+  
+
+  .footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    bottom: 0;
+}
+

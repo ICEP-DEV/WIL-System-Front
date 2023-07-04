@@ -1,0 +1,77 @@
+.h p {
+    width: 1000;
+    height: 29px;
+    left: 464px;
+    margin-top: 50px;
+    margin-left: 850px;
+  
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+  
+    color: #000000;
+  }
+  .W {
+
+    color: rgb(0, 89, 255);
+    margin-left: -28% ;
+    margin-top: 3%;
+    
+  }
+  .content p {
+    margin-top: 170px;
+    margin-left: 50px;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    height: 693px;
+    overflow: hidden;
+  }
+  
+  .circle {
+    display: flex;
+    border-radius: 50%;
+    width: 143px;
+    height: 133px;
+    margin-top: 120px;
+    margin-left: 650px;
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, rgb(60, 255, 0) 3%, darkgreen 60%, rgb(60, 255, 0) 100%);
+  }
+  
+  .checkmark {
+    transform: rotate(45deg) translate(-50%, -50%);
+    margin-left: 30%;
+    margin-top: 45%;
+    width: 35px;
+    height: 60px;
+    border-bottom: 20px solid white;
+    border-right: 20px solid white;
+  }
+  
+  .heading {
+    margin-left: 15%;
+  }
+  
+  .heading h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  body{
+    font-family: "Montserrat";
+  }
+
+
+.main{
+    margin-top: 5%;
+    margin-left: 15%;
+    /* font-family: 'Montserrat' */
+}

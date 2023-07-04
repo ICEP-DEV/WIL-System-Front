@@ -1,0 +1,88 @@
+<body>
+    <app-sidenav></app-sidenav>
+      <div class="heading">
+        <h1>Life as an intern</h1>
+      </div>
+      
+      <br><br>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <div class="main" onload="">
+     
+             <div class="header">
+    
+                  <h2 style="font-size: 24px ;font-style: normal ; margin-left: 45%;" >My Report</h2>
+    
+             </div>
+    
+    
+    
+              <br><br>
+    
+      <div class="loginfo">
+    
+        <p style ="font-size: 22px ;font-style: normal; margin-left: 35%;" id=line1>WORKBOOK REPORT COMPLETED BY STUDENT</p>
+    
+           <br><br>
+           <br>
+        
+      </div>
+    
+             <p style ="font-size: 22px ;font-style: normal;" id="line2">DETAILED INFORMATION OF ALL TASK AND WORK THAT YOU HAVE ACCOMPLISHED</p>
+               <br><br>
+    
+    <div class="container" >
+        <textarea  id="textarea"  rows="25" cols="100"  [(ngModel)] ='report_text'  ></textarea>
+           <div *ngIf="isTextareaEmpty" style="margin-left: 200px;">
+               Report cannot be empty
+              </div>
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <div id="instructions3" class="instructions"> 
+        <h5   style =" font-size: 22px ;font-style: normal; color:red;">INSRUCTIONS: <label style="color: black;"></label><h5></h5>
+    
+    <div></div>
+    
+    
+    <label style="font-size: 22px; color: black;">Click <label style="font-size: 22px ; font-style: normal; color: rgb(0, 89, 255);"> SAVE </label> to save existing changes.</label>
+    <br><br>
+    
+    <label  style="font-size: 22px; color: black;">Click <label style="font-size: 22px ; font-style: normal; color: rgb(0, 89, 255);"> SUBMIT REPORT</label> to submit this report for your evaluation.</label>
+    <br><br>
+    
+    
+    <label style="font-size: 22px;">NB: This report forms part of your evaluation, be sure to submit it when you about to complete your Work-Intergrated Learning</label>
+    <br><br>
+    
+    
+      <div class="buttons">
+     
+    <button  (click)="validateTextarea('/report-save')"  class="button" id="btnSaveLog1"  >Save</button> 
+    
+      <button (click)="validateTextarea('/report-submit')" class="button" id="btnSubLog1" style="margin-left:40% ; width: 250px; background-color: rgba(255, 0, 43, 0.747);" type="submit" >SUBMIT REPORT</button> 
+      </div>
+      <br>
+    
+    
+    
+      <div class="footer">
+        <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+       
+    </div>
+  
+  
+      
+    
+    
+    
+    
+    
+

@@ -48,6 +48,9 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { ReportComponent } from './components/report/report.component';
+import { ReportSubmitComponent } from './components/report-submit/report-submit.component';
+import { ReportSaveComponent } from './components/report-save/report-save.component';
 
 @NgModule({
   declarations: [
@@ -88,7 +91,10 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
           ReAdmissionFormComponent,
           SystemDocumentationComponent,
           NavbarComponent,
-          SysDocSubmittedComponent
+          SysDocSubmittedComponent,
+          ReportComponent,
+          ReportSubmitComponent,
+          ReportSaveComponent
   ],
   imports: [
     BrowserModule,
