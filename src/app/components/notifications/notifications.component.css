@@ -1,4 +1,4 @@
-body{
+/* body{
     font-family: "Montserrat";
   }
 .heading{
@@ -13,7 +13,7 @@ body{
 .main{
     margin-top: 5%;
     margin-left: 15%;
-    /* font-family: 'Montserrat' */
+    font-family: 'Montserrat'
 }
 .header{
     text-align: center;
@@ -28,6 +28,5 @@ hr{
 .footerimg{
     position:fixed ;
     bottom: 0;
-    right: 0;
-    width: 70%;
 }
+*/

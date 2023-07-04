@@ -1,0 +1,42 @@
+<body>
+    <app-sidenav></app-sidenav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+                
+      </div>
+      <div class="col-md-9">
+        <h2>Life as an Intern</h2>
+        <app-navbar></app-navbar>
+        <div class="content">
+          
+          <h3>Assessments</h3>
+          <p><span style="color: #0055C9">UPLOAD SYSTEM DOCUMENTATION.</span>  This document represents <br>
+            <span style="margin-left: 5%;">documents that describe the system itself and its parts. </span><br>
+            <span style="margin-left: 12%;">This is your counts in your final mark </span>
+           
+         
+    
+           <div class="custom-file">
+            <input type="file" id="inputField" (change)="onFileSelected($event)" hidden />
+            <label for="inputField" class="custom-file-label">UPLOAD SYSTEM DOCUMENTATION</label>
+          </div><br>
+          <span *ngIf="message" class="error-message" style="margin-top:20% ;">{{ message }}</span>
+          <span *ngIf="selectedFile" class="selected-file-name">Selected Document: {{ selectedFile.name }}</span>
+       
+          <div class="upload-button">
+            <button (click)="uploadFile()">Submit</button>
+          </div>
+          
+        
+            <img  src="../../../assets/footer 1.png" alt=""/>
+        
+        </div>
+       
+        
+      </div>
+      </div>
+      </div>
+    </body>
+     
+    

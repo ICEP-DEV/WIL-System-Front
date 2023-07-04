@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
@@ -35,8 +36,12 @@ import { DeclarationComponent } from './components/declaration/declaration.compo
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
-
-
+import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { ApplicantsComponent } from './components/applicants/applicants.component';
+import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
 
@@ -81,9 +86,18 @@ const routes: Routes = [
   {path: 'wil-registration',component: WILRegistrationComponent},
   {path: 'ep-information', component: EpInformationComponent},
   {path: 'Internlife', component: HomeComponent},
-
   {path: 'Submit Evaluation', component: SubmittedEvaluationComponent},
   {path: 'Submit Query', component: SubmittedQueryComponent},
+  {path: 'placement-letter', component:PlacementLetterComponent},
+  {path: 're-admission', component:ReAdmissionComponent},
+  {path: 'declaration', component:DeclarationComponent},
+  {path: 'success-respond', component:SuccessRespondComponent},
+  {path: 'registration-data', component:RegistrationDataComponent},
+  {path: 'Internlife', component: HomeComponent},
+  {path: 're-admission-form', component:ReAdmissionFormComponent},
+  {path: 'system-documentation', component:SystemDocumentationComponent},
+  {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
+  {path: 'navbar', component:NavbarComponent},
 
   ///////////////////////WIL_CO_ROUTING/////////////////////////////////////
   { path: 'w_Home', component: WilHomeComponent },
@@ -96,10 +110,14 @@ const routes: Routes = [
   {path: 'StudentActivities',component: StudentActivitiesComponent},
   {path: 'wilAssessments',component: WilAssessmentsComponent},
 
-
-
-
+  //////////////////////////ADMIN////////////////////////////
+{path: 'admin-home', component:AdminHomeComponent},
+{path: 'applicants', component:ApplicantsComponent},
+{path: 'admin-view/:studentNumber', component:AdminViewComponent},  // Add dynamic route parameter
+{ path: '', redirectTo: '/applicants', pathMatch: 'full' },
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

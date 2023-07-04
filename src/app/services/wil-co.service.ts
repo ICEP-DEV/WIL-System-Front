@@ -35,6 +35,11 @@ export class WilCoService {
       return this.http.get<any>(`${this.baseUrl}/sysDoc/`, data )
     }
 
+    //  report( data: any):Observable<any> 
+    //  {
+    //    return this.http.get<any>(`${this.baseUrl}/`, data )
+    //  }
+
   // getDocumentations( data: any):Observable<any> 
   // {
   //   return this.http.get<any>(`${this.baseUrl}/`, data )

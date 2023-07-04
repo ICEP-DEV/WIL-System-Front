@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { StudentService } from 'src/app/services/student.service';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -30,7 +31,7 @@ import { HttpClientModule} from '@angular/common/http'
 import { DatePipe } from '@angular/common';
 
 import { LoginComponent } from './components/login/login.component';
-
+import { NotificationService } from 'src/app/services/notification.service';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
@@ -46,6 +47,14 @@ import { DeclarationComponent } from './components/declaration/declaration.compo
 import { SuccessRespondComponent } from './components/success-respond/success-respond.component';
 import { RegistrationDataComponent } from './components/registration-data/registration-data.component';
 import { ReAdmissionFormComponent } from './components/re-admission-form/re-admission-form.component';
+import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
+import { ApplicantsComponent } from './components/applicants/applicants.component';
+import { AdminViewComponent } from './components/admin-view/admin-view.component';
+
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
 import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
@@ -93,7 +102,21 @@ import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessment
     SuccessRespondComponent,
     RegistrationDataComponent,
     
+    PlacementLetterComponent,
+    ReAdmissionComponent,
+    DeclarationComponent,
+    SuccessRespondComponent,
+    RegistrationDataComponent,
+    
     PracticeComponent,
+          ReAdmissionFormComponent,
+          SystemDocumentationComponent,
+          NavbarComponent,
+          SysDocSubmittedComponent,
+          AdminHomeComponent,
+          AdminNavbarComponent,
+          ApplicantsComponent,
+          AdminViewComponent,
           ReAdmissionFormComponent,
           SubmittedEvaluationComponent,
           SubmittedQueryComponent,
@@ -110,13 +133,14 @@ import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessment
   imports: [
     BrowserModule,
     AppRoutingModule, // Add AppRoutingModule here
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [DatePipe,StudentService],
+  providers: [DatePipe,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
