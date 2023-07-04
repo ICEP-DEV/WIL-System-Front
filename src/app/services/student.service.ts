@@ -8,8 +8,8 @@ import { ReAdmissionComponent } from '../components/re-admission/re-admission.co
   providedIn: 'root'
 })
 export class StudentService {
- // private baseUrl = 'http://localhost:8080/api';
-   private baseUrl = 'http://192.168.27.52:8080/api'
+ private baseUrl = 'http://localhost:8080/api';
+  // private baseUrl = 'http://192.168.27.52:8080/api'
 
   constructor(private http: HttpClient) { }
 
@@ -44,7 +44,7 @@ uploadSystemDocumentation(data: any): Observable<any>
 
 saveMetorData(data: any) {
   console.log(data);
-  return this.http.post(this.baseUrl + '/mentor', data);
+  return this.http.post(this.baseUrl + '/inviteMentor', data);
 }
 
 saveWorkstation(data: any) {

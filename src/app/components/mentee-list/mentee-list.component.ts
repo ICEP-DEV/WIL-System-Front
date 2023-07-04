@@ -8,6 +8,7 @@ import { MentorService } from 'src/app/services/mentor.service';
 })
 export class MenteeListComponent {
   data: any[] = [];
+  rowCount: number = 0;
 
   constructor(private dataService: MentorService) { }
 
@@ -19,6 +20,7 @@ export class MenteeListComponent {
     this.dataService.getData().subscribe(
       (response: any) => {
         this.data = response;
+        this.rowCount = this.data.length;
       },
       (error) => {
         console.error('Error fetching data:', error);

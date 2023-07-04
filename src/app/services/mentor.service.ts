@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class MentorService {
 
-  private baseUrl = 'http://168.172.134.142:8080/api';
-  // private BaseUrl = 'http://192.168.27.46:8080/api'
+  //private baseUrl = 'http://168.172.134.142:8080/api';
+  private baseUrl = 'http://localhost:8080/api'
 
   constructor(private http: HttpClient) { }
 
