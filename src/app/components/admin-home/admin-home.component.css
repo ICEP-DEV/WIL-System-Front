@@ -1,0 +1,22 @@
+body{
+    font-family: "Montserrat";
+  }
+
+.container{
+    margin: 0;
+}
+
+ img{
+    width:35%
+}
+
+h2{
+    font-size: 2vw;
+    font-weight: bold;
+    /* padding-left: 10%; */
+    color: rgb(87, 85, 85);
+    text-shadow: 2px 2px 4px rgb(87, 85, 85);
+    margin-left: 60%;
+    margin-top: 2%;
+
+  }

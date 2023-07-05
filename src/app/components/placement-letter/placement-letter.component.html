@@ -20,7 +20,8 @@
        <div class="custom-file">
         <input type="file" id="inputField" (change)="onFileSelected($event)" hidden />
         <label for="inputField" class="custom-file-label">Upload Document</label>
-      </div>
+      </div><br>
+      <span *ngIf="message" class="error-message" >{{ message }}</span>
       <span *ngIf="selectedFile" class="selected-file-name">Selected Document: {{ selectedFile.name }}</span>
       
       <div class="upload-button">
