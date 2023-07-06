@@ -16,6 +16,8 @@ export class AdminViewComponent {
   studentInfo: any = {};
   admissionInfo: any = {};
   fileName: string = '';
+
+
 constructor(private route: ActivatedRoute, private adminService: AdminService){
   
 }
@@ -103,6 +105,50 @@ getReAdmission() {
     }
   );
 }
+
+isConfirmationModalAccepted: boolean = false;
+
+approveApplication() {
+  const data = {
+    student_no: this.student_no,
+    app_status: 'accepted',
+    comment: 'Application accepted'
+  };
+
+  this.adminService.getApprove(data).subscribe(
+    response => {
+      console.log(response);
+      // Handle success response
+      this.isConfirmationModalAccepted = true;
+    },
+    error => {
+      console.log(error);
+      // Handle error response
+    }
+  );
+}
+
+
+rejectApplication() {
+  const data = {
+    student_no: this.student_no,
+    app_status: 'rejected',
+    comment: 'Application rejected'
+  };
+
+  this.adminService.getApprove(data).subscribe(
+    response => {
+      console.log(response);
+      // Handle success response
+    },
+    error => {
+      console.log(error);
+      // Handle error response
+    }
+  );
+}
+
+
 
 
 }

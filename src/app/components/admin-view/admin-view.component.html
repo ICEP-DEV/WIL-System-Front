@@ -160,7 +160,6 @@
         <p>{{ admissionInfo.finacialAid }}</p>
       </div>
     </div>
-
     <div class="declaration">
       <!-- <h3 style="color: #080808; font-weight: bold">
         Declaration
@@ -176,7 +175,7 @@
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        <button>Approve</button>
+        <button >Approve</button>
 
         <!-- Button trigger modal -->
         <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -184,21 +183,13 @@
              </button> -->
 
         <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">CONFIRMATION</h5>
-
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
               </div>
-              <div class="modal-body">
+              <div class="modal-body" *ngIf="!isConfirmationModalAccepted; else acceptedContent">
                 <div class="app-stud">
                   <p>
                     Applicant: <span>{{ studentInfo.student_no }}</span>
@@ -212,19 +203,37 @@
                   </p>
                 </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btnN" data-bs-dismiss="modal">
-                  Not sure
-                </button>
-                <button type="button" class="btnY">Yes</button>
+              <ng-template #acceptedContent>
+                <svg xmlns="http://www.w3.org/2000/svg" style="color: #12c556" width="120" height="120" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                </svg>
+                <p style="margin-top: -16%">
+                  Student Document Verified.<br />
+                  <span style="margin-left: -4%">Forms have successfully sent to</span>
+                  <br />
+                  <span style="margin-left: 14%">Register Office</span>
+                </p>
+                <button type="button" class="btn-close2" aria-label="Close" >Get List</button>
+              </ng-template>
+              <div class="modal-footer" *ngIf="!isConfirmationModalAccepted">
+                <button type="button" class="btnN" data-bs-dismiss="modal">Not sure</button>
+                <button (click)="approveApplication()" type="button" class="btnY">Yes</button>
               </div>
             </div>
           </div>
         </div>
+        
+        <!--  -->
+        
         <!--  -->
       </div>
       <div class="reject">
-        <button [routerLink]="['/admin-reject', studentInfo.student_no ]">Reject</button>
+        <button
+          (click)="rejectApplication()"
+          [routerLink]="['/admin-reject', studentInfo.student_no]"
+        >
+          Reject
+        </button>
       </div>
     </div>
     <br />
