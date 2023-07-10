@@ -308,28 +308,53 @@ font-size: 1.5vw;
 }
 
 .modal-footer{
-  margin-top: -6vh;
+  margin-top: -4vh;
   margin-bottom: 4vh;
+ 
 }
+
+
 .modal-footer button:nth-child(1) {
   background-color:#CC3250;
   color: white;
-  /* margin-left: -22%; */
-  margin-right: 26%;
   padding: 0.5vw;
+  margin: 0;
   width: 6vw;
-
+  margin-right: 30vh;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 
 .modal-footer button:nth-child(2) {
   background-color:#55B75E;
   color: white;
-  margin-right: 20%;
   padding: 0.5vw;
-  width: 6vw;
+ margin: 0;
+ width: 6vw;
+ margin-right: 10vh;
+ margin-bottom: 4vh;
+ margin-top: 4vh;
 }
 
+.modal-body2 svg{
+  margin-left: 8vh;
+  margin-top: 6vh;
+}
+.modal-body2 p{
+  margin-left: 32vh;
+  margin-top: 4vh;
+}
 
+.modal-footer2 button{
+  background-color:#55B75E;
+  color: white;
+  padding: 0.5vw;
+ margin: 0;
+ width: 6vw;
+ margin-left: 41vh;
+ margin-bottom: 8vh;
+ margin-top: 2vh;
+}
 
 
 
@@ -604,7 +629,7 @@ font-size: 1.5vw;
     margin-left: 9vh;
   }
 
-  .modal-footer {
+  /* .modal-footer {
     margin-top: -6vh;
     margin-bottom: 4vh;
   }
@@ -621,7 +646,7 @@ font-size: 1.5vw;
     padding: 1.5vw;
     width: 15vw;
     font-size: 3.5vw;
-  }
+  } */
 
   .reject {
     margin-top: -4.5vh;

@@ -24,16 +24,22 @@
                         
                     </tr>
                 </thead>
+                
                 <tbody>
-                    <tr *ngFor = "let number of studentNumbers">
-                        <td style="padding: 5px;">{{number}} </td>
-                            <td><button class="action-button" [routerLink]="['/admin-view', number]">View</button> 
-                        
-                       
-                    </tr>
-
+                    <tr *ngFor="let number of studentNumbers">
+                        <ng-container *ngIf="!adminService.acceptedStudentNumbers.includes(number)">
+                          <td style="padding: 5px;">{{ number }}</td>
+                          <td>
+                            <button class="action-button" [routerLink]="['/admin-view', number]">View</button>
+                          </td>
+                        </ng-container>
+                      </tr>
+                      
+                      
+                  </tbody>
                   
-                </tbody>
+                  
+                  
             </table>
 
 

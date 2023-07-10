@@ -161,71 +161,75 @@
       </div>
     </div>
     <div class="declaration">
-      <!-- <h3 style="color: #080808; font-weight: bold">
-        Declaration
-      </h3>
-      <div class="signed">
-        <h1 style="color: #ffb300; font-weight: bold">Signed Declaration</h1>
-        <h2>Yes or No?</h2>
-        <p>dgg</p>
-      </div> -->
-
-      <div
-        class="approve"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-      >
-        <button >Approve</button>
-
-        <!-- Button trigger modal -->
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-             Launch demo modal
-             </button> -->
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">CONFIRMATION</h5>
-              </div>
-              <div class="modal-body" *ngIf="!isConfirmationModalAccepted; else acceptedContent">
-                <div class="app-stud">
-                  <p>
-                    Applicant: <span>{{ studentInfo.student_no }}</span>
-                  </p>
-                </div>
-                <div class="app-info">
-                  <p>
-                    Are you sure that you have verified the student's <br />
-                    Application documents and have verified with<br />
-                    <span>company?</span>
-                  </p>
-                </div>
-              </div>
-              <ng-template #acceptedContent>
-                <svg xmlns="http://www.w3.org/2000/svg" style="color: #12c556" width="120" height="120" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                </svg>
-                <p style="margin-top: -16%">
-                  Student Document Verified.<br />
-                  <span style="margin-left: -4%">Forms have successfully sent to</span>
-                  <br />
-                  <span style="margin-left: 14%">Register Office</span>
+      <!-- Existing code -->
+    
+      <div class="approve">
+        <button (click)="showConfirmationModal()">Approve</button>
+      </div>
+    
+      <!-- Confirmation Modal -->
+      <div class="modal" [ngClass]="{ 'modal-visible': isConfirmationModalVisible }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">CONFIRMATION</h5>
+              
+            </div>
+            <div class="modal-body">
+              <div class="app-stud">
+                <p>
+                  Applicant: <span>{{ studentInfo.student_no }}</span>
                 </p>
-                <button type="button" class="btn-close2" aria-label="Close" >Get List</button>
-              </ng-template>
-              <div class="modal-footer" *ngIf="!isConfirmationModalAccepted">
-                <button type="button" class="btnN" data-bs-dismiss="modal">Not sure</button>
-                <button (click)="approveApplication()" type="button" class="btnY">Yes</button>
               </div>
+              <div class="app-info">
+                <p>
+                  Are you sure that you have verified the student's
+                  <br />Application documents and have verified with<br />
+                  <span>company?</span>
+                </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btnN"  (click)="cancelConfirmationModal()">Not sure</button>
+              <button type="button" class="btnY"(click)="approveApplication()">Yes</button>
             </div>
           </div>
         </div>
-        
-        <!--  -->
-        
-        <!--  -->
+      </div>
+    
+      <!-- Second Modal -->
+      <div class="modal" [ngClass]="{ 'modal-visible': isSecondModalVisible }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+             
+            </div>
+            <div class="modal-body2">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              style="color: #12c556"
+              width="120"
+              height="120"
+              fill="currentColor"
+              class="bi bi-check-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+              />
+            </svg>
+            <p style="margin-top: -16% ;">
+              Student Document Verified.<br>
+             <span style="margin-left: -4%;">Forms have successfully sent to </span> <br>
+             <span style="margin-left: 14%;">Register Office</span> 
+          </p>
+            </div>
+            <div class="modal-footer2">
+              <button type="button" aria-label="Close" (click)="closeSecondModal()" routerLink="/applicants">Get list</button>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="reject">
         <button
@@ -236,6 +240,7 @@
         </button>
       </div>
     </div>
+    
     <br />
     <div class="footer">
       <img  src="../../../assets/footer 1.png" alt=""/>
