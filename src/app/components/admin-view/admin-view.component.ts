@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AdminService } from 'src/app/services/admin.service';
 
@@ -9,12 +9,17 @@ import { AdminService } from 'src/app/services/admin.service';
   styleUrls: ['./admin-view.component.css']
 })
 export class AdminViewComponent {
- 
+  @Output() studentAccepted = new EventEmitter<string>();
+
   studentNumber: string = '';
   student_no: string = ''
   students: any[] = [];
   studentInfo: any = {};
+  admissionInfo: any = {};
   fileName: string = '';
+
+  
+
 constructor(private route: ActivatedRoute, private adminService: AdminService){
   
 }
@@ -25,8 +30,11 @@ ngOnInit() {
     this.student_no = params['studentNumber']
     this.getStudentInfo();
     this.getFileName();
-    
+    this.getReAdmission()
+
   });
+
+  
 }
 
 getStudentInfo() {
@@ -46,21 +54,7 @@ getStudentInfo() {
   );
 }
 
-// downloadPlacementLetter(student_no: string, fileName: string) {
-//   this.adminService.getPlacementLetter(student_no, fileName).subscribe(
-//     (fileResponse) => {
-//       const blob = new Blob([fileResponse], { type: 'application/pdf' });
-//       const url = window.URL.createObjectURL(blob);
-//       window.open(url);
-//       URL.revokeObjectURL(url);
-//       console.log(fileResponse);
-      
-//     },
-//     (error) => {
-//       console.log(error);
-//     }
-//   );
-// }
+
 
 
 getFileName() {
@@ -97,6 +91,89 @@ downloadPlacementLetter() {
     }
   );
 }
+
+getReAdmission() {
+  
+
+  this.adminService.getformById(this.student_no).subscribe(
+    
+    response => {
+      console.log('read:', this.student_no);
+      console.log(response.data);
+      
+      this.admissionInfo = response.data[0];
+      
+     
+    },
+    error => {
+      console.log('Error:', error);
+    }
+  );
+}
+
+
+isConfirmationModalVisible = false;
+  isSecondModalVisible = false;
+
+  // Other component code
+
+  showConfirmationModal() {
+    this.isConfirmationModalVisible = true;
+  }
+
+  cancelConfirmationModal() {
+    this.isConfirmationModalVisible = false;
+  }
+  approveApplication() {
+    const data = {
+      student_no: this.student_no,
+      app_status: 'accepted',
+      comment: 'Application accepted'
+    };
+  
+    this.adminService.getApprove(data).subscribe(
+      response => {
+        console.log(response);
+        // Handle success response
+        this.isConfirmationModalVisible = false; // Hide the confirmation modal
+        this.isSecondModalVisible = true; // Show the second modal
+  
+        this.adminService.removeAcceptedStudentNumber(this.student_no);  // Remove the accepted student number
+      },
+      error => {
+        console.log(error);
+        // Handle error response
+      }
+    );
+  }
+  
+
+  closeSecondModal() {
+    this.isSecondModalVisible = false;
+  }
+
+
+
+rejectApplication() {
+  const data = {
+    student_no: this.student_no,
+    app_status: 'rejected',
+    comment: 'Application rejected'
+  };
+
+  this.adminService.getApprove(data).subscribe(
+    response => {
+      console.log(response);
+      // Handle success response
+    },
+    error => {
+      console.log(error);
+      // Handle error response
+    }
+  );
+}
+
+
 
 
 }

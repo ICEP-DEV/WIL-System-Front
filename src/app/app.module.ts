@@ -54,6 +54,7 @@ import { AdminHomeComponent } from './components/admin-home/admin-home.component
 import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
 
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
@@ -118,8 +119,14 @@ import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.compo
           AdminNavbarComponent,
           ApplicantsComponent,
           AdminViewComponent,
-          ReAdmissionFormComponent,
+          AdminRejectComponent,
           SubmittedEvaluationComponent,
+          InternlifeComponent,
+          
+          
+
+          
+          //
           SubmittedQueryComponent,
           WilHomeComponent,
           WilActivitiesComponent,
