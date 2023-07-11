@@ -3,7 +3,7 @@
 <div class="main">
     <div class="instr">
        <h4 style="color: #FFB300;">Profile of:</h4>
-       <h4 style="color: black; margin-left: 1%;">{{studentNo}}  {{studName}}</h4>
+       <h4 style="color: black; margin-left: 1%;">{{studentNo}}  {{studName}} </h4>
     </div>
         <div class="progressbar">
             <h4 style="color: #FFB300; margin-top: 2%;">Progress Status:</h4><br>
@@ -117,7 +117,7 @@
                 <td>Report</td>
                 <td>Not Completed</td>
                 <td>Not Completed</td>
-                <td><button (click)="newtabpdf()"> View</button></td>
+                <td><button routerLink="/report"> View</button></td>
                 <td>
                     <select (click) = "d_SubTot()" id="systemDoc" style="border-radius: 15px;">
                         <option value="">Rate Work</option>

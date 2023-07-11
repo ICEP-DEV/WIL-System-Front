@@ -66,6 +66,7 @@ import { WilTopnavComponent } from './wil_co/wil-topnav/wil-topnav.component';
 import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
 import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
 import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
+import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 
 @NgModule({
   declarations: [
@@ -128,7 +129,8 @@ import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessment
           WilTopnavComponent,
           InternActivitiesComponent,
           StudentActivitiesComponent,
-          WilAssessmentsComponent
+          WilAssessmentsComponent,
+          WilCoReportComponent
   ],
   imports: [
     BrowserModule,

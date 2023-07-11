@@ -54,6 +54,7 @@ import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp
 import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
 import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
 import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
+import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 
 
 
@@ -79,7 +80,7 @@ const routes: Routes = [
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
 
-  {path: '', component:LoginComponent},
+ // {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
@@ -109,6 +110,7 @@ const routes: Routes = [
   {path: 'I_activities',component: InternActivitiesComponent},
   {path: 'StudentActivities',component: StudentActivitiesComponent},
   {path: 'wilAssessments',component: WilAssessmentsComponent},
+  {path: 'report',component: WilCoReportComponent},
 
   //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},

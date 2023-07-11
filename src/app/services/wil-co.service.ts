@@ -6,9 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WilCoService {
-  private baseUrl = 'http://192.168.27.46:8080/api';
+  private baseUrl = 'http://localhost8080/api';
   constructor(private http: HttpClient) { }
- // http://192.168.27.46:8080/api/getWorkInfo
+ // http://localhost8080/api/getWorkInfo
+ //http://192.168.27.46:8080
 
     getRegisteredStu( data: any):Observable<any> 
     {
@@ -32,13 +33,14 @@ export class WilCoService {
 
     systemDoc( data: any):Observable<any> 
     {
-      return this.http.get<any>(`${this.baseUrl}/sysDoc/`, data )
+      return this.http.get<any>(`${this.baseUrl}/sysDoc/`+ data )
     }
 
-    //  report( data: any):Observable<any> 
-    //  {
-    //    return this.http.get<any>(`${this.baseUrl}/`, data )
-    //  }
+    report( data: any):Observable<any> 
+    {
+      return this.http.get<any>(`${this.baseUrl}/getReport/`+ data )
+    }
+
 
   // getDocumentations( data: any):Observable<any> 
   // {

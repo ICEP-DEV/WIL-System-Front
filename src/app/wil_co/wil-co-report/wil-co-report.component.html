@@ -1,0 +1,20 @@
+<app-wil-topnav></app-wil-topnav>
+<div class="main">
+<div class="instr">
+<h4 style="color: #FFB300;">Profile of:</h4><h4 style="color: black; margin-left: 1%;">{{studentNo}}  {{studName}}</h4>
+
+</div>
+<h4 style="color: #FFB300;">Instructions</h4>
+<h4>Please read the report below</h4>
+<h4 style="color: #FFB300;">Report</h4>
+<div class="report" style="background-color: whitesmoke; height: 500px;">
+    <p *ngFor="let data of reportdata">
+        {{data.report_doc}}
+    </p>
+</div>
+<div class="back">
+<h4 style="text-align: center; cursor: pointer;" routerLink="/StudentActivities">Back to Student</h4>
+</div>
+<!-- <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" /> -->
+</div>
+
