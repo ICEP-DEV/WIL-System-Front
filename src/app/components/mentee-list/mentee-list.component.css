@@ -40,12 +40,13 @@ h2{
   }
 
   table {
-    width: 70%;
+    width: 100%;
     border-collapse: collapse;
+    color: black;
   }
 
   table tr:nth-child(even) {
-    background-color: #dfdede; /* Grey color for even rows */
+    background-color: #f7f5f5; /* Grey color for even rows */
   }
   
   table tr:nth-child(odd) {
@@ -59,6 +60,9 @@ h2{
     padding: 10px;
     
   }
+  table tr{
+    height: 50px;
+  }
 
   p {
     font-size: 24px;
@@ -71,7 +75,7 @@ h2{
   color: red;
  }
 
- button {
+ .relBtn{
   width: 15%;
   height: 3vw;
   border: 0ch;
@@ -87,7 +91,20 @@ h2{
 }
 
 .footer{
-  margin-left:15.5%;
+  
   margin-top: 6%;
   width:100%;
+}
+
+.viewBtn{
+
+  width: 50%;
+  height: 3vw;
+  border: 0ch;
+  border-radius: 31px;
+  background-color: rgb(233, 230, 230);
+  font-size: 24px;
+
+  color: #000000;
+
 }

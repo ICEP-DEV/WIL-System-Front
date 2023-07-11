@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { MentorService } from 'src/app/services/mentor.service';
 
 @Component({
@@ -7,20 +7,28 @@ import { MentorService } from 'src/app/services/mentor.service';
   styleUrls: ['./mentee-list.component.css']
 })
 export class MenteeListComponent {
-  data: any[] = [];
+  table_data: any[] =[] ;
   rowCount: number = 0;
+  tempMentorInform: any;
+  email_address: any = '';
 
   constructor(private dataService: MentorService) { }
 
   ngOnInit() {
+    this.tempMentorInform = localStorage.getItem('user');
+    const studentInfo = JSON.parse(this.tempMentorInform);
+    this.email_address = studentInfo.student_no;
     this.getDataFromApi();
   }
+  
 
   getDataFromApi() {
-    this.dataService.getData().subscribe(
-      (response: any) => {
-        this.data = response;
-        this.rowCount = this.data.length;
+    this.dataService.getData(this.email_address).subscribe(
+      response => {
+        this.table_data = response.mentees;
+        this.rowCount = this.table_data.length;
+        console.log(this.table_data)
+        
       },
       (error) => {
         console.error('Error fetching data:', error);

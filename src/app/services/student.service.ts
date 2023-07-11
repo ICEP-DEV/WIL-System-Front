@@ -9,6 +9,7 @@ import { ReAdmissionComponent } from '../components/re-admission/re-admission.co
 })
 export class StudentService {
  private baseUrl = 'http://localhost:8080/api';
+ private emailUrl ='http://localhost:5000'
   // private baseUrl = 'http://192.168.27.52:8080/api'
 
   constructor(private http: HttpClient) { }
@@ -52,7 +53,21 @@ saveWorkstation(data: any) {
   return this.http.post(this.baseUrl + '/workInfo', data);
 }
 
+/*sendEmail(email_address:any){
+  console.log(email_address)
+  return this.http.post(this.emailUrl + '/send-email', { to:email_address })
+}*/
 
+sendEmail(from: string, to: string, subject: string, text: string): Observable<any> {
+  const emailData = {
+    from,
+    to,
+    subject,
+    text
+  };
+
+  return this.http.post(this.emailUrl + '/send-email', emailData);
+}
 
 }
 

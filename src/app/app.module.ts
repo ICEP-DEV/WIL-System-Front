@@ -58,6 +58,12 @@ import { MenteeListComponent } from './components/mentee-list/mentee-list.compon
 import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
 import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
 import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
+import { MentorHomeComponent } from './components/mentor-home/mentor-home.component';
+import { MentorNavbarComponent } from './components/mentor-navbar/mentor-navbar.component';
+import { MentorActivitiesComponent } from './components/mentor-activities/mentor-activities.component';
+import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
+import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
+import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +114,13 @@ import { StudentEvaluationComponent } from './components/student-evaluation/stud
           MenteeListComponent,
           MenteeLogsComponent,
           MenteeRatingComponent,
-          StudentEvaluationComponent
+          StudentEvaluationComponent,
+          MentorHomeComponent,
+          MentorNavbarComponent,
+          MentorActivitiesComponent,
+          MentorNotificationComponent,
+          MentorInvitesComponent,
+          MentorLoginComponent
   ],
   imports: [
     BrowserModule,

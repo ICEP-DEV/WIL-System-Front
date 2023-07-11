@@ -19,6 +19,15 @@ export class AddmentorComponent {
   suburb:any = '';
   address:any = '';
   mentor_id:any = '';
+  fromE:any = '';
+  name: any='';
+  surname: any = '';
+
+  // Email content
+  e_subject: string = '';
+  e_text: string = '';
+
+
   constructor(private mentor: StudentService, private router: Router) {}
 
 
@@ -26,8 +35,24 @@ export class AddmentorComponent {
     this.tempStudentInform = localStorage.getItem('user');
     const studentInfo = JSON.parse(this.tempStudentInform);
     this.student_no = studentInfo.student_no;
+    this.fromE = studentInfo.email;
+    this.name = studentInfo.name;
+    this.surname = studentInfo.surname
     
     this.addMentor.student_no = this.student_no;
+   //Email content
+   this.e_subject ="Invitation by student " + this.student_no + " " + this.surname +" "+ this.name +"." ;
+   this.setEText();
+    
+  }
+
+  setEText(): void {
+    this.e_text =
+      'Good day! \n\nYou are invited to mentor ' +
+      this.surname +
+      ' ' +
+      this.name +
+      ' for their WIL';
   }
 
   addMentor = {
@@ -53,17 +78,12 @@ export class AddmentorComponent {
     }else
     {
       this.saveData();
+      this.sendEmaill();
       this.router.navigateByUrl('/mentor-invited')
     }
   }
 
-  /*addData = new FormGroup({
-    title: new FormControl(),
-    m_name: new FormControl(),
-    m_surname: new FormControl(),
-    email_address: new FormControl(),
-    mobileNo  : new FormControl(),
-  });*/
+
 
   saveData() {
     //console.log(this.addData.value); 
@@ -82,16 +102,27 @@ export class AddmentorComponent {
         console.error('POST request unsuccesful', error);
       };
 
-    /*this.http.post('https://your-backend-api.com/send-email', { to: 'user@example.com' })
-      .subscribe(
-        () => {
-          console.log('Email sent successfully');
-          // Additional success handling logic
-        },
-        ((error:any) => {
-          console.error('Error sending email:', error);
-
-        }),
-}*/
+    
   }
+
+
+
+
+sendEmaill() {
+  const from = 'Workintergratedlearning@outlook.com';
+  const to = this.email_address;
+  const subject = this.e_subject;
+  const text = this.e_text;
+
+  this.mentor.sendEmail(from, to, subject, text).subscribe(
+    () => {
+      console.log('Email sent successfully!');
+    },
+    (error) => {
+      console.error('Error sending email:', error);
+    }
+  );
 }
+}
+
+

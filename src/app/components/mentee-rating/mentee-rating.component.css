@@ -84,3 +84,10 @@ h2{
   .reject{
     margin-left: 20%;
   }
+
+  .footer{
+  
+    margin-top: 6%;
+    bottom: 0;
+    width: 160%;
+  }

@@ -4,7 +4,7 @@
       <div class="heading">
         <h1>Life as an intern</h1>
     </div>
-    <app-admin-navbar></app-admin-navbar>
+    <app-mentor-navbar></app-mentor-navbar>
 
     <div class="everything">
         <div class="header">
@@ -19,7 +19,7 @@
         </div>
         <br>
         <br>
-        <button (click)="refreshTable()">Refresh List</button>
+        <button (click)="refreshTable()" class="relBtn">Refresh List</button>
         <br>
         <br>
         <p class="men">Mentee</p>
@@ -37,11 +37,11 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr *ngFor="let item of data">
-                    <td>{{ item.column1 }}</td>
-                    <td>{{ item.column2 }}</td>
-                    <td>{{ item.column3 }}</td>
-                    <td><button>View</button></td>
+                  <tr *ngFor="let item of table_data">
+                    <td>{{ item.student_no }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.surname }}</td>
+                    <td><button class="viewBtn">View</button></td>
                     <!-- Add more columns as needed -->
                   </tr>
                 </tbody>

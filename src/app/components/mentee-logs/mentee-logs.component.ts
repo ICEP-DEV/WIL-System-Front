@@ -21,7 +21,7 @@ export class MenteeLogsComponent {
 
   
   ngOnInit() {
-    this.getDataFromApi();
+    //this.getDataFromApi();
 
     this.tempStudentInform = localStorage.getItem('user');
     const studentInfo = JSON.parse(this.tempStudentInform);
@@ -32,7 +32,7 @@ export class MenteeLogsComponent {
     
   }
 
-  getDataFromApi() {
+ /* getDataFromApi() {
     this.logEntries.getData().subscribe(
       (response: any) => {
         this.data = response;
@@ -41,7 +41,7 @@ export class MenteeLogsComponent {
         console.error('Error fetching data:', error);
       }
     );
-  }
+  }*/
 
   sendLogEntries() {
     this.logEntries.sendEntries(this.evaluatedLogs).subscribe((response) => {
