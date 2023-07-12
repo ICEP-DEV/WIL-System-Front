@@ -39,4 +39,12 @@ getformById(student_no: any):Observable<any>{
   console.log('Received Student Number:', student_no);
   return this.http.get<any>(`${this.baseUrl}/admissionForm/` +student_no);
 }
+
+getApprove(data: any): Observable<any>
+{
+  return this.http.post<any>(`${this.baseUrl}/appApprove`, data );
+}
+
+
+
 }

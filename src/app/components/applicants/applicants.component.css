@@ -16,7 +16,8 @@ h2{
     /* padding-left: 10%; */
     color: rgb(87, 85, 85);
     text-shadow: 2px 2px 4px rgb(87, 85, 85);
-    margin-left: 60%;
+    /* margin-left: 60%; */
+    margin-left: 50%;
     margin-top: 2%;
     margin-bottom: 3%;
 
@@ -27,7 +28,8 @@ h3 {
     font-size: 1.3vw;
     margin-top: 2vh;
     margin-bottom: 4vh;
-    margin-left: 62%;
+    /* margin-left: 62%; */
+    margin-left: 52%;
     padding: 1vw;
     padding-left: 2vw;
     width: 22%;

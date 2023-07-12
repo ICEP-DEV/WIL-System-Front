@@ -16,7 +16,8 @@ body{
     /* padding-left: 10%; */
     color: rgb(87, 85, 85);
     text-shadow: 2px 2px 4px rgb(87, 85, 85);
-    margin-left: 60%;
+    /* margin-left: 60%; */
+    margin-left: 50%;
     margin-top: 2%;
     margin-bottom: 3%;
 
@@ -56,7 +57,8 @@ h3 {
     
   }
   .form-input{
-    margin-top: -41%;
+    /* margin-top: -41%; */
+    margin-top: -37.8%;
     margin-left: 27%;
     width: 95%;
   }
@@ -77,7 +79,8 @@ h3 {
   }
   .form-period{
     
-    margin-top: -7%;
+    /* margin-top: -7%; */
+    margin-top: -6.6%;
     margin-left: 27%;
     width: 98%;
     
@@ -103,7 +106,8 @@ h3 {
 }
 
 .file p{
-  margin-top: -10.3%;
+  /* margin-top: -10.3%; */
+  margin-top: -9.9%;
     margin-left: 27%;
   border: none;
   outline: none;
@@ -116,14 +120,15 @@ h3 {
   display: flex;
   justify-content: space-between;
   text-align: right;
-  margin-top: -7.5%;
+  margin-top: -6%;
   width: 90vw;
   
 }
 
 button{
   width: 18vw;
-  margin-left: 130vh;
+  /* margin-left: 130vh; */
+  margin-left: 155vh;
   padding: 0.8vw;
   font-size: 1.1vw;
   border-radius: 2vw;
@@ -147,7 +152,8 @@ button{
   border-right:1px solid rgb(49, 48, 48);
 }
 .choice p{
-  margin-top: -7.1%;
+  /* margin-top: -7.1%; */
+  margin-top: -6.6%;
     margin-left: 27%;
   border: none;
   outline: none;
@@ -171,7 +177,8 @@ button{
   border-right:1px solid rgb(49, 48, 48);
 }
 .class p{
-  margin-top: -7.1%;
+  /* margin-top: -7.1%; */
+  margin-top: -6.6%;
     margin-left: 27%;
   border: none;
   outline: none;
@@ -193,7 +200,8 @@ button{
   border-right:1px solid rgb(49, 48, 48);
 }
 .campus p{
-  margin-top: -7.1%;
+  /* margin-top: -7.1%; */
+  margin-top: -6.6%;
     margin-left: 27%;
   border: none;
   outline: none;
@@ -215,7 +223,8 @@ button{
   border-right:1px solid rgb(49, 48, 48);
 }
 .finacial p{
-  margin-top: -7.1%;
+  /* margin-top: -7.1%; */
+  margin-top: -6.6%;
     margin-left: 27%;
   border: none;
   outline: none;
@@ -308,34 +317,59 @@ font-size: 1.5vw;
 }
 
 .modal-footer{
-  margin-top: -6vh;
+  margin-top: -4vh;
   margin-bottom: 4vh;
+ 
 }
+
+
 .modal-footer button:nth-child(1) {
   background-color:#CC3250;
   color: white;
-  /* margin-left: -22%; */
-  margin-right: 26%;
   padding: 0.5vw;
+  margin: 0;
   width: 6vw;
-
+  margin-right: 30vh;
+  margin-bottom: 4vh;
+  margin-top: 4vh;
 }
 
 .modal-footer button:nth-child(2) {
   background-color:#55B75E;
   color: white;
-  margin-right: 20%;
   padding: 0.5vw;
-  width: 6vw;
+ margin: 0;
+ width: 6vw;
+ margin-right: 10vh;
+ margin-bottom: 4vh;
+ margin-top: 4vh;
 }
 
+.modal-body2 svg{
+  margin-left: 8vh;
+  margin-top: 6vh;
+}
+.modal-body2 p{
+  margin-left: 32vh;
+  margin-top: 4vh;
+}
 
+.modal-footer2 button{
+  background-color:#55B75E;
+  color: white;
+  padding: 0.5vw;
+ margin: 0;
+ width: 6vw;
+ margin-left: 41vh;
+ margin-bottom: 8vh;
+ margin-top: 2vh;
+}
 
 
 
 .reject{
   
-  margin-top: -4vh;
+  margin-top: -5vh;
 }
 .reject button{
   margin-top: -14vh;
@@ -352,3 +386,294 @@ font-size: 1.5vw;
   right: 0;
   width: 70%;
 }
+
+.modal {
+  display: none;
+  /* Additional styling for the modal */
+}
+
+.modal-visible {
+  display: block;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 80%;
+  }
+
+  .heading h2 {
+    font-size: 4vw;
+    margin-left: 10%;
+  }
+
+  h3 {
+    font-size: 4vw;
+    margin-left: 2%;
+  }
+
+  p {
+    font-size: 3.5vw;
+    margin-left: 2%;
+  }
+
+  h1 {
+    font-size: 3.5vw;
+    margin-left: 2%;
+  }
+
+  .form-label label {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .form-input {
+    margin-top: -45%;
+    margin-left: 10%;
+    width: 95%;
+  }
+
+  .form-input input {
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  h4 {
+    margin-top: 12%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    font-size: 4vw;
+  }
+
+  .form-period {
+    margin-top: -7%;
+    margin-left: 10%;
+    width: 98%;
+  }
+
+  .form-period input {
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .file h1 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .file p {
+    margin-top: -10.3%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .download {
+    margin-top: -7.5%;
+    width: 90vw;
+  }
+
+  button {
+    width: 30vw;
+    margin-left: 10vh;
+    padding: 2.5vw;
+    font-size: 3.5vw;
+    border-radius: 2vw;
+  }
+
+  .admission h3 {
+    margin-top: 10%;
+    font-size: 4vw;
+  }
+
+  .choice h1 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+  }
+
+  .choice h2 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .choice p {
+    margin-top: -7.1%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .class h1 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+  }
+
+  .class h2 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .class p {
+    margin-top: -7.1%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .campus h1 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+  }
+
+  .campus h2 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .campus p {
+    margin-top: -7.1%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .finacial h1 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+  }
+
+  .finacial h2 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .finacial p {
+    margin-top: -7.1%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .declaration {
+    margin-bottom: 10%;
+    font-size: 3.5vw;
+  }
+
+  .signed h1 {
+    margin-top: 4%;
+    font-size: 3.5vw;
+  }
+
+  .signed h2 {
+    width: 80%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .signed p {
+    margin-top: -7.1%;
+    margin-left: 10%;
+    font-size: 3.5vw;
+    padding: 5%;
+  }
+
+  .approve {
+    width: 20vw;
+    margin-top: 8%;
+    margin-left: 2%;
+  }
+
+  .approve button {
+    margin-top: 8%;
+    margin-left: 2%;
+    width: 20vw;
+    border-radius: 2vw;
+    padding: 2.5vw;
+    font-size: 3.5vw;
+  }
+
+  .parent-container .modal-dialog {
+    max-width: 80vw;
+    margin-top: 15vh;
+    border-radius: 8vw;
+  }
+
+  .modal-dialog {
+    max-width: 80vw;
+    margin-top: 15vh;
+    border-width: 8vw;
+    box-shadow: 2px 2px 4px rgb(87, 85, 85);
+  }
+
+  .modal-title {
+    margin-left: 10vh;
+    font-size: 4vw;
+  }
+
+  .app-stud {
+    font-weight: bold;
+    margin-left: 8vh;
+    margin-top: 1vh;
+    font-size: 3.5vw;
+  }
+
+  .app-stud span {
+    margin-left: 6vh;
+  }
+
+  .app-info {
+    margin-top: 2vh;
+    margin-left: 4vh;
+  }
+
+  .app-info span {
+    margin-left: 9vh;
+  }
+
+  /* .modal-footer {
+    margin-top: -6vh;
+    margin-bottom: 4vh;
+  }
+
+  .modal-footer button:nth-child(1) {
+    margin-right: 16%;
+    padding: 1.5vw;
+    width: 15vw;
+    font-size: 3.5vw;
+  }
+
+  .modal-footer button:nth-child(2) {
+    margin-right: 10%;
+    padding: 1.5vw;
+    width: 15vw;
+    font-size: 3.5vw;
+  } */
+
+  .reject {
+    margin-top: -4.5vh;
+  }
+
+  .reject button {
+    margin-top: -14vh;
+    margin-left: 10%;
+    width: 20vw;
+    border-radius: 2vw;
+    padding: 2.5vw;
+    font-size: 3.5vw;
+  }
+
+  .footer img {
+    width: 90%;
+  }
+}
+
+
+

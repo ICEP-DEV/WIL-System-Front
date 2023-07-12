@@ -8,32 +8,13 @@ import { AdminService } from 'src/app/services/admin.service';
 })
 export class ApplicantsComponent implements OnInit {
   studentNumbers: string[] = [];
-
-  constructor(private adminService: AdminService) {}
+  acceptedStudentNumbers: string[] = [];
+  
+  constructor(public adminService: AdminService) {}
 
   ngOnInit() {
     this.getStudentNumbers();
   }
-
-  // getStudentNumbers() {
-  //   const data = ''; // Pass any required data here
-  //   this.adminService.willInfo(data).subscribe(
-  //     response => {
-  //       if (response.result && Array.isArray(response.result)) {
-  //         const studentSet = new Set<string>(); // Use a Set to store unique student numbers
-  //         response.result.forEach((item: any) => {
-  //           studentSet.add(item.student_no); // Add each student number to the Set
-  //         });
-  //         this.studentNumbers = Array.from(studentSet); // Convert the Set back to an array
-  //       } else {
-  //         console.error('Invalid response format:', response);
-  //       }
-  //     },
-  //     error => {
-  //       console.log('Error:', error);
-  //     }
-  //   );
-  // }
 
   getStudentNumbers() {
     const data = ''; // Pass any required data here
@@ -55,5 +36,13 @@ export class ApplicantsComponent implements OnInit {
     );
   }
   
-
+ 
+  
+  
+  // removeStudentNumber(studentNumber: string) {
+  //   const index = this.adminService.acceptedStudentNumbers.indexOf(studentNumber); // Access the acceptedStudentNumbers array through adminService
+  //   if (index !== -1) {
+  //     this.adminService.acceptedStudentNumbers.splice(index, 1);
+  //   }
+ // }
 }
