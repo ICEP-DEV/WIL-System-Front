@@ -87,6 +87,7 @@ import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.compo
     HomeComponent,
     RegulationsComponent,
     
+    InternlifeComponent,
     ActivitiesComponent,
     SystemSupportComponent,
     TopnavComponent,
@@ -143,7 +144,20 @@ import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.compo
           MentorActivitiesComponent,
           MentorNotificationComponent,
           MentorInvitesComponent,
-          MentorLoginComponent
+          MentorLoginComponent,
+          SubmittedEvaluationComponent,
+          SubmittedQueryComponent,
+          WilHomeComponent,
+          WilActivitiesComponent,
+          WilRegulationsComponent,
+          WilSystemSuppComponent,
+          WilInternsComponent,
+          WilTopnavComponent,
+          InternActivitiesComponent,
+          StudentActivitiesComponent,
+          WilAssessmentsComponent,
+          WilCoReportComponent,
+          
   ],
   imports: [
     BrowserModule,
