@@ -53,6 +53,18 @@ import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.com
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
+import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
+import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
+import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
+import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
+import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
+import { MentorHomeComponent } from './components/mentor-home/mentor-home.component';
+import { MentorNavbarComponent } from './components/mentor-navbar/mentor-navbar.component';
+import { MentorActivitiesComponent } from './components/mentor-activities/mentor-activities.component';
+import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
+import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
+import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +110,19 @@ import { AdminRejectComponent } from './components/admin-reject/admin-reject.com
           AdminNavbarComponent,
           ApplicantsComponent,
           AdminViewComponent,
-          AdminRejectComponent
+          AdminRejectComponent,
+          MentorInvitedComponent,
+          WorkPlaceSavedComponent,
+          MenteeListComponent,
+          MenteeLogsComponent,
+          MenteeRatingComponent,
+          StudentEvaluationComponent,
+          MentorHomeComponent,
+          MentorNavbarComponent,
+          MentorActivitiesComponent,
+          MentorNotificationComponent,
+          MentorInvitesComponent,
+          MentorLoginComponent
   ],
   imports: [
     BrowserModule,

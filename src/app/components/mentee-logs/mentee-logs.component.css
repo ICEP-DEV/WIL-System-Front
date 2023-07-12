@@ -1,0 +1,118 @@
+body{
+    font-family: "Montserrat";
+  }
+
+.container{
+    margin: 0;
+}
+
+.heading{
+	margin-left: 30%;
+    margin-top: -3%;
+}
+.heading h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+ 
+
+h2{
+    font-size: 2vw;
+    font-weight: bold;
+    /* padding-left: 10%; */
+    color: rgb(87, 85, 85);
+    text-shadow: 2px 2px 4px rgb(87, 85, 85);
+    margin-left: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+  }
+
+  h3 {
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    margin-left: 37%;
+    padding: 1vw;
+    padding-left: 4vw;
+   
+  }
+
+  table {
+    width: 70%;
+    border-collapse: collapse;
+  }
+
+  table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Grey color for even rows */
+  }
+  
+  table tr:nth-child(odd) {
+    background-color: #ffffff; /* White color for odd rows */
+  }
+table th
+ {
+    background-color: rgb(243, 241, 241);
+    height: 50px;
+    border-bottom: 1px solid black;
+    width:25%;
+    padding: 10px;
+    
+  }
+
+table tr{
+  height: 70px;
+}
+
+p {
+    font-size: 24px;
+    color: orange;
+    font-weight: bold;
+  }
+.everything
+{
+  margin-left:10%;
+}
+
+ .bt 
+{
+  width: 25%;
+  height: 2vw;
+  border: 0ch;
+  border-radius: 31px;
+  background-color: orange;
+  font-size: 24px;
+  font-weight: bold;
+
+  color: #ffffff;
+}
+
+.comp{
+  width: 70%;
+  height: 2vw;
+  border-radius: 30px;
+  background-color: #bebbbb;
+  border:0;
+}
+
+.progress-bar {
+    width: 20%;
+    height: 40px;
+    background-color: #bebbbb;
+    
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color:blue;
+    transition: width 0.3s;
+  }
+  
+  .footer{
+    margin-left:15.5%;
+    margin-top: 6%;
+    width:160%;
+  }

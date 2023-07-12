@@ -22,6 +22,8 @@ import { ChangementorComponent } from './components/changementor/changementor.co
 import { AddworkComponent } from './components/addwork/addwork.component';
 import { ChangeworkComponent } from './components/changework/changework.component';
 import { PlacementdetailsComponent } from './components/placementdetails/placementdetails.component';
+import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
+import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
 
 //sidenav 
 //import { CommonModule } from '@angular/common';
@@ -44,6 +46,17 @@ import { ApplicantsComponent } from './components/applicants/applicants.componen
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
 
+//mentor
+import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
+import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
+import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
+import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
+import { MentorHomeComponent } from './components/mentor-home/mentor-home.component';
+import { MentorNavbarComponent } from './components/mentor-navbar/mentor-navbar.component';
+import { MentorActivitiesComponent } from './components/mentor-activities/mentor-activities.component';
+import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
+import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
+import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
 
 
 
@@ -69,6 +82,8 @@ const routes: Routes = [
   {path: 'addwork',component: AddworkComponent},
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
+  {path: 'mentor-invited',component:MentorInvitedComponent},
+  {path: 'workPlace-saved',component: WorkPlaceSavedComponent},
 
   {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
@@ -86,6 +101,18 @@ const routes: Routes = [
   {path: 'system-documentation', component:SystemDocumentationComponent},
   {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
   {path: 'navbar', component:NavbarComponent},
+  
+  //Mentor
+  {path: 'mentor_home', component:MentorHomeComponent},
+  {path: 'mentor_navbar', component:MentorNavbarComponent},
+  {path: 'mentee_logs', component:MenteeLogsComponent},
+  {path: 'mentee_list', component:MenteeListComponent},
+  {path: 'mentee_rating', component:MenteeRatingComponent},
+  {path: 'student_evaluation', component:StudentEvaluationComponent},
+  {path: 'mentor_activities', component:MentorActivitiesComponent},
+  {path: 'mentor_notification', component:MentorNotificationComponent},
+  {path: 'mentor_invites', component:MentorInvitesComponent},
+  {path: 'mentor_login', component:MentorLoginComponent},
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},

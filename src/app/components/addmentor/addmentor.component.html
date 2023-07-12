@@ -1,24 +1,77 @@
 <body>
     
+    <app-sidenav></app-sidenav>
 
-<div class="heading">
-    <h1>Life as an intern</h1>
-</div>
-<app-sidenav></app-sidenav>
-<app-topnav></app-topnav>
-<div class="main">
-    <div class="header">
-        <h3 style="font-family: 'Montserrat'">Placement Information</h3>
-    </div>
-        <label for="">SELECT TITLE:</label><input type="text" required><br>
-        <label for="">FIRST NAME:</label><input type="text" style="margin-left: 15.8%;"  required><br>
-        <label for="">LAST NAME:</label><input type="text"  style="margin-left: 16%;" required><br>
-        <label for="">EMAIL:</label><input type="text" style="margin-left: 18.5%;" required><br>
-        <label for="">MOBILE NO:</label><input type="text" style="margin-left: 16.2%;" required><br>
-
-        <button>Send Invitation</button>
-</div>
-<div class="footer">
-    <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
-</div>
+    <div class="heading">
+      <h1>Life as an intern</h1>
+  </div>
+    <app-topnav></app-topnav>
+    <div class="main">
+        <div class="header">
+            <h3 style="font-family: 'Montserrat'">Placement Information</h3>
+        </div>
+        <div class="rect">
+          <p>Mentor Details</p>
+      </div>
+      <br>
+      <br>
+      <div class="para">
+          <p>The student must have the Mentor’s name, Mobile numbers, and Email address before completing this step.
+               This information is compulsory because the Mentor would receive an Email with their Username and Password after the WIL Office approves the Registration.
+             </p>
+      </div>
+      
+        <div>
+            <div>
+              <div class="mb-3">
+                <label for="title" class="form-label">SELECT TITLE:</label>
+                <select
+                  class="drop"
+                  [(ngModel)]="title"
+                  required
+                  placeholder="--SELECT TITLE--"
+                >
+                  <option value="" disabled selected hidden>--SELECT TITLE--</option>
+                  <option>Mr</option>
+                  <option>Ms</option>
+                  <option>Mrs</option>
+                </select>
+              </div>
+              <br />
+              <div class="mb-3">
+                <label for="m_name" class="form-label">FIRST NAME:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="m_name"
+                  required
+                />
+              </div>
+              <br />
+              <div class="mb-3">
+                <label for="m_surname" class="form-label">LAST NAME:</label>
+                <input type="text" class="form-control" [(ngModel)]="m_surname" />
+              </div>
+              <br />
+              <div class="mb-3">
+                <label class="form-label" for="email_address">EMAIL:</label>
+                <input type="email" class="form-control" [(ngModel)]="email_address" />
+              </div>
+              <br />
+              <div class="mb-3">
+                <label class="form-label" for="mobileNo">MOBILE NO:</label>
+                <input type="tel" class="form-control" [(ngModel)]="mobileNo" />
+              </div>
+              <button (click)="validateAndRedirect()" class="save">Send Invitation</button>
+            </div>
+          </div>
+        
+          <div class="footer">
+            <img
+              src="../../../assets/footer_1.png"
+              alt=""
+              style="margin-left: 27.3%; margin-bottom: 0"
+            />
+          </div>
+        </div>
 </body>
