@@ -1,0 +1,31 @@
+<app-wil-topnav></app-wil-topnav>
+<h4>Intern's Activities</h4>
+<div class="main">
+    <div class="instr">
+       <h4 style="color: #F5002F;">INSTRUCTIONS:</h4>
+        <h4 style="margin-left: 1%;"> Click on a student to access the student's Profile</h4>
+    </div>
+    
+    <table>
+        <thead>
+        <th>Student Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        </thead>
+        <tbody *ngFor="let data of regStuddata">
+            <tr (click)="studentProfile(data)">
+                <td >{{data.student_no}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.surname}}</td>
+                <td>{{data.email}}</td>
+                </tr>
+        </tbody>
+        
+        
+    </table>
+    <Label style="margin-top:2%">Total Registered students: {{regStuddata.length}} </Label>
+    <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
+</div>
+
+

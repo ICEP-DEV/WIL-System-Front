@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { StudentService } from 'src/app/services/student.service';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ import { WILRegistrationComponent } from './components/wil-registration/wil-regi
 import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 import { PracticeComponent } from './practice/practice.component';
+import { InternlifeComponent } from './internlife/internlife.component';
 
 
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
@@ -53,6 +55,19 @@ import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.com
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+
+import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
+import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
+import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
+import { WilActivitiesComponent } from './wil_co/wil-activities/wil-activities.component';
+import { WilRegulationsComponent } from './wil_co/wil-regulations/wil-regulations.component';
+import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp.component';
+import { WilInternsComponent } from './wil_co/wil-interns/wil-interns.component';
+import { WilTopnavComponent } from './wil_co/wil-topnav/wil-topnav.component';
+import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
+import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
+import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
+import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +104,12 @@ import { AdminRejectComponent } from './components/admin-reject/admin-reject.com
     SuccessRespondComponent,
     RegistrationDataComponent,
     
+    PlacementLetterComponent,
+    ReAdmissionComponent,
+    DeclarationComponent,
+    SuccessRespondComponent,
+    RegistrationDataComponent,
+    
     PracticeComponent,
           ReAdmissionFormComponent,
           SystemDocumentationComponent,
@@ -98,7 +119,25 @@ import { AdminRejectComponent } from './components/admin-reject/admin-reject.com
           AdminNavbarComponent,
           ApplicantsComponent,
           AdminViewComponent,
-          AdminRejectComponent
+          AdminRejectComponent,
+          SubmittedEvaluationComponent,
+          InternlifeComponent,
+          
+          
+
+          
+          //
+          SubmittedQueryComponent,
+          WilHomeComponent,
+          WilActivitiesComponent,
+          WilRegulationsComponent,
+          WilSystemSuppComponent,
+          WilInternsComponent,
+          WilTopnavComponent,
+          InternActivitiesComponent,
+          StudentActivitiesComponent,
+          WilAssessmentsComponent,
+          WilCoReportComponent
   ],
   imports: [
     BrowserModule,
@@ -110,7 +149,7 @@ import { AdminRejectComponent } from './components/admin-reject/admin-reject.com
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [DatePipe,NotificationService],
+  providers: [DatePipe,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

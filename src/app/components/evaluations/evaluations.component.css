@@ -5,6 +5,10 @@ body{
 	margin-left: 15%;
 }
 
+.gg{
+  margin-left: 25%;
+} 
+
 .heading h1{
 	text-align: center;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -22,7 +26,6 @@ body{
 .supervison h2{
     text-align: center;
 }
-
 
 .dropbtn{
     background-color: #ffff;
@@ -100,10 +103,12 @@ body{
     height: 50px;
   }
 
-  .footer{
-    margin-left:15.5%;
-    margin-top: 6%;
+  .footerimg{
+    position:fixed ;
     bottom: 0;
-}
+    right: 0;
+    margin-top: 3%;
+    width: 70%;
+  }
   
   

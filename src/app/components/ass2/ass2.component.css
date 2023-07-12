@@ -95,9 +95,10 @@ body{
     text-align: center;
   }
 
-  .footer{
-    margin-left:15.5%;
-    margin-top: 6%;
+.footerimg{
+    position:fixed ;
     bottom: 0;
+    right: 0;
+    width: 70%;
 }
 

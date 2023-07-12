@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
@@ -42,15 +43,27 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
+import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
 
 
+///////////////////////WIL_CO/////////////////////////////////////
+import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
+import { WilRegulationsComponent } from './wil_co/wil-regulations/wil-regulations.component';
+import { WilInternsComponent } from './wil_co/wil-interns/wil-interns.component';
+import { WilActivitiesComponent } from './wil_co/wil-activities/wil-activities.component';
+import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp.component';
+import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
+import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
+import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
+import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 
 
 
 
 const routes: Routes = [
- 
+  //{ path: '', component: RecommendationComponent },
   { path: 'Home', component: HomeComponent },
   { path: 'Regulations', component: RegulationsComponent },
   { path: 'Placement Information', component: PlacementinfoComponent },
@@ -74,8 +87,11 @@ const routes: Routes = [
   {path: 'login', component:LoginComponent},
   {path: 'recommendation', component:RecommendationComponent},
  
-  {path: 'wil-registration',component:WILRegistrationComponent},
-  {path: 'ep-information', component:EpInformationComponent},
+  {path: 'wil-registration',component: WILRegistrationComponent},
+  {path: 'ep-information', component: EpInformationComponent},
+  {path: 'Internlife', component: HomeComponent},
+  {path: 'Submit Evaluation', component: SubmittedEvaluationComponent},
+  {path: 'Submit Query', component: SubmittedQueryComponent},
   {path: 'placement-letter', component:PlacementLetterComponent},
   {path: 're-admission', component:ReAdmissionComponent},
   {path: 'declaration', component:DeclarationComponent},
@@ -86,7 +102,20 @@ const routes: Routes = [
   {path: 'system-documentation', component:SystemDocumentationComponent},
   {path: 'sys-doc-submitted', component:SysDocSubmittedComponent},
   {path: 'navbar', component:NavbarComponent},
-//////////////////////////ADMIN////////////////////////////
+
+  ///////////////////////WIL_CO_ROUTING/////////////////////////////////////
+  { path: 'w_Home', component: WilHomeComponent },
+  { path: 'w_Regulations', component: WilRegulationsComponent },
+  { path: 'w_Interns', component: WilInternsComponent },
+  {path: 'w_Activities',component: WilActivitiesComponent},
+  {path: 'w_System Support',component: WilSystemSuppComponent},
+
+  {path: 'I_activities',component: InternActivitiesComponent},
+  {path: 'StudentActivities',component: StudentActivitiesComponent},
+  {path: 'wilAssessments',component: WilAssessmentsComponent},
+  {path: 'report',component: WilCoReportComponent},
+
+  //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},
 {path: 'admin-view/:studentNumber', component:AdminViewComponent},  // Add dynamic route parameter
@@ -94,6 +123,8 @@ const routes: Routes = [
 {path: 'admin-reject/:student_no', component:AdminRejectComponent},
 { path: '', redirectTo: '/admin-view', pathMatch: 'full' },
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

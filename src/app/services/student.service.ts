@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs'
-import { ReAdmissionComponent } from '../components/re-admission/re-admission.component';
+
 
 
 @Injectable({
@@ -9,7 +9,9 @@ import { ReAdmissionComponent } from '../components/re-admission/re-admission.co
 })
 export class StudentService {
  private baseUrl = 'http://localhost:8080/api';
-  // private baseUrl = 'http://192.168.27.52:8080/api'
+ // private BaseUrl = 'http://192.168.27.46:8080/api';
+//http://192.168.27.52:8080/api/answer
+  
 
   constructor(private http: HttpClient) { }
 
@@ -42,7 +44,11 @@ uploadSystemDocumentation(data: any): Observable<any>
  return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
 
+submitEvaluation(selectedOption: string) {
+  const body = { selectedOption: selectedOption };
 
+  return this.http.post(`${this.baseUrl}/answer`, body);
+}
 
 
 }
