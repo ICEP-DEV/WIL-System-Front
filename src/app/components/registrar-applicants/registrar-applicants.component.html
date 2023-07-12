@@ -1,0 +1,46 @@
+<body>
+    <div class="container">
+   
+        <img  src="../../../assets/logoTUTC.png"
+        alt="">
+        <h2>Life as an Intern</h2>
+         <app-registrar-navbar></app-registrar-navbar>  
+         <h3>Applicants</h3>  
+         <p><span style="color: #F5002F">Instruction:</span> <br> Below is a list of Students who want to register the Work-Integrated Learning registration module:<br>
+
+            To perform various actions on applications, please use the following options:<br><br>
+            
+            View: Use this option to view the forms associated with the applications.<br>
+            Download: Select this option to download the form related to an application.<br>
+            Approve: Choose this option to approve the application.<br>
+            Reject: Select this option to reject the application.</p>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        
+                        <th scope="col">Student Number</th>
+                        <th scope="col" >Action</th>
+                        
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr *ngFor="let number of studentNumbers">
+                          <td style="padding: 5px;">{{ number }}</td>
+                          <td>
+                            <button class="action-button" [routerLink]="['/registrar-view', number]" >View</button>
+                          </td>
+                        
+                      </tr>
+                      
+                      
+                  </tbody>
+                  
+                  
+                  
+            </table>
+
+
+      </div>   
+</body>

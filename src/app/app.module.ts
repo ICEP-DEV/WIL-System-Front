@@ -53,6 +53,10 @@ import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.com
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+import { RegistrarHomeComponent } from './components/registrar-home/registrar-home.component';
+import { RegistrarNavbarComponent } from './components/registrar-navbar/registrar-navbar.component';
+import { RegistrarApplicantsComponent } from './components/registrar-applicants/registrar-applicants.component';
+import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +102,11 @@ import { AdminRejectComponent } from './components/admin-reject/admin-reject.com
           AdminNavbarComponent,
           ApplicantsComponent,
           AdminViewComponent,
-          AdminRejectComponent
+          AdminRejectComponent,
+          RegistrarHomeComponent,
+          RegistrarNavbarComponent,
+          RegistrarApplicantsComponent,
+          RegistrarViewComponent
   ],
   imports: [
     BrowserModule,
