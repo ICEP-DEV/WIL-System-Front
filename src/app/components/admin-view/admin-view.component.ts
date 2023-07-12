@@ -9,7 +9,6 @@ import { AdminService } from 'src/app/services/admin.service';
   styleUrls: ['./admin-view.component.css']
 })
 export class AdminViewComponent {
-  @Output() studentAccepted = new EventEmitter<string>();
 
   studentNumber: string = '';
   student_no: string = ''
@@ -17,8 +16,7 @@ export class AdminViewComponent {
   studentInfo: any = {};
   admissionInfo: any = {};
   fileName: string = '';
-
-  
+ 
 
 constructor(private route: ActivatedRoute, private adminService: AdminService){
   
@@ -138,7 +136,6 @@ isConfirmationModalVisible = false;
         this.isConfirmationModalVisible = false; // Hide the confirmation modal
         this.isSecondModalVisible = true; // Show the second modal
   
-        this.adminService.removeAcceptedStudentNumber(this.student_no);  // Remove the accepted student number
       },
       error => {
         console.log(error);

@@ -36,10 +36,13 @@ export class ApplicantsComponent implements OnInit {
     );
   }
   
-  removeStudentNumber(studentNumber: string) {
-    const index = this.adminService.acceptedStudentNumbers.indexOf(studentNumber); // Access the acceptedStudentNumbers array through adminService
-    if (index !== -1) {
-      this.adminService.acceptedStudentNumbers.splice(index, 1);
-    }
-  }
+ 
+  
+  
+  // removeStudentNumber(studentNumber: string) {
+  //   const index = this.adminService.acceptedStudentNumbers.indexOf(studentNumber); // Access the acceptedStudentNumbers array through adminService
+  //   if (index !== -1) {
+  //     this.adminService.acceptedStudentNumbers.splice(index, 1);
+  //   }
+ // }
 }

@@ -45,13 +45,6 @@ getApprove(data: any): Observable<any>
   return this.http.post<any>(`${this.baseUrl}/appApprove`, data );
 }
 
-acceptedStudentNumbers: string[] = [];
 
-removeAcceptedStudentNumber(studentNumber: string): void {
-  const index = this.acceptedStudentNumbers.indexOf(studentNumber);
-  if (index !== -1) {
-    this.acceptedStudentNumbers.splice(index, 1);
-  }
-}
 
 }

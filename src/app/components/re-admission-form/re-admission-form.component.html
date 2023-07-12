@@ -26,7 +26,7 @@
   <div class= "form_box">
     <div class= "flex">
       <div class="completing_Form"> You are completing re-admission form</div>
-   <form  [formGroup]="reAdmissionForm" class="admission_form" id="form" #myForm="ngForm">
+   <form  [formGroup]="reAdmissionForm" class="admission_form" id="form" #myForm="ngForm" style="margin-bottom: 50%;">
     <div class="Choice_Qualification">CHOICE OF QUALIFICATON</div>
     <div class="choice_1">
   <input type="text" formControlName="firstChoice"class="choice_Of_Qua" placeholder="Write your choice of qualification here" required> 
@@ -72,8 +72,8 @@
 </form>
 </div>
 </div> 
-   <div class="btnForm">
-     <button id="form" form="form" value="submit" [disabled]="!myForm.form.valid" (click)="onSubmit()">Next</button>
+   <div class="btnForm" style="margin-top: 6%;">
+     <button id="form" form="form" value="submit" [disabled]="!myForm.form.valid" (click)="onSubmit()" >Next</button>
     </div>
      <div class="imgFooter">
     <img src="../../../assets/footer 1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
