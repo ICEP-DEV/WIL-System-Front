@@ -59,7 +59,7 @@ export class StudentActivitiesComponent {
     });
 
     ///////////////////Student Deatils//////////////////////////
-      this.WilCoService.getMentor(this.tempdata).subscribe((data) => {
+      this.WilCoService.getMentor(Number(this.studentNo)).subscribe((data) => {
       this.tempdata = data;
       this.Mentordata = data.result;
       console.log(data.result);
@@ -70,6 +70,13 @@ export class StudentActivitiesComponent {
       this.tempdata = data;
       this.sysdata = data.result;
       // console.log(data.result)
+    });
+
+    // ///////////////////Get Report//////////////////////////
+    this.WilCoService.report(this.tempdata).subscribe((data) => {
+      this.tempdata = data;
+      this.reportdata = data.result;
+      console.log(data.result)
     });
     
 

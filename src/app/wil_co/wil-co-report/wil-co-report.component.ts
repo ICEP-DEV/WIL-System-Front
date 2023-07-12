@@ -18,10 +18,14 @@ export class WilCoReportComponent {
   ngOnInit(): void {
     this.studentNo = localStorage.getItem('studentNo')?.toString();
     this.studName = localStorage.getItem('studName')?.toString();
+    console.log(this.studentNo);
+    console.log(this.studName);
 
-    this.WilCoService.report(this.tempdata).subscribe((data) => {
+    // ///////////////////Get Report//////////////////////////
+    this.WilCoService.report(Number(this.studentNo)).subscribe((data) => {
       this.tempdata = data;
       this.reportdata = data.result;
+      console.log(data.result)
     });
 
   }

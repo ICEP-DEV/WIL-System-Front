@@ -11,7 +11,7 @@ export class StudentService {
   //private baseUrl = 'http://localhost:8080/api';
   private BaseUrl = 'http://192.168.27.46:8080/api';
   //http://192.168.27.52:8080/api/answer
-  private baseUrl = 'http://192.168.27.52:8080/api';
+  private baseUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) { }
 
