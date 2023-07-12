@@ -1,0 +1,61 @@
+<body>
+    <div class="container">
+      <img src="../../../assets/logoTUTC.png" alt="" />
+      <div class="heading">
+        <h1>Life as an intern</h1>
+    </div>
+    <app-mentor-navbar></app-mentor-navbar>
+
+    <div class="everything">
+        <div class="header">
+            <h3 style="font-family: 'Montserrat'">Mentees</h3>
+        </div>
+        <div>
+            <p class="inst">Instruction:
+            </p>
+            <p>Below is a list of your Mentee you can evaluate their logbook in this paltform.</p>
+            <p>To perfom various action on applications.please use the following options:</p>
+            <p>View: Use this option to view Information associated with the Mentee.</p>
+        </div>
+        <br>
+        <br>
+        <button (click)="refreshTable()" class="relBtn">Refresh List</button>
+        <br>
+        <br>
+        <p class="men">Mentee</p>
+        
+        <div>
+        
+            <table>
+                <thead>
+                  <tr>
+                    <th>Student Number</th>
+                    <th>Surname</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                    <!-- Add more columns as needed -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of table_data">
+                    <td>{{ item.student_no }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.surname }}</td>
+                    <td><button class="viewBtn">View</button></td>
+                    <!-- Add more columns as needed -->
+                  </tr>
+                </tbody>
+              </table>      
+        </div>
+        <br>
+        <br>
+        <p>
+          Mentee: {{rowCount}}
+        </p>
+        </div>
+    </div>
+    <div class="footer">
+      <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+  </div>
+</body>    
+      
