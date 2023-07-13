@@ -40,7 +40,16 @@ h3 {
     margin-left: 13%;
     font-size: 1.2vw;
   }
-
+.list{
+  background-color: #FFB300;
+  color: white;
+  border: none;
+  border-radius: 2vw;
+  width: 8vw;
+  padding: 0.6vw;
+  margin-top: 2%;
+  margin-left: 12%;
+}
   table{
     margin-top: 3%;
     margin-left: 13%; 

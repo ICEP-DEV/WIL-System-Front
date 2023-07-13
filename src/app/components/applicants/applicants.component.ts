@@ -36,7 +36,9 @@ export class ApplicantsComponent implements OnInit {
     );
   }
   
- 
+  refreshList() {
+    window.location.reload(); // Reload the page
+  }
   
   
   // removeStudentNumber(studentNumber: string) {

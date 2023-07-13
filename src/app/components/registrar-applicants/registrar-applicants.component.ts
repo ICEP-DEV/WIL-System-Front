@@ -34,4 +34,9 @@ export class RegistrarApplicantsComponent {
       }
     );
   }
+
+  refreshList() {
+    window.location.reload(); // Reload the page
+  }
+
 }
