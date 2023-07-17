@@ -54,6 +54,9 @@ import { MentorActivitiesComponent } from './components/mentor-activities/mentor
 import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
 import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
 import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
+import { LogApprovedComponent } from './components/log-approved/log-approved.component';
+import { LogRejectedComponent } from './components/log-rejected/log-rejected.component';
+import { MentorSystemSupportComponent } from './components/mentor-system-support/mentor-system-support.component';
 
 
 
@@ -102,14 +105,17 @@ const routes: Routes = [
   //Mentor
   {path: 'mentor_home', component:MentorHomeComponent},
   {path: 'mentor_navbar', component:MentorNavbarComponent},
-  {path: 'mentee_logs', component:MenteeLogsComponent},
+  {path: 'mentee_logs/:student_no/:name/:surname', component:MenteeLogsComponent},
   {path: 'mentee_list', component:MenteeListComponent},
-  {path: 'mentee_rating', component:MenteeRatingComponent},
+  {path: 'mentee_rating/:Student_no/:surname/:name/:month', component:MenteeRatingComponent},
   {path: 'student_evaluation', component:StudentEvaluationComponent},
   {path: 'mentor_activities', component:MentorActivitiesComponent},
   {path: 'mentor_notification', component:MentorNotificationComponent},
   {path: 'mentor_invites', component:MentorInvitesComponent},
   {path: 'mentor_login', component:MentorLoginComponent},
+  {path: 'log_approved/:Student_no/:surname/:name/:month/:approval', component:LogApprovedComponent},
+  {path: 'log_rejected/:Student_no/:surname/:name/:month/:approval', component:LogRejectedComponent},
+  {path: 'mentor_systemSupport', component:MentorSystemSupportComponent},
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},

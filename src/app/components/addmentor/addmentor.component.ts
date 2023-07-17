@@ -29,7 +29,7 @@ export class AddmentorComponent {
 
 
   constructor(private mentor: StudentService, private router: Router) {}
-
+  empty_space: boolean = false;
 
   ngOnInit(): void {
     this.tempStudentInform = localStorage.getItem('user');
@@ -73,7 +73,8 @@ export class AddmentorComponent {
       !this.email_address ||
       !this.mobileNo
     ){
-      alert('All fields are required');
+      this.empty_space = true;
+      //alert('All fields are required');
       this.router.navigateByUrl('/addmentor')
     }else
     {

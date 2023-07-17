@@ -19,11 +19,14 @@ export class AddworkComponent {
   city:any = '';
   suburb:any = '';
   address:any = '';
+  label:string ='';
   
   constructor(private workStation: StudentService, private router: Router) {
+
+    
     
   }
-
+  empty_space: boolean = false;
   
 
   ngOnInit(): void {
@@ -68,8 +71,10 @@ validateAndRedirect(){
     !this.suburb ||
     !this.address
   ){
-    alert('All fields are required');
+    this.empty_space = true;
+    //alert('All fields are required');
     this.router.navigateByUrl('/addwork')
+    //this.label = 'All field are required'
   }else
   {
     this.saveWorkData();

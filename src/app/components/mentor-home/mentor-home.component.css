@@ -20,3 +20,17 @@ h2{
     margin-top: 2%;
 
   }
+  .footer{
+    margin-top:27% ;
+    margin-right:-100% ;
+  }
+
+  body{
+    font-family: "Montserrat";
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .I{
+    margin-left:15% ;
+  }

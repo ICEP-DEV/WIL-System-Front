@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators'
 
 
 @Injectable({
@@ -20,10 +21,26 @@ export class MentorService {
   }
 
   //get log entries
-  getlogEntries(): Observable<any> {
-    return this.http.get<any>(this.baseUrl);
+  getlogEntries(student_no:any): Observable<any> {
+    return this.http.get<any>(`${this.baseUrl}/getlogbooks/` + student_no);
   }
 
   sendEntries(data: any){
     return this.http.post(this.baseUrl ,data);}
+
+   logDesc(student_no: any, month:any){
+    console.log(student_no)
+    console.log(month)
+    return this.http.get(`${this.baseUrl}/logDisc/${student_no}/${month}`);
+  }
+
+  updateCell(logbook_id:any, approval: any) {
+
+    const body = {
+      cell: approval
+    };
+
+    console.log(approval)
+    return this.http.patch(`${this.baseUrl}/logEvaluation/${logbook_id}`,body);
+  }
 }

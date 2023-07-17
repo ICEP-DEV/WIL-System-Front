@@ -1,6 +1,8 @@
 body{
-    font-family: "Montserrat";
-  }
+  font-family: "Montserrat";
+  width: 100%;
+  overflow-x: hidden;
+}
 
 .container{
     margin: 0;
@@ -40,28 +42,25 @@ h2{
   }
 
   table {
-    width: 100%;
+    width: 120%;
     border-collapse: collapse;
     color: black;
+    text-align: center;
+    font-size: 20px;
   }
 
-  table tr:nth-child(even) {
-    background-color: #f7f5f5; /* Grey color for even rows */
-  }
-  
-  table tr:nth-child(odd) {
-    background-color: #ffffff; /* White color for odd rows */
-  }
   table th{
     background-color: rgb(243, 241, 241);
     height: 50px;
     border-bottom: 1px solid black;
     width:25%;
-    padding: 10px;
+    padding: 15px;
+    font-size: 24px;
     
   }
   table tr{
-    height: 50px;
+    height: 100px;
+  border-bottom: 1px solid #ddd;
   }
 
   p {
@@ -91,7 +90,7 @@ h2{
 }
 
 .footer{
-  
+  margin-left:27% ;
   margin-top: 6%;
   width:100%;
 }
@@ -107,4 +106,8 @@ h2{
 
   color: #000000;
 
+}
+
+.I{
+  margin-left:15% ;
 }
