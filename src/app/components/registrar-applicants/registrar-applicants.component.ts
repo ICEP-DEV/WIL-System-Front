@@ -1,16 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { AdminService } from 'src/app/services/admin.service';
+import { Component } from '@angular/core';
+import { RegistrarService } from 'src/app/services/registrar.service';
 
 @Component({
-  selector: 'app-applicants',
-  templateUrl: './applicants.component.html',
-  styleUrls: ['./applicants.component.css']
+  selector: 'app-registrar-applicants',
+  templateUrl: './registrar-applicants.component.html',
+  styleUrls: ['./registrar-applicants.component.css']
 })
-export class ApplicantsComponent implements OnInit {
+export class RegistrarApplicantsComponent {
   studentNumbers: string[] = [];
-  acceptedStudentNumbers: string[] = [];
-  
-  constructor(public adminService: AdminService) {}
+
+  constructor(public registrarService: RegistrarService){}
 
   ngOnInit() {
     this.getStudentNumbers();
@@ -18,7 +17,7 @@ export class ApplicantsComponent implements OnInit {
 
   getStudentNumbers() {
     const data = ''; // Pass any required data here
-    this.adminService.willInfo(data).subscribe(
+    this.registrarService.getwillInfo(data).subscribe(
       response => {
         if (response.success === 1 && Array.isArray(response.data)) {
           const studentSet = new Set<string>(); // Use a Set to store unique student numbers
@@ -35,16 +34,9 @@ export class ApplicantsComponent implements OnInit {
       }
     );
   }
-  
+
   refreshList() {
     window.location.reload(); // Reload the page
   }
-  
-  
-  // removeStudentNumber(studentNumber: string) {
-  //   const index = this.adminService.acceptedStudentNumbers.indexOf(studentNumber); // Access the acceptedStudentNumbers array through adminService
-  //   if (index !== -1) {
-  //     this.adminService.acceptedStudentNumbers.splice(index, 1);
-  //   }
- // }
+
 }

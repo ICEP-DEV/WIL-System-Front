@@ -41,13 +41,16 @@ import { ReAdmissionFormComponent } from './components/re-admission-form/re-admi
 import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
-
+///admin
 import { AdminHomeComponent } from './components/admin-home/admin-home.component';
 import { ApplicantsComponent } from './components/applicants/applicants.component';
 import { AdminViewComponent } from './components/admin-view/admin-view.component';
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
 import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+import { RegistrarHomeComponent } from './components/registrar-home/registrar-home.component';
+import { RegistrarApplicantsComponent } from './components/registrar-applicants/registrar-applicants.component';
+import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
 
 //mentor
 import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
@@ -136,6 +139,11 @@ const routes: Routes = [
 { path: '', redirectTo: '/applicants', pathMatch: 'full' },
 {path: 'admin-reject/:student_no', component:AdminRejectComponent},
 { path: '', redirectTo: '/admin-view', pathMatch: 'full' },
+//////////////////////////ADMIN////////////////////////////
+{path: 'registrar-home', component:RegistrarHomeComponent},
+{path: 'registrar-applicants', component:RegistrarApplicantsComponent},
+{path: 'registrar-view/:studentNumber', component:RegistrarViewComponent}, 
+
 ];
 
 

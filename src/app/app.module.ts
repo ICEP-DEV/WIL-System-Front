@@ -80,6 +80,10 @@ import { InternActivitiesComponent } from './wil_co/intern-activities/intern-act
 import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
 import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
 import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
+import { RegistrarHomeComponent } from './components/registrar-home/registrar-home.component';
+import { RegistrarNavbarComponent } from './components/registrar-navbar/registrar-navbar.component';
+import { RegistrarApplicantsComponent } from './components/registrar-applicants/registrar-applicants.component';
+import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
 
 @NgModule({
   declarations: [
@@ -158,6 +162,10 @@ import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.compo
           WilAssessmentsComponent,
           WilCoReportComponent,
           
+          RegistrarHomeComponent,
+          RegistrarNavbarComponent,
+          RegistrarApplicantsComponent,
+          RegistrarViewComponent
   ],
   imports: [
     BrowserModule,
