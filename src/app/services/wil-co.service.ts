@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class WilCoService {
-  private baseUrl = 'http://localhost:8080/api';
+  //private baseUrl = 'http://localhost:8080/api';
+  private baseUrl = 'http://192.168.27.46:8080/api';
   constructor(private http: HttpClient) { }
  // http://localhost8080/api/getWorkInfo
  //http://192.168.27.46:8080
