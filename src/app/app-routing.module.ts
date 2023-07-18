@@ -133,6 +133,17 @@ const routes: Routes = [
   {path: 'mentor_notification', component:MentorNotificationComponent},
   {path: 'mentor_invites', component:MentorInvitesComponent},
   {path: 'mentor_login', component:MentorLoginComponent},
+   ///////////////////////WIL_CO_ROUTING/////////////////////////////////////
+   { path: 'w_Home', component: WilHomeComponent },
+   { path: 'w_Regulations', component: WilRegulationsComponent },
+   { path: 'w_Interns', component: WilInternsComponent },
+   {path: 'w_Activities',component: WilActivitiesComponent},
+   {path: 'w_System Support',component: WilSystemSuppComponent},
+ 
+   {path: 'I_activities',component: InternActivitiesComponent},
+   {path: 'StudentActivities',component: StudentActivitiesComponent},
+   {path: 'wilAssessments',component: WilAssessmentsComponent},
+   {path: 'report',component: WilCoReportComponent},
   {path: 'super_eva',component: WilEvaSuperComponent},
   {path: 'co_eva',component: WilEvaCowComponent},
 //////////////////////////ADMIN////////////////////////////
