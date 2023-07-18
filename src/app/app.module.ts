@@ -84,6 +84,8 @@ import { RegistrarHomeComponent } from './components/registrar-home/registrar-ho
 import { RegistrarNavbarComponent } from './components/registrar-navbar/registrar-navbar.component';
 import { RegistrarApplicantsComponent } from './components/registrar-applicants/registrar-applicants.component';
 import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
+import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
+import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
 
 @NgModule({
   declarations: [
@@ -165,7 +167,9 @@ import { RegistrarViewComponent } from './components/registrar-view/registrar-vi
           RegistrarHomeComponent,
           RegistrarNavbarComponent,
           RegistrarApplicantsComponent,
-          RegistrarViewComponent
+          RegistrarViewComponent,
+          WilEvaSuperComponent,
+          WilEvaCowComponent
   ],
   imports: [
     BrowserModule,

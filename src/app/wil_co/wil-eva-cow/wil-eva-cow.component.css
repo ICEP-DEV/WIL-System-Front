@@ -1,0 +1,30 @@
+.main {
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 2%;
+
+}
+
+ 
+
+.instr{
+    display: flex;
+}
+
+ 
+
+.report{
+    border-color: black;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+    border-left: solid 1px;
+    border-right:  solid 1px;
+}
+
+.footerimg {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    margin-top: 3%;
+  }
