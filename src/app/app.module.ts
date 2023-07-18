@@ -80,6 +80,8 @@ import { InternActivitiesComponent } from './wil_co/intern-activities/intern-act
 import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
 import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
 import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
+import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
+import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
 
 @NgModule({
   declarations: [
@@ -157,7 +159,8 @@ import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.compo
           StudentActivitiesComponent,
           WilAssessmentsComponent,
           WilCoReportComponent,
-          
+          WilEvaSuperComponent,
+          WilEvaCowComponent
   ],
   imports: [
     BrowserModule,

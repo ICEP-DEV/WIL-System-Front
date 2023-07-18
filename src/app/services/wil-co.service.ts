@@ -44,18 +44,15 @@ export class WilCoService {
     }
 
 
-  // getDocumentations( data: any):Observable<any> 
-  // {
-  //   return this.http.get<any>(`${this.baseUrl}/`, data )
-  // }
+  getEva_Super( data: any):Observable<any> 
+  {
+    return this.http.get<any>(`${this.baseUrl}/getSupInfo/`+ data )
+  }
 
-  // getCoEvaluation( data: any):Observable<any> 
-  // {
-  //   return this.http.get<any>(`${this.baseUrl}/getCoInfo`, data )
-  // }
+  getCoEvaluation( data: any):Observable<any> 
+  {
+    return this.http.get<any>(`${this.baseUrl}/getCoInfo/`+ data )
+  }
 
-  // getSupEvaluation( data: any):Observable<any> 
-  // {
-  //   return this.http.get<any>(`${this.baseUrl}/getSupInfo`, data )
-  // }
+
 }
