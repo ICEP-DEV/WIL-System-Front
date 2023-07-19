@@ -60,6 +60,7 @@ import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessment
 import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
 import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
+import { WilSubmittedQueryComponent } from './wil_co/wil-submitted-query/wil-submitted-query.component';
 
 
 
@@ -117,6 +118,7 @@ const routes: Routes = [
   {path: 'report',component: WilCoReportComponent},
   {path: 'super_eva',component: WilEvaSuperComponent},
   {path: 'co_eva',component: WilEvaCowComponent},
+  {path: 'wilQuery',component: WilSubmittedQueryComponent},
 
   //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},

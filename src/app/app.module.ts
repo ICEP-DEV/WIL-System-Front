@@ -70,6 +70,7 @@ import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessment
 import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
 import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
 import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
+import { WilSubmittedQueryComponent } from './wil_co/wil-submitted-query/wil-submitted-query.component';
 
 @NgModule({
   declarations: [
@@ -141,7 +142,8 @@ import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
           WilAssessmentsComponent,
           WilCoReportComponent,
           WilEvaSuperComponent,
-          WilEvaCowComponent
+          WilEvaCowComponent,
+          WilSubmittedQueryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,25 @@
+.main{
+    margin-left: 15%;
+    /* font-family: 'Montserrat' */
+}
+.header{
+    text-align: center;
+ }
+
+.message{
+    text-align: center;
+    margin-top: 20vh;
+    display: flex;
+    margin-left: 20%;
+}
+h3{
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.footerimg{
+    position:fixed ;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}
