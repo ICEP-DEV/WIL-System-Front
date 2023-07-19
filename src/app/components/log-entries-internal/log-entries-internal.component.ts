@@ -20,7 +20,7 @@ export class LogEntriesInternalComponent {
 
   log_description: any='';
   log_status: any='';
-
+  
   //displayEntry: any ='';
 
   
@@ -62,9 +62,10 @@ year = this.currentDate.getFullYear(); // Get the current year (e.g., 2023)
 
   data = {
     student_no: this.student_no, 
-    mentor_id: this.mentor_id,
     date: this.formattedDate,
-    log_description: this.log_description
+    log_description: this.log_description,
+    submittedAt: this.formattedDate,
+   logMonth: 1,
     
   };
 
