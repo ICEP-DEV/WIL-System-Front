@@ -41,6 +41,9 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
 import { ReportComponent } from './components/report/report.component';
 import { ReportSaveComponent } from './components/report-save/report-save.component';
 import { ReportSubmitComponent } from './components/report-submit/report-submit.component';
+import { RegistrarSupportComponent } from './components/registrar-support/registrar-support.component';
+import { RegistrarSaveComponent } from './components/registrar-save/registrar-save.component';
+
 
 
 
@@ -66,6 +69,8 @@ const routes: Routes = [
   {path: 'addwork',component: AddworkComponent},
   {path: 'changework',component: ChangeworkComponent},
   {path: 'placementd',component: PlacementdetailsComponent},
+  {path: 'registrar-support', component: RegistrarSupportComponent},
+  {path: 'registrar-save', component: RegistrarSaveComponent},
 
   {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},

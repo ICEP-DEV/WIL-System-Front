@@ -51,6 +51,8 @@ import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc
 import { ReportComponent } from './components/report/report.component';
 import { ReportSubmitComponent } from './components/report-submit/report-submit.component';
 import { ReportSaveComponent } from './components/report-save/report-save.component';
+import { RegistrarSupportComponent } from './components/registrar-support/registrar-support.component';
+import { RegistrarSaveComponent } from './components/registrar-save/registrar-save.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +96,9 @@ import { ReportSaveComponent } from './components/report-save/report-save.compon
           SysDocSubmittedComponent,
           ReportComponent,
           ReportSubmitComponent,
-          ReportSaveComponent
+          ReportSaveComponent,
+          RegistrarSupportComponent,
+          RegistrarSaveComponent
   ],
   imports: [
     BrowserModule,

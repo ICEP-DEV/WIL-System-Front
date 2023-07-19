@@ -1,0 +1,57 @@
+<body>
+    <div class="container">
+      <img src="../../../assets/logoTUTC.png" alt="" />
+      <h2>Life as an Intern</h2>
+     
+      <h3>System Support</h3>
+  
+      <!--<div class="info">-->
+      <p>
+        <span
+          style="
+            color: #ffb300;
+            font-family: Montserrat;
+            font-style: normal;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: normal;
+          "
+          >Information:</span
+        >
+        <br /><br />
+  
+        If you have any issues related to the system,
+        <br /><br />
+        please send your inquiry, and a support agent will provide you
+        <br /><br />
+        with better advice.<br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
+  
+      <h6>
+        Contact information: (011) 234 567 898 <br />
+        <br />
+        Email Address: willenvironmentsupport@tut.domain <br />
+        <br />
+        Send a query:<br />
+      </h6>
+      <div class="W">
+        <textarea [(ngModel)]="query" id="queryMessage"></textarea>
+      </div>
+      <br />
+      <br />
+      <div class="I">
+        <button (click)="submitQuery()" class="button" id="btnsend">
+          Send query
+        </button>
+      </div>
+      <div *ngIf="empty_text" class="S">You can't submit an empty query</div>
+      <div class="footer">
+        <img src="../../../assets/footer 1.png" alt="" />
+      </div>
+    </div>
+  </body>
+  
