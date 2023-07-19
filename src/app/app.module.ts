@@ -67,6 +67,7 @@ import { MentorLoginComponent } from './components/mentor-login/mentor-login.com
 import { LogApprovedComponent } from './components/log-approved/log-approved.component';
 import { LogRejectedComponent } from './components/log-rejected/log-rejected.component';
 import { MentorSystemSupportComponent } from './components/mentor-system-support/mentor-system-support.component';
+import { UpdateMentorComponent } from './components/update-mentor/update-mentor.component';
 
 @NgModule({
   declarations: [
@@ -126,7 +127,8 @@ import { MentorSystemSupportComponent } from './components/mentor-system-support
           MentorLoginComponent,
           LogApprovedComponent,
           LogRejectedComponent,
-          MentorSystemSupportComponent
+          MentorSystemSupportComponent,
+          UpdateMentorComponent
   ],
   imports: [
     BrowserModule,

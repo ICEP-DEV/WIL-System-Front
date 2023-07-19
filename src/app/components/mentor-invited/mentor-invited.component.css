@@ -23,6 +23,7 @@
     line-height: 29px;
   }
   .content {
+    margin-left:10% ;
     display: flex;
     width: 1148px;
     height: 693px;
@@ -56,5 +57,21 @@
   .heading h1 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  body{
+    font-family: "Montserrat";
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .footer{
+    margin-left:15.5%;
+    margin-top: -7%;
+    width:100%;
+  }
+
+  .I{
+    margin-left:27% ;
   }
   

@@ -69,5 +69,24 @@ sendEmail(from: string, to: string, subject: string, text: string): Observable<a
   return this.http.post(this.emailUrl + '/send-email', emailData);
 }
 
+getMentors(student_no:any): Observable<any> {
+  return this.http.get<any>(`${this.baseUrl}/getMentorInfo/` + student_no);
 }
 
+updateMentor(data:any, student_no:any, mentor_Id:any){
+  console.log(data);
+  
+  return this.http.patch(`${this.baseUrl}/updateMentor/${student_no}/${mentor_Id}`, data);
+}
+
+getWork(student_no:any): Observable<any> {
+  return this.http.get<any>(`${this.baseUrl}/getWorkInfo/${student_no}`);
+}
+
+updateWork(data:any, student_no:any){
+  console.log(data);
+  
+  return this.http.patch(`${this.baseUrl}/updateWorkDiv/${student_no}`, data);
+}
+
+}

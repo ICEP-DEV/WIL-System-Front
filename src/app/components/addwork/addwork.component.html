@@ -86,12 +86,13 @@
             <label class="form-label" for="add_address">Address:</label>
             <input id="add_address" type="address" class="form-control" [(ngModel)]="address" required autocomplete="street-address"/>
           </div>
-          <div>
-          <button (click)="validateAndRedirect()" class="save">Save</button>
-          </div>
           <div *ngIf="empty_space" class="S">
             All fields are required
            </div>
+          <div>
+          <button (click)="validateAndRedirect()" class="save">Save</button>
+          </div>
+          
       </div>
       </div>
       

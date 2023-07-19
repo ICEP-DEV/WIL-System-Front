@@ -24,6 +24,7 @@ import { ChangeworkComponent } from './components/changework/changework.componen
 import { PlacementdetailsComponent } from './components/placementdetails/placementdetails.component';
 import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
 import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
+import { UpdateMentorComponent } from './components/update-mentor/update-mentor.component';
 
 //sidenav 
 //import { CommonModule } from '@angular/common';
@@ -62,6 +63,7 @@ import { MentorSystemSupportComponent } from './components/mentor-system-support
 
 
 
+
 const routes: Routes = [
  
   { path: 'Home', component: HomeComponent },
@@ -84,6 +86,7 @@ const routes: Routes = [
   {path: 'placementd',component: PlacementdetailsComponent},
   {path: 'mentor-invited',component:MentorInvitedComponent},
   {path: 'workPlace-saved',component: WorkPlaceSavedComponent},
+  {path: 'updateMentor/:mentor_Id/:title/:m_name/:m_surname/:mobileNo/:email_address',component: UpdateMentorComponent},
 
   {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},

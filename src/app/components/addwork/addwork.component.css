@@ -12,7 +12,7 @@ body{
 
 .footer{
     margin-left:15.5%;
-    margin-top: 6%;
+    margin-top: -10%;
     bottom: 0;
 }
 .rect{
@@ -119,8 +119,8 @@ body{
       }
 
       .S{
-        margin-top: -230px;
-        margin-left: 40%;
+        margin-left: 43.5%;
         font-size: 24px;
+        color: red;
       }
       
