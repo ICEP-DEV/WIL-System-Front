@@ -1,6 +1,4 @@
-body{
-    font-family: "Montserrat";
-  }
+
 
 .container{
     margin: 0;
@@ -86,8 +84,16 @@ h2{
 }
 
 .footer{
-  
-  margin-top: 6%;
-  bottom: 0;
-  width: 160%;
+  margin-top:5% ;
+  margin-right:-100% ;
+}
+
+body{
+  font-family: "Montserrat";
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.I{
+  margin-left:15% ;
 }

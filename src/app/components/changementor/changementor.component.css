@@ -18,6 +18,74 @@ body{
 .footerimg{
     position:fixed ;
     bottom: 0;
-    right: 0;
-    width: 70%;
 }
+
+.main h3 {
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    margin-left: 37%;
+    padding: 1vw;
+    padding-left: 4vw;
+   
+  }
+
+.rect{
+
+    width: 389px;
+    height: 93px;
+    margin-left: 40%;
+    margin-top: -2%;
+    
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align:center
+    }
+
+    .rect p{
+        float: left;
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 24px;
+        margin-left: 30%;
+        margin-top: 5%;
+        }
+
+    .L{
+        margin-top:50px ;
+        margin-left:37% ;
+        font-size: 24px;
+    }
+
+    table {
+        width: 70%;
+        border-collapse: collapse;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+        margin-left:20% ;
+      }
+    
+      table th{
+        background-color: rgb(243, 241, 241);
+        height: 50px;
+        border-bottom: 1px solid black;
+        width:25%;
+        padding: 15px;
+        font-size: 24px;
+        
+      }
+      table tr{
+        height: 100px;
+      border-bottom: 1px solid #ddd;
+      }

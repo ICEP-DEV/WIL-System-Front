@@ -67,6 +67,10 @@ import { MentorActivitiesComponent } from './components/mentor-activities/mentor
 import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
 import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
 import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
+import { LogApprovedComponent } from './components/log-approved/log-approved.component';
+import { LogRejectedComponent } from './components/log-rejected/log-rejected.component';
+import { MentorSystemSupportComponent } from './components/mentor-system-support/mentor-system-support.component';
+import { UpdateMentorComponent } from './components/update-mentor/update-mentor.component';
 
 import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
 import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
@@ -169,7 +173,11 @@ import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
           RegistrarApplicantsComponent,
           RegistrarViewComponent,
           WilEvaSuperComponent,
-          WilEvaCowComponent
+          WilEvaCowComponent,
+          LogApprovedComponent,
+          LogRejectedComponent,
+          MentorSystemSupportComponent,
+          UpdateMentorComponent
   ],
   imports: [
     BrowserModule,

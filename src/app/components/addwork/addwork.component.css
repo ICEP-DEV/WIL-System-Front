@@ -10,8 +10,9 @@ body{
 }
 
 
-.footerimg{
-    position:fixed ;
+.footer{
+    margin-left:15.5%;
+    margin-top: -10%;
     bottom: 0;
     right: 0;
     width: 70%;
@@ -118,3 +119,10 @@ body{
         content: "*";
         color: red;
       }
+
+      .S{
+        margin-left: 43.5%;
+        font-size: 24px;
+        color: red;
+      }
+      

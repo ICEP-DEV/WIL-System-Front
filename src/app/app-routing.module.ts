@@ -25,6 +25,7 @@ import { ChangeworkComponent } from './components/changework/changework.componen
 import { PlacementdetailsComponent } from './components/placementdetails/placementdetails.component';
 import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
 import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
+import { UpdateMentorComponent } from './components/update-mentor/update-mentor.component';
 
 //sidenav 
 //import { CommonModule } from '@angular/common';
@@ -63,6 +64,10 @@ import { MentorActivitiesComponent } from './components/mentor-activities/mentor
 import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
 import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
 import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
+import { LogApprovedComponent } from './components/log-approved/log-approved.component';
+import { LogRejectedComponent } from './components/log-rejected/log-rejected.component';
+import { MentorSystemSupportComponent } from './components/mentor-system-support/mentor-system-support.component';
+
 
 ///////////////////////WIL_CO/////////////////////////////////////
 import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
@@ -101,6 +106,7 @@ const routes: Routes = [
   {path: 'placementd',component: PlacementdetailsComponent},
   {path: 'mentor-invited',component:MentorInvitedComponent},
   {path: 'workPlace-saved',component: WorkPlaceSavedComponent},
+  {path: 'updateMentor/:mentor_Id/:title/:m_name/:m_surname/:mobileNo/:email_address',component: UpdateMentorComponent},
 
   {path: '', component:LoginComponent},
   {path: 'login', component:LoginComponent},
@@ -125,9 +131,9 @@ const routes: Routes = [
   //Mentor
   {path: 'mentor_home', component:MentorHomeComponent},
   {path: 'mentor_navbar', component:MentorNavbarComponent},
-  {path: 'mentee_logs', component:MenteeLogsComponent},
+  {path: 'mentee_logs/:student_no/:name/:surname', component:MenteeLogsComponent},
   {path: 'mentee_list', component:MenteeListComponent},
-  {path: 'mentee_rating', component:MenteeRatingComponent},
+  {path: 'mentee_rating/:Student_no/:surname/:name/:month', component:MenteeRatingComponent},
   {path: 'student_evaluation', component:StudentEvaluationComponent},
   {path: 'mentor_activities', component:MentorActivitiesComponent},
   {path: 'mentor_notification', component:MentorNotificationComponent},
@@ -146,6 +152,9 @@ const routes: Routes = [
    {path: 'report',component: WilCoReportComponent},
   {path: 'super_eva',component: WilEvaSuperComponent},
   {path: 'co_eva',component: WilEvaCowComponent},
+  {path: 'log_approved/:Student_no/:surname/:name/:month/:approval', component:LogApprovedComponent},
+  {path: 'log_rejected/:Student_no/:surname/:name/:month/:approval', component:LogRejectedComponent},
+  {path: 'mentor_systemSupport', component:MentorSystemSupportComponent},
 //////////////////////////ADMIN////////////////////////////
 {path: 'admin-home', component:AdminHomeComponent},
 {path: 'applicants', component:ApplicantsComponent},

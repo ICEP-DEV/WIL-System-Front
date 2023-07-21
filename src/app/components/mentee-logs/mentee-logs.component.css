@@ -1,7 +1,8 @@
 body{
-    font-family: "Montserrat";
-  }
-
+  font-family: "Montserrat";
+  width: 100%;
+  overflow-x: hidden;
+}
 .container{
     margin: 0;
 }
@@ -41,29 +42,28 @@ h2{
   }
 
   table {
-    width: 70%;
+    width: 120%;
     border-collapse: collapse;
+    font-size: 20px;
+    text-align: center;
   }
 
-  table tr:nth-child(even) {
-    background-color: #f2f2f2; /* Grey color for even rows */
-  }
-  
-  table tr:nth-child(odd) {
-    background-color: #ffffff; /* White color for odd rows */
-  }
+
 table th
  {
     background-color: rgb(243, 241, 241);
     height: 50px;
     border-bottom: 1px solid black;
     width:25%;
-    padding: 10px;
+    padding: 15px;
+    font-size: 24px;
+    
     
   }
 
 table tr{
-  height: 70px;
+  height: 100px;
+  border-bottom: 1px solid #ddd;
 }
 
 p {
@@ -108,11 +108,28 @@ p {
   .progress {
     height: 100%;
     background-color:blue;
-    transition: width 0.3s;
+    transition: width 1.0s;
   }
   
   .footer{
     margin-left:15.5%;
     margin-top: 6%;
-    width:160%;
+    width:100%;
+  }
+
+  .viewBtn{
+
+    width: 50%;
+    height: 3vw;
+    border: 0ch;
+    border-radius: 31px;
+    background-color: rgb(233, 230, 230);
+    font-size: 24px;
+  
+    color: #000000;
+  
+  }
+
+  .I{
+    margin-left:27% ;
   }

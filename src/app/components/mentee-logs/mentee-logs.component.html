@@ -4,13 +4,13 @@
       <div class="heading">
         <h1>Life as an intern</h1>
     </div>
-    <app-admin-navbar></app-admin-navbar>
+    <app-mentor-navbar></app-mentor-navbar>
     <div class="everything">
         <div class="header">
-            <h3 style="font-family: 'Montserrat'">Invitation</h3>
+            <h3 style="font-family: 'Montserrat'">Log Entries</h3>
         </div>
     <div>
-        <p>Profile of: </p> 
+        <p>Profile of: {{student_no}} {{surname}} {{name}} </p> 
     </div>
     
     <br>
@@ -39,12 +39,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let item of data">
-                <td>{{ item.column1 }}</td>
-                <td>{{ item.column2 }}</td>
-                <td>{{ item.column3 }}</td>
-                <td><button>View</button></td>
-                <!-- Add more columns as needed -->
+              <tr *ngFor="let item of data; let i = index">
+                <td>{{ item.month}}</td>
+                <td>{{ convertDateFormat(item.submitted_at) }}</td>
+                <td>{{ item.status }}</td>
+                <td><button class="viewBtn" [routerLink]="['/mentee_rating',student_no,surname,name,item.month]">View</button></td>
+                <!-- Add more columns as needed [routerLink]="['/mentee_rating', student_no, item.submitted_at]"-->
               </tr>
             </tbody>
           </table>      
@@ -84,7 +84,7 @@
     </div>
 
     <div class="footer">
-      <img  src="../../../assets/footer_1.png" alt="" style="margin-left: 27.3%; margin-bottom: 0;"/>
+      <img class="I" src="../../../assets/footer_1.png"/>
   </div>
         
 </body>

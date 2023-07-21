@@ -97,7 +97,8 @@ input{
 }
 
 .updateMentor button{
-    width: 150px;
+    width: 200px;
+    height: 30px;
 }
 
 .updateworkS button{
@@ -148,3 +149,4 @@ input{
       margin-left: 5.5%;
     }
   }
+  

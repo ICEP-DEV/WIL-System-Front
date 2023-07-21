@@ -28,7 +28,7 @@
   }
   
   .save {
-    margin-left: 37%;
+    margin-left: 43%;
     margin-top: 5vh;
     margin-bottom: 30vh;
     width: 18%;
@@ -83,7 +83,7 @@
   
   .footer {
     margin-left: 15.5%;
-    margin-top: 6%;
+    margin-top: -10%;
     bottom: 0;
   }
   .rect{
@@ -132,3 +132,14 @@
     
     color: #000000;
     }  
+
+    .S{
+  
+      margin-left: 45%;
+      font-size: 24px;
+      color:red ;
+    }
+
+    .I{
+      margin-left:30% ;
+    }
