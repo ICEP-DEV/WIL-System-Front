@@ -23,7 +23,7 @@
     line-height: 29px;
   }
   .content {
-    margin-left:10% ;
+    margin-left:40% ;
     display: flex;
     width: 1148px;
     height: 693px;
@@ -73,5 +73,8 @@
 
   .I{
     margin-left:27% ;
+  }
+  .circle-fill{
+    margin-top:10% ;
   }
   
