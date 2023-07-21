@@ -44,15 +44,15 @@ export class WilCoService {
     }
 
 
-  getEva_Super( data: any):Observable<any> 
-  {
-    return this.http.get<any>(`${this.baseUrl}/getSupInfo/`+ data )
-  }
+    getEva_Super( data: any):Observable<any> 
+    {
+      return this.http.get<any>(`${this.baseUrl}/getSupInfo/`+ data )
+    }
 
-  getCoEvaluation( data: any):Observable<any> 
-  {
-    return this.http.get<any>(`${this.baseUrl}/getCoInfo/`+ data )
-  }
+    getCoEvaluation( data: any):Observable<any> 
+    {
+      return this.http.get<any>(`${this.baseUrl}/getCoInfo/`+ data )
+    }
 
 
 }
