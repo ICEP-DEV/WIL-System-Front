@@ -89,3 +89,10 @@ body{
         height: 100px;
       border-bottom: 1px solid #ddd;
       }
+      .main img{
+        position:fixed ;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        /* margin-top: 20vh; */
+      }

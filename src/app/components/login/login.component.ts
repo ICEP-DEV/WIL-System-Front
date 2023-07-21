@@ -106,7 +106,7 @@ signIn(){
           console.log(myobject.token);
           
         }
-        this.router.navigate(['/']);
+        this.router.navigate(['/w_Home']);
       }
     })
   }else {
