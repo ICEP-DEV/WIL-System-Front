@@ -34,7 +34,7 @@ p {
   bottom: 0;
   right: 0;
   width: 70%;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 .submitbtn {
@@ -53,6 +53,7 @@ p {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+
 
 @media screen and (max-width: 768px) {
   .heading {
