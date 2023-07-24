@@ -1,23 +1,25 @@
+<body>
 <app-wil-topnav></app-wil-topnav>
-<div class="main">
-    <table>
-        <thead>
-        <th>Student Number</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email Address</th>
-        </thead>
-        <tbody *ngFor="let data of regStuddata">
-            <tr>
-                <td >{{data.student_no}}</td>
-                <td>{{data.name}}</td>
-                <td>{{data.surname}}</td>
-                <td>{{data.email}}</td>
-            </tr>
-        </tbody>
-        
-        
-    </table>
-    <Label style="margin-top:2%">Total Registered students: {{regStuddata.length}} </Label>
-    <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
-</div>
+    <div class="main">
+        <table>
+            <thead>
+            <th>Student Number</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email Address</th>
+            </thead>
+            <tbody *ngFor="let data of regStuddata">
+                <tr>
+                    <td >{{data.student_no}}</td>
+                    <td>{{data.name}}</td>
+                    <td>{{data.surname}}</td>
+                    <td>{{data.email}}</td>
+                </tr>
+            </tbody>
+            
+            
+        </table>
+        <Label style="margin-top:2%"><b> Registered students: {{regStuddata.length}} </b></Label>
+        <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
+    </div>
+</body>

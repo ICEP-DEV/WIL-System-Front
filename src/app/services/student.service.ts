@@ -10,7 +10,7 @@ import { Observable } from 'rxjs'
 export class StudentService {
  private baseUrl = 'http://localhost:8080/api';
  private emailUrl ='http://localhost:5000'
-   //private baseUrl = 'http://192.168.27.52:8080/api'
+   //private baseUrl = 'http://192.168.27.46:8080/api'
 
   constructor(private http: HttpClient) { }
 

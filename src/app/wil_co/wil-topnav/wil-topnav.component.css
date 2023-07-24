@@ -1,19 +1,23 @@
+body{
+  font-family: 'Montserrat' 
+}
+
 .header{
     display: flex;
 }
 
 h1{
     text-align: center;
-    color: gray;
-    margin-left: 65vh;
+    margin-left: 25%;
 }
 
 .main{
     margin-left: 15%; 
     margin-right: 15%;
-    /* font-family: 'Montserrat' */
+    
     /* text-align: center; */
-  }
+}
+
   
   /* .heading
   {

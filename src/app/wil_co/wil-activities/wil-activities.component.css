@@ -1,7 +1,12 @@
+body{
+  font-family: 'Montserrat';
+}
+
 .main{
     text-align: center;
     display: flex;
     margin-top: 5%;
+    margin-bottom: 10%;
     /* margin-top: 5%;
     margin-left: 15%;
     margin-right: 3%; */
