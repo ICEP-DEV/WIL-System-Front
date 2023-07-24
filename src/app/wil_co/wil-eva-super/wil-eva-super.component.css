@@ -21,6 +21,11 @@
     border-right:  solid 1px;
 }
 
+p{
+    font-style: italic;
+    font-size: larger;   
+}
+
 .footerimg {
     position: fixed;
     bottom: 0;

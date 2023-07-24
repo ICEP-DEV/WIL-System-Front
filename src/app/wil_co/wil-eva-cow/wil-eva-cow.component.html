@@ -10,20 +10,20 @@
 <div class="report" style="background-color: whitesmoke; height: 500px;">
         <ol *ngFor="let data of co_evadata">
             <li>Was your immediate supervisor of assistance in your developing an effective relationship with co-workers?</li>
-            {{data.coworkerAssistance}}
+            <b>{{data.coworkerAssistance}}</b>
             <li>Did he/she appear interested in you as an individual?</li>
-            {{data.coworkerInterest}}
+            <b>{{data.coworkerInterest}}</b>
             <li>Did he/she give or provide for adequate training?</li>
-            {{data.coworkerTraining}}
+            <b>{{data.coworkerTraining}}</b>
             <li>Did he/she motivate you to improve yourself?</li>
-            {{data.coworkerMotivation}}
+            <b>{{data.coworkerMotivation}}</b>
             <li>Did you receive adequate instruction or assistance from your supervisor in the conduct of your work?</li>
-            {{data.coworkerInstruction}}
+            <b>{{data.coworkerInstruction}}</b>
         </ol>
 </div>
 <div class="back">
-<h4 style="text-align: center; cursor: pointer;" routerLink="/StudentActivities">Back to Student</h4>
+<h4 style="text-align: center; cursor: pointer;margin-bottom: 15%" routerLink="/StudentActivities">Back to Student</h4>
 </div>
-<!-- <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" /> -->
+<img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
 </div>
 

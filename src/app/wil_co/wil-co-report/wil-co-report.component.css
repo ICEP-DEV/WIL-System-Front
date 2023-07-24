@@ -2,16 +2,11 @@
     margin-top: 2%;
     margin-left: 15%;
     margin-right: 2%;
-
 }
-
- 
 
 .instr{
     display: flex;
 }
-
- 
 
 .report{
     border-color: black;
@@ -19,6 +14,11 @@
     border-top: solid 1px;
     border-left: solid 1px;
     border-right:  solid 1px;
+}
+
+p{
+    font-style: italic;
+    font-size: larger;   
 }
 
 .footerimg {
