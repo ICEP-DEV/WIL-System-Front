@@ -52,7 +52,7 @@ saveMetorData(data: any) : Observable<any>
 saveWorkstation(data: any): Observable<any>
 {
   console.log(data);
-  return this.http.post(this.baseUrl + '/workInfo', data);
+  return this.http.post(this.baseUrl + '/workInfo1', data);
 }
 
 /*sendEmail(email_address:any){
@@ -78,7 +78,7 @@ getMentors(student_no:any): Observable<any> {
 updateMentor(data:any, student_no:any, mentor_Id:any){
   console.log(data);
   
-  return this.http.patch(`${this.baseUrl}/updateMentor/${student_no}/${mentor_Id}`, data);
+  return this.http.patch(`${this.baseUrl}/updateMentor/${student_no}`, data);
 }
 
 getWork(student_no:any): Observable<any> {

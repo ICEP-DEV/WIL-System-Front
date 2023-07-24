@@ -34,7 +34,7 @@ export class SystemSupportComponent {
     };
 
     // Make a POST request to the API endpoint with the evaluation data
-    fetch('http://192.168.27.46:8080/api/query', {
+    fetch('http://localhost:8080/api/query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
