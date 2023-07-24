@@ -26,11 +26,17 @@
   
   td {
     padding: 10px;
+    
   }
   
   tr {
     border-bottom: 1px solid #F5F3F3;
     margin-top: 1%;
+    cursor: pointer;
+  }
+
+  table tr:hover {
+    background-color: #FFB300; 
   }
   
   .instr {

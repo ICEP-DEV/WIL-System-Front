@@ -10,7 +10,7 @@ import { Observable } from 'rxjs'
 export class StudentService {
  private baseUrl = 'http://localhost:8080/api';
  private emailUrl ='http://localhost:5000'
-  // private baseUrl = 'http://192.168.27.52:8080/api'
+   //private baseUrl = 'http://192.168.27.52:8080/api'
 
   constructor(private http: HttpClient) { }
 
@@ -43,14 +43,16 @@ uploadSystemDocumentation(data: any): Observable<any>
  return this.http.post<any>(`${this.baseUrl}/uploadSysDoc`, data)
 }
 
-saveMetorData(data: any) {
+saveMetorData(data: any) : Observable<any>
+{
   console.log(data);
   return this.http.post(this.baseUrl + '/inviteMentor', data);
 }
 
-saveWorkstation(data: any) {
+saveWorkstation(data: any): Observable<any>
+{
   console.log(data);
-  return this.http.post(this.baseUrl + '/workInfo', data);
+  return this.http.post(this.baseUrl + '/workInfo1', data);
 }
 
 /*sendEmail(email_address:any){
@@ -76,7 +78,7 @@ getMentors(student_no:any): Observable<any> {
 updateMentor(data:any, student_no:any, mentor_Id:any){
   console.log(data);
   
-  return this.http.patch(`${this.baseUrl}/updateMentor/${student_no}/${mentor_Id}`, data);
+  return this.http.patch(`${this.baseUrl}/updateMentor/${student_no}`, data);
 }
 
 getWork(student_no:any): Observable<any> {

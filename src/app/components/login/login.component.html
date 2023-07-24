@@ -67,6 +67,9 @@
             <label class="radio-inline">
               <input type="radio" formControlName="userType" value="admin">Admin
             </label>
+            <label class="radio-inline">
+              <input type="radio" formControlName="userType" value="wil_coordinator">Personnel
+            </label>
             <br /><br/>
    <!-- ------------------STUDENT------------------- -->
             <div *ngIf="formControls['userType'].value === 'student'">
@@ -192,6 +195,47 @@
     </div>
   </div>
 
+  <!-- ------------------wil_coordinator------------------- -->
+
+   <div *ngIf="formControls['userType'].value === 'wil_coordinator'">
+    <label id="LogCord">Personnel Number: </label
+    ><input
+      type="number"
+      class="w3-input"
+      type="text"
+      name="unum"
+      size="10"
+      maxlength="9"
+      autofocus=""
+      formControlName="wilCoord_id"
+      [ngClass]="{
+        'has-error': isSubmitted && formControls['wilCoord_id'].errors
+      }"
+    />
+    <div *ngIf="isSubmitted && formControls['wilCoord_id'].errors">
+      <div *ngIf="formControls['wilCoord_id'].errors['required']">
+        Personnel number is required
+      </div>
+    </div>
+
+    <label>Pin:</label>
+    <input
+      class="w3-input"
+      type="password"
+      name="pin"
+      size="10"
+      maxlength="5"
+      formControlName="itsPin"
+      [ngClass]="{
+        'has-error': isSubmitted && formControls['itsPin'].errors
+      }"
+    />
+    <div *ngIf="isSubmitted && formControls['itsPin'].errors">
+      <div *ngIf="formControls['itsPin'].errors['required']">
+        Pin is required
+      </div>
+    </div>
+  </div>
   <!-- /////////////////////////////////////////////// -->
             <input
               type="submit"

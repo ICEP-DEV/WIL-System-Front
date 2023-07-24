@@ -36,6 +36,10 @@ label{
     margin-top: 2%;
 }
 
+.container label{
+  font-size: larger;
+}
+
 .footer{
     margin-left:15.5%;
     bottom: 0;

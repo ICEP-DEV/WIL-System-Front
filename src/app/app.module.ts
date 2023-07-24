@@ -90,6 +90,7 @@ import { RegistrarApplicantsComponent } from './components/registrar-applicants/
 import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
 import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
 import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
+import { WilSubmittedQueryComponent } from './wil_co/wil-submitted-query/wil-submitted-query.component';
 
 @NgModule({
   declarations: [
@@ -177,7 +178,8 @@ import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
           LogApprovedComponent,
           LogRejectedComponent,
           MentorSystemSupportComponent,
-          UpdateMentorComponent
+          UpdateMentorComponent,
+          WilSubmittedQueryComponent
   ],
   imports: [
     BrowserModule,

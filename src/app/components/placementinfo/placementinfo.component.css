@@ -10,16 +10,6 @@ body{
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.heading{
-	margin-left: 15%;
-    /* font-family: 'Montserrat'; */
-}
-
-.heading h1{
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
 .main{margin-top: 5%;
     margin-left: 25%;
     /* font-family: 'Montserrat' */
@@ -36,10 +26,6 @@ h3{
     margin-top: 2%;
     margin-right: 12%;
  }
-
-.p_info h2{
-    margin-left: 15%;
-}
 
 .p_info button{
     background-color: #fff;

@@ -94,3 +94,10 @@ body{
       .I{
         margin-left:30% ;
       }
+      .main img{
+        position:fixed ;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        /* margin-top: 20vh; */
+      }

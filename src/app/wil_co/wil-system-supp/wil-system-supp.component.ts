@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WilCoService } from 'src/app/services/wil-co.service';
+
 
 @Component({
   selector: 'app-wil-system-supp',
@@ -11,7 +11,6 @@ export class WilSystemSuppComponent {
     student_no: any;
     tempStudentInfo: any;
     query: string = '';
-    constructor(private WilCoService: WilCoService){}
   
     ngOnInit(): void {
       this.tempStudentInfo = localStorage.getItem('user');
@@ -35,7 +34,7 @@ export class WilSystemSuppComponent {
       };
   
       // Make a POST request to the API endpoint with the evaluation data
-      fetch('http://192.168.27.46:8080/api/regQuery', {
+      fetch('http://192.168.27.46:8080/api/wilQuery', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

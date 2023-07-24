@@ -11,15 +11,15 @@
             please send your inquiry, and a support agent will provide you 
             with better advice.
         </p>
-        <label>Contact information: (011) 234 567 898</label><br>
-        <label>Address: willenvironmentsupport@tut.domain</label><br>
-        <label>Send a query:</label><br>
+        <label>Contact information: (011) 234 567 898</label>
+        <label>Address: willenvironmentsupport@tut.domain</label>
+        <label>Send a query:</label>
         
-        <textarea id="queryMessage" cols="160" rows="12" placeholder="WRITE YOUR QUERY HERE (if there is any!)" [(ngModel)]="query"></textarea><br>
+        <textarea id="queryMessage" cols="160" rows="10" placeholder="WRITE YOUR QUERY HERE (if there is any!)" [(ngModel)]="query"></textarea><br>
         
-        <div style="margin-top: 2%;" class="submitbtn">
-            <button type="submit" routerLink="/SubmitQueryW" (click)="submitQuery()" *ngIf="query.trim() !== ''">Submit Query</button>
+        <div style="margin-top: 2%; margin-bottom: 4%;" class="submitbtn">
+            <button type="submit" routerLink="/wilQuery" (click)="submitQuery()" *ngIf="query.trim() !== ''">Submit Query</button>
         </div>
     </div>
-    <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
+    <!-- <img class = "footerimg"src="../../../assets/footer 1.png" alt="" /> -->
 </div>
