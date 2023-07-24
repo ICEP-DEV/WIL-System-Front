@@ -1,3 +1,7 @@
+body{
+  font-family: "Montserrat";
+}
+
 .heading {
     margin-left: 15%;
   }
@@ -5,6 +9,7 @@
   .heading h1 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-weight: normal;
   }
   
   .main {
@@ -35,7 +40,7 @@
     height: 4vw;
     border: 0ch;
     border-radius: 31px;
-    background-color: blue;
+    background-color: #0055C9;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;

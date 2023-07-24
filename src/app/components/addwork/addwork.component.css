@@ -10,12 +10,10 @@ body{
 }
 
 
-.footer{
-    margin-left:15.5%;
-    margin-top: -10%;
-    bottom: 0;
-    right: 0;
-    width: 70%;
+.footer {
+  margin-left: 15.5%;
+  margin-top: -10%;
+  bottom: 0;
 }
 .rect{
 
@@ -75,7 +73,7 @@ body{
         height: 4vw;
         border: 0ch;
         border-radius: 31px;
-        background-color: blue;
+        background-color: #0055C9;
         font-family: "Inter";
         font-style: normal;
         font-weight: 700;
@@ -126,3 +124,6 @@ body{
         color: red;
       }
       
+      .I{
+        margin-left:30% ;
+      }
