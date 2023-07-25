@@ -28,6 +28,21 @@ ol{
     font-size: larger;   
 }
 
+.back{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.back svg{
+    cursor: pointer;
+}
+
+.back h4{
+    margin-top: 6.5px;
+    margin-left: 3px;
+}
+
 .footerimg {
     position: fixed;
     bottom: 0;
