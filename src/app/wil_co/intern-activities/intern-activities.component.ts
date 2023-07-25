@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./intern-activities.component.css']
 })
 export class InternActivitiesComponent {
-  student_no: any;
+  wil_no: any;
 
   regStuddata: any;
   tempdata: any;
@@ -20,24 +20,26 @@ export class InternActivitiesComponent {
   constructor(private WilCoService: WilCoService,private route : Router ){}
   
 
-  ngOnInit(): void {
+  ngOnInit(): void
+  {
     this.tempStudentInfo = localStorage.getItem('user');
     const studInfo = JSON.parse(this.tempStudentInfo);
-    this.student_no = studInfo.student_no; //Use this to get the logged in Wil_Co
-
+    this.wil_no = studInfo.wilCoord_id; //Use this to get the logged in Wil_Co
+    console.log(studInfo.wilCoord_id)
 
     ///////////////////Registered students//////////////////////////
-    this.WilCoService.getRegisteredStu(this.tempdata).subscribe((data) => {
+    this.WilCoService.getRegisteredStu(Number(this.wil_no)).subscribe((data) => {
       this.tempdata = data;
       this.regStuddata = data.result;
-      // console.log(data.result);
+      console.log(data);
     });
   }
 
   studentProfile(profile:any){
 
     localStorage.setItem("studentNo",profile.student_no);
-    localStorage.setItem("studName",profile.name+"  "+profile.surname);
+    localStorage.setItem("initials",profile.initials);
+    localStorage.setItem("surname",profile.surname);
    
    // console.log(profile)
     this.route.navigate(["/StudentActivities"])

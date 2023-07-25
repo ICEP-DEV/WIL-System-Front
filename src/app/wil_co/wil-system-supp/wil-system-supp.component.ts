@@ -34,7 +34,7 @@ export class WilSystemSuppComponent {
       };
   
       // Make a POST request to the API endpoint with the evaluation data
-      fetch('http://192.168.27.46:8080/api/wilQuery', {
+      fetch('http://localhost:8080/api/wilQuery', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

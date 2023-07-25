@@ -21,7 +21,8 @@ export class StudentActivitiesComponent {
   
 
   studentNo: any;
-  studName: any;
+  initials: any;
+  surname:any;
 
   tempStudentInfo: any; //switch to staff number
 
@@ -30,12 +31,14 @@ export class StudentActivitiesComponent {
   ngOnInit(): void {
     this.tempStudentInfo = localStorage.getItem('user');
     const studInfo = JSON.parse(this.tempStudentInfo);
-    this.student_no = studInfo.student_no; //Use this to get the logged in Wil_Co
+    this.student_no = studInfo.initials; //Use this to get the logged in Wil_Co
 
     this.studentNo = localStorage.getItem('studentNo')?.toString();
-    this.studName = localStorage.getItem('studName')?.toString();
+    this.initials = localStorage.getItem('initials')?.toString();
+    this.surname = localStorage.getItem('surname')?.toString();
     console.log(this.studentNo);
-    console.log(this.studName);
+    console.log(this.initials);
+    console.log(this.surname);
     ///////////////////Registered students//////////////////////////
     // this.WilCoService.getRegisteredStu(this.tempdata).subscribe((data) => {
     //   this.tempdata = data;
@@ -65,12 +68,6 @@ export class StudentActivitiesComponent {
       console.log(data.result);
     });
 
-    // ///////////////////Documentation Details//////////////////////////
-      this.WilCoService.systemDoc(this.tempdata).subscribe((data) => {
-      this.tempdata = data;
-      this.sysdata = data.result;
-      // console.log(data.result)
-    });
 
     // ///////////////////Get Report//////////////////////////
     this.WilCoService.report(this.tempdata).subscribe((data) => {

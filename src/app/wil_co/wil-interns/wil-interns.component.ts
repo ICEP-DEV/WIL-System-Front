@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./wil-interns.component.css']
 })
 export class WilInternsComponent {
-  student_no: any;
+  wil_no: any;
 
   regStuddata: any;
   tempdata: any;
@@ -24,14 +24,14 @@ export class WilInternsComponent {
   {
     this.tempStudentInfo = localStorage.getItem('user');
     const studInfo = JSON.parse(this.tempStudentInfo);
-    this.student_no = studInfo.student_no; //Use this to get the logged in Wil_Co
-
+    this.wil_no = studInfo.wilCoord_id; //Use this to get the logged in Wil_Co
+    console.log(studInfo.wilCoord_id)
 
     ///////////////////Registered students//////////////////////////
-    this.WilCoService.getRegisteredStu(this.tempdata).subscribe((data) => {
+    this.WilCoService.getRegisteredStu(Number(this.wil_no)).subscribe((data) => {
       this.tempdata = data;
       this.regStuddata = data.result;
-      console.log(data.result);
+      console.log(data);
     });
   }
 }

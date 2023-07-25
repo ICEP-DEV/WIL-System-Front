@@ -15,7 +15,7 @@ export class WilCoService {
 
     getRegisteredStu( data: any):Observable<any> 
     {
-      return this.http.get<any>(`${this.baseUrl}/getStudInfo`, data )
+      return this.http.get<any>(`${this.baseUrl}/getStudInfo/`+ data )
     }
 
     getStudDetail( data: any):Observable<any> 

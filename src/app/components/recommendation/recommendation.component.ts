@@ -81,60 +81,63 @@ formattedDate = `${this.scurrentDate.getDate()}/${this.scurrentDate.toLocaleStri
    //this.downloadAsPDF();
     doc.addImage(this.imgData, 'JPEG', 10,5, 75, 47);
     doc.setFontSize(18)
-    doc.text('Faculty of :\nInformation and Communication Technology \n\n',80,20);
+    doc.text('Faculty of :\nInformation and \nCommunication Technology \n\n',104,22);
     doc.setFontSize(14)
-    doc.text(this.dateString,10,55)
+    doc.text(this.dateString,10,66)
    
 
-   doc.text('RE: Work Intergrated Learning or Industrial Exposure',10,65)
-   doc.text('TO WHOM IT MAY CONCERN Dear Sir/Madam,',10,75)
-   doc.text(`The letter certify that ${this.tempInfo.data[0].surname}  ${this.tempInfo.data[0].initials} (student number ${this.tempInfo.data[0].student_no}) is a potential`,10,85)
-  doc.text('graduate for National Diploma in IT: Software Development from the Tshwane University',10,90)
-   doc.text('of Technology.',10,95)
-    doc.text('',10,95)
+   doc.text('RE: Work Intergrated Learning or Industrial Exposure',10,75)
+   doc.text('TO WHOM IT MAY CONCERN Dear Sir/Madam,',10,80)
+   doc.text('',10,85)
+   doc.text(`The letter certify that ${this.tempInfo.data[0].surname}  ${this.tempInfo.data[0].initials} ${this.tempInfo.data[0].student_no} is a potential graduate for National Diploma`,10,90)
+  doc.text(` in IT: ${this.tempInfo.data[0].course_name} from the Tshwane University of Technology.`,10,95)
+ 
+  
     doc.text('It is my pleasure to recommend surname and initials for a work integrated learning',10,100)
     doc.text('exposure as it is a requirement for the student to complete the diploma',10,105)
     doc.text('',10,110)
     doc.text('The major fileds of study in this diploma are:',10,115)
     doc.text(`*  ${this.tempInfo.data[0].roles} `,10,120)
-    doc.text('* Mobile Development',10,125)
-    doc.text(`*  ${this.tempInfo.data[0].roles} `,10,130)
-    doc.text('* Software Testing',10,135)
+    doc.text(`*  ${this.tempInfo.data[1].roles} `,10,125)
+    doc.text(`*  ${this.tempInfo.data[2].roles} `,10,130)
+    doc.text(`*  ${this.tempInfo.data[3].roles} `,10,135)
+    doc.text(`*  ${this.tempInfo.data[4].roles} `,10,140)
+
     //doc.text('* Database Development and Administration',10,130)
-    doc.text('',10,135)
-    doc.text('For the experiential training to add value to the student, we suggest that the students be ',10,140)
-    doc.text('assigned tasks and responsiblities that are aligned to the field of study. it is to be noted',10,145)
-    doc.text('that the above mentioned fields of studies are only a guideline in this regard, any other',10,150)
-    doc.text('information Technology(IT) oriented projects and task may also be accepted.',10,155)
-    doc.text('The duration of the industry exposure should be a minimum of 6 months.',10,160)
-    doc.text('',10,165)
-    doc.text('The student has consistently demostrated an ability to rise to any xhallenges that she',10,170)
-    // doc.text('may face in her academic studies or any other endeavour.',10,150)
-    // doc.text('',10,155)
-    // doc.text('In conclusion, I would like to',10,160)
-    // doc.text('state my strong recommendation for surname and initials you have any further',10,165)
-    // doc.text('questions regarding his ability or this recommendation, please do not hesitate to',10,170)
-    doc.text('contact me using the information on this letter head.',10,175)
-    doc.text('',10,180)
-    doc.text('',10,185)
+    doc.text('',10,145)
+    doc.text('For the experiential training to add value to the student, we suggest that the students be ',10,150)
+    doc.text('assigned tasks and responsiblities that are aligned to the field of study. it is to be noted',10,155)
+    doc.text('that the above mentioned fields of studies are only a guideline in this regard, any other',10,160)
+    doc.text('information Technology(IT) oriented projects and task may also be accepted.',10,165)
+    doc.text('The duration of the industry exposure should be a minimum of 6 months.',10,170)
+    doc.text('',10,175)
+    doc.text('The student has consistently demostrated an ability to rise to any challenges that she',10,180)
+    doc.text('may face in her academic studies or any other endeavour.',10,185)
     doc.text('',10,190)
-    doc.text('Your co-operation is highly valued',10,195)
-    doc.text('',10,200)
-    doc.text('_________________________\n\n',10,205)
-    doc.text('Mr N.F Smith',10,210)
-    doc.text('WIL Admin',10,215)
-    doc.text('Email :  smith@tut.ac.za',10,220)
-    doc.text('Tel: 012 621 9997',10,225)
+    doc.text(`In conclusion, I would like to state my strong recommendation for ${this.tempInfo.data[0].surname} ${this.tempInfo.data[0].initials} `,10,195)
+    doc.text(`if you have any further questions regarding his ability or this recommendation, `,10,200)
+    doc.text('please do not hesitate to contact me using the information on this letter head.',10,205)
+    doc.text('',10,210)
+    // doc.text('',10,215)
+    // doc.text('',10,220)
+    // doc.text('',10,225)
+    doc.text('Your co-operation is highly valued.',10,215)
+    doc.text('',10,220)
+    doc.text('_________________________\n\n',10,230)
+    doc.text('Mr N.F Smith',10,235)
+    doc.text('WIL Admin',10,240)
+    doc.text('Email :  smith@tut.ac.za',10,245)
+    doc.text('Tel: 012 621 9997',10,250)
 
     doc.setDrawColor(0); // Set the border color of the stamp to black
- doc.rect(95, 190, 90, 70, 'D'); // Draw the stamp border
- doc.addImage(this.imgData, 'PNG', 100, 195, 70, 40); // Replace with the path to your logo image
+ doc.rect(95, 210, 90, 70, 'D'); // Draw the stamp border
+ doc.addImage(this.imgData, 'PNG', 100, 212, 70, 40); // Replace with the path to your logo image
 
  doc.setFontSize(14);
  doc.setTextColor(0); // Set the text color of the stamp
-doc.text(this.formattedDate,  100+ (70/2)-(doc.getTextWidth(this.formattedDate)/2), 190 + 50); // Add the dynamic date to the stamp
+doc.text(this.formattedDate,  100+ (70/2)-(doc.getTextWidth(this.formattedDate)/2), 210 + 50); // Add the dynamic date to the stamp
 doc.setFontSize(16);
-doc.text(` Department: ${this.tempInfo.data[0].dep_name}\n Faculty: ICT`,100,250)
+doc.text(` Department: ${this.tempInfo.data[0].dep_name}\n Faculty: ICT`,100,270)
 
 
     doc.save('Recommendation Letter');
