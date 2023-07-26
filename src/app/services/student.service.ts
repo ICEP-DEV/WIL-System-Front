@@ -8,6 +8,9 @@ import { ReAdmissionComponent } from '../components/re-admission/re-admission.co
   providedIn: 'root'
 })
 export class StudentService {
+  static logentrie() {
+    throw new Error('Method not implemented.');
+  }
   private baseUrl = 'http://localhost:8080/api';
   // private BaseUrl = 'http://192.168.27.46:8080/api'
 
@@ -41,10 +44,17 @@ logentries: any;
 
 entries(data: any): Observable<any>
 {
+ return this.http.post<any>(`${this.baseUrl}/subLogbook`, data)
  return this.http.post<any>(`${this.baseUrl}/subLogbook/:month`, data)
 };
 
+getStatus(student_no:any): Observable<any>
+{
+ return this.http.get<any>(`${this.baseUrl}/getMonthlyStatus/${student_no}`)
+};
 
 }
+
+
 
  

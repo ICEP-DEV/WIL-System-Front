@@ -48,6 +48,8 @@ import { LogEntriesInternalComponent } from './components/log-entries-internal/l
 import { LogEntriesSubmittedComponent } from './components/log-entries-submitted/log-entries-submitted.component';
 import { LogEntriesSavedComponent } from './components/log-entries-saved/log-entries-saved.component';
 import { LogEntriesAprrovalStatusComponent } from './components/log-entries-aprroval-status/log-entries-aprroval-status.component';
+import { LogEntriesClosedComponent } from './components/log-entries-closed/log-entries-closed.component';
+import { LogSubmittedComponent } from './components/log-submitted/log-submitted.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +91,9 @@ import { LogEntriesAprrovalStatusComponent } from './components/log-entries-aprr
           LogEntriesInternalComponent,
           LogEntriesSubmittedComponent,
           LogEntriesSavedComponent,
-          LogEntriesAprrovalStatusComponent
+          LogEntriesAprrovalStatusComponent,
+          LogEntriesClosedComponent,
+          LogSubmittedComponent
   ],
   imports: [
     BrowserModule,

@@ -39,6 +39,8 @@ import { LogEntriesInternalComponent } from './components/log-entries-internal/l
 import { LogEntriesSavedComponent } from './components/log-entries-saved/log-entries-saved.component';
 import { LogEntriesSubmittedComponent } from './components/log-entries-submitted/log-entries-submitted.component';
 import { LogEntriesAprrovalStatusComponent } from './components/log-entries-aprroval-status/log-entries-aprroval-status.component';
+import { LogEntriesClosedComponent } from './components/log-entries-closed/log-entries-closed.component';
+import { LogSubmittedComponent } from './components/log-submitted/log-submitted.component';
 
 
 
@@ -80,7 +82,9 @@ const routes: Routes = [
   {path: 'log-entries-internal', component: LogEntriesInternalComponent},
   {path: 'log-entries-submitted', component: LogEntriesSubmittedComponent},
   {path: 'log-entries-saved', component: LogEntriesSavedComponent},
-  {path: 'log-entries-approval-status', component: LogEntriesAprrovalStatusComponent}
+  {path: 'log-entries-approval-status', component: LogEntriesAprrovalStatusComponent},
+  {path: 'log-entries-closed', component: LogEntriesClosedComponent},
+  {path: 'log-submitted', component: LogSubmittedComponent}
 
 
 ];

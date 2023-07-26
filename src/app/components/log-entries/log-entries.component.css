@@ -33,6 +33,38 @@ hr{
     margin-left: 18%;
 }
 
+a,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10%;
+  }
+
+  table th{
+   
+    height: 50px;
+    border-bottom: 1px solid black;
+    width:25%;
+    padding: 15px;
+    font-size: 24px;
+    
+  }
+  table tr{
+    height: 100px;
+  border-bottom: 1px solid #ddd;
+  }
+
 .footer{
     margin-left:15.5%;
     margin-top: 6%;

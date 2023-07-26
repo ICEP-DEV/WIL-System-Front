@@ -22,11 +22,18 @@ export class LogEntriesInternalComponent {
   log_status: any='';
   
   //displayEntry: any ='';
-
+ // navigateToNextPage: any;
   
  
+
+  //displayEntry: any ='';
+
+//title ='For loop'
+//b_status=[ 'submitted', 'Opened', 'Closed']
+//img_approval=['img src=".\assets\lockOpened.png"', 'img src=".\assets\lockClosed.png"', ]
+ 
   
-  constructor ( private logentries: StudentService, private router: Router)
+  constructor ( private logentries: StudentService, private router: Router, private updatemonth: StudentService,)
     
   {}
   
@@ -34,7 +41,9 @@ export class LogEntriesInternalComponent {
   
   isTextareaEmpty: boolean = false;
 
-  
+ 
+
+
   ngOnInit(): void {
     this.tempStudentInform = localStorage.getItem('user');
     const studentInfo = JSON.parse(this.tempStudentInform);
@@ -49,7 +58,7 @@ year = this.currentDate.getFullYear(); // Get the current year (e.g., 2023)
  month = this.currentDate.getMonth() + 1; // Get the current month (0-11, so add 1 to get 1-12)
  day = this.currentDate.getDate(); // Get the current day of the month (1-31)
 
- formattedDate = `${this.year}-${this.month}-${this.day}`; // Format the date as desired (e.g., "2023-06-15")
+ formattedDate = `${this.year}/${this.month}/${this.day}`; // Format the date as desired (e.g., "2023-06-15")
 
   
   
@@ -65,6 +74,7 @@ year = this.currentDate.getFullYear(); // Get the current year (e.g., 2023)
     date: this.formattedDate,
     log_description: this.log_description,
     submittedAt: this.formattedDate,
+ 
    logMonth: 1,
     
   };
@@ -114,6 +124,7 @@ year = this.currentDate.getFullYear(); // Get the current year (e.g., 2023)
     this.router.navigate([redirectTo]);
   
   }
+
 
 
 }
