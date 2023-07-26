@@ -10,16 +10,19 @@ export class WilEvaSuperComponent {
   tempdata:any;
   co_supdata: any;
   studentNo:any;
-  studName:any;
+  initials:any;
+  surname:any;
+  
 
   constructor(private WilCoService: WilCoService){}
 
 
   ngOnInit(): void {
     this.studentNo = localStorage.getItem('studentNo')?.toString();
-    this.studName = localStorage.getItem('studName')?.toString();
+    this.initials = localStorage.getItem('initials')?.toString();
+    this.surname = localStorage.getItem('surname')?.toString();
     console.log(this.studentNo);
-    console.log(this.studName);
+    
 
     // ///////////////////Get Evaluation//////////////////////////
     this.WilCoService.getEva_Super(Number(this.studentNo)).subscribe((data) => {

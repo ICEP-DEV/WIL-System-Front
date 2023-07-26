@@ -10,6 +10,8 @@ export class WilCoReportComponent {
   tempdata:any;
   reportdata: any;
   studentNo:any;
+  initials:any;
+  surname:any;
   studName:any;
 
   constructor(private WilCoService: WilCoService){}
@@ -17,7 +19,8 @@ export class WilCoReportComponent {
 
   ngOnInit(): void {
     this.studentNo = localStorage.getItem('studentNo')?.toString();
-    this.studName = localStorage.getItem('studName')?.toString();
+    this.initials = localStorage.getItem('initials')?.toString();
+    this.surname = localStorage.getItem('surname')?.toString();
     console.log(this.studentNo);
     console.log(this.studName);
 

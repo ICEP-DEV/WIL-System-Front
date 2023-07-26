@@ -10,16 +10,19 @@ export class WilEvaCowComponent {
   tempdata:any;
   co_evadata: any;
   studentNo:any;
-  studName:any;
+  initials:any;
+  surname:any;
+  
 
   constructor(private WilCoService: WilCoService){}
 
 
   ngOnInit(): void {
     this.studentNo = localStorage.getItem('studentNo')?.toString();
-    this.studName = localStorage.getItem('studName')?.toString();
+    this.initials = localStorage.getItem('initials')?.toString();
+    this.surname = localStorage.getItem('surname')?.toString();
     console.log(this.studentNo);
-    console.log(this.studName);
+    
 
     // ///////////////////Get evaluation//////////////////////////
     this.WilCoService.getCoEvaluation(Number(this.studentNo)).subscribe((data) => {
