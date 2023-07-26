@@ -91,7 +91,7 @@ export class EvaluationsComponent {
     };
 
     // Make a POST request to the API endpoint with the evaluation data
-    fetch('http://192.168.27.46:8080/api/answer', {
+    fetch('http://localhost:8080/api/answer', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
