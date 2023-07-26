@@ -2,18 +2,18 @@ body{
 	font-family: "Montserrat";
   }
 .heading{
-	margin-left: 15%;
-	/* font-family: 'Montserrat'; */
+	  margin-left: 15%;
+	  /*font-family: 'Montserrat';*/
 }
-
-.heading h1{
-	text-align: center;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
+  
+  .heading h1{
+	  text-align: center;
+	  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
 .main{
 	margin-top: 5%;
 	margin-left: 15%;
+	margin-bottom: 8%;
 	/* font-family: 'Montserrat'; */
 }
 
@@ -43,9 +43,11 @@ p{
 	margin-left: 10%;
 	margin-right: 10%;
 }
-.footer{
-    margin-left:15.5%;
+.footerimg{
+    position:fixed ;
     bottom: 0;
+    right: 0;
+    width: 70%;
 }
 
 @media screen and (max-width: 768px) {

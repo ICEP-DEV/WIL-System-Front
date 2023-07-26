@@ -17,6 +17,15 @@ export class ReAdmissionFormComponent {
   tempStudentInfo: any
   studentNo: any
 
+  // reAdminForm={
+  //   student_no: '',
+  //   firstChoice: '',
+  //   enrollType: '',
+  //   finacialAid: '',
+  //   campus: '',
+
+  // }
+
 
   constructor(private formBuilder: FormBuilder, private router: Router, private route: ActivatedRoute, private studentService: StudentService) { }
 
@@ -34,18 +43,22 @@ export class ReAdmissionFormComponent {
 
     var studInfo = JSON.parse((this.tempStudentInfo))
     this.studentNo = studInfo.student_no
-    // console.log(this.studentNo);
+     console.log(this.studentNo);
 
   }
 
-  get f() { return this.reAdmissionForm.controls; }
+//  get f() { return this.reAdmissionForm.controls; }
 
 
 
   errorMessage: any
+  // submitForm(){
+  //   console.log(this.reAdminForm);
+  // }
 
   onSubmit(): void {
-   
+   console.log( this.reAdmissionForm)
+    
     // Handle form submission and API call here
     this.reAdmissionForm.value.student_no = this.studentNo
     // console.log(this.empForm.value.student_no);
@@ -56,7 +69,7 @@ export class ReAdmissionFormComponent {
       (response) => {
         // Handle success response
         console.log(response);
-        this.router.navigate(['/placement-letter']);
+        this.router.navigate(['/declaration']);
       },
       (error) => {
         // Handle error response

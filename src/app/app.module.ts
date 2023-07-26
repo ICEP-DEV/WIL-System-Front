@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { StudentService } from 'src/app/services/student.service';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -29,13 +31,14 @@ import { HttpClientModule} from '@angular/common/http'
 import { DatePipe } from '@angular/common';
 
 import { LoginComponent } from './components/login/login.component';
-
+import { NotificationService } from 'src/app/services/notification.service';
 import { RecommendationComponent } from './components/recommendation/recommendation.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { WILRegistrationComponent } from './components/wil-registration/wil-registration.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { EpInformationComponent } from './components/ep-information/ep-information.component';
 import { PracticeComponent } from './practice/practice.component';
+import { InternlifeComponent } from './internlife/internlife.component';
 
 
 import { PlacementLetterComponent } from './components/placement-letter/placement-letter.component';
@@ -50,6 +53,50 @@ import { LogEntriesSavedComponent } from './components/log-entries-saved/log-ent
 import { LogEntriesAprrovalStatusComponent } from './components/log-entries-aprroval-status/log-entries-aprroval-status.component';
 import { LogEntriesClosedComponent } from './components/log-entries-closed/log-entries-closed.component';
 import { LogSubmittedComponent } from './components/log-submitted/log-submitted.component';
+import { SystemDocumentationComponent } from './components/system-documentation/system-documentation.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SysDocSubmittedComponent } from './components/sys-doc-submitted/sys-doc-submitted.component';
+import { AdminHomeComponent } from './components/admin-home/admin-home.component';
+import { AdminNavbarComponent } from './components/admin-navbar/admin-navbar.component';
+import { ApplicantsComponent } from './components/applicants/applicants.component';
+import { AdminViewComponent } from './components/admin-view/admin-view.component';
+import { AdminRejectComponent } from './components/admin-reject/admin-reject.component';
+import { MentorInvitedComponent } from './components/mentor-invited/mentor-invited.component';
+import { WorkPlaceSavedComponent } from './components/work-place-saved/work-place-saved.component';
+import { MenteeListComponent } from './components/mentee-list/mentee-list.component';
+import { MenteeLogsComponent } from './components/mentee-logs/mentee-logs.component';
+import { MenteeRatingComponent } from './components/mentee-rating/mentee-rating.component';
+import { StudentEvaluationComponent } from './components/student-evaluation/student-evaluation.component';
+import { MentorHomeComponent } from './components/mentor-home/mentor-home.component';
+import { MentorNavbarComponent } from './components/mentor-navbar/mentor-navbar.component';
+import { MentorActivitiesComponent } from './components/mentor-activities/mentor-activities.component';
+import { MentorNotificationComponent } from './components/mentor-notification/mentor-notification.component';
+import { MentorInvitesComponent } from './components/mentor-invites/mentor-invites.component';
+import { MentorLoginComponent } from './components/mentor-login/mentor-login.component';
+import { LogApprovedComponent } from './components/log-approved/log-approved.component';
+import { LogRejectedComponent } from './components/log-rejected/log-rejected.component';
+import { MentorSystemSupportComponent } from './components/mentor-system-support/mentor-system-support.component';
+import { UpdateMentorComponent } from './components/update-mentor/update-mentor.component';
+
+import { SubmittedEvaluationComponent } from './components/submitted-evaluation/submitted-evaluation.component';
+import { SubmittedQueryComponent } from './components/submitted-query/submitted-query.component';
+import { WilHomeComponent } from './wil_co/wil-home/wil-home.component';
+import { WilActivitiesComponent } from './wil_co/wil-activities/wil-activities.component';
+import { WilRegulationsComponent } from './wil_co/wil-regulations/wil-regulations.component';
+import { WilSystemSuppComponent } from './wil_co/wil-system-supp/wil-system-supp.component';
+import { WilInternsComponent } from './wil_co/wil-interns/wil-interns.component';
+import { WilTopnavComponent } from './wil_co/wil-topnav/wil-topnav.component';
+import { InternActivitiesComponent } from './wil_co/intern-activities/intern-activities.component';
+import { StudentActivitiesComponent } from './wil_co/student-activities/student-activities.component';
+import { WilAssessmentsComponent } from './wil_co/wil-assessments/wil-assessments.component';
+import { WilCoReportComponent } from './wil_co/wil-co-report/wil-co-report.component';
+import { RegistrarHomeComponent } from './components/registrar-home/registrar-home.component';
+import { RegistrarNavbarComponent } from './components/registrar-navbar/registrar-navbar.component';
+import { RegistrarApplicantsComponent } from './components/registrar-applicants/registrar-applicants.component';
+import { RegistrarViewComponent } from './components/registrar-view/registrar-view.component';
+import { WilEvaSuperComponent } from './wil_co/wil-eva-super/wil-eva-super.component';
+import { WilEvaCowComponent } from './wil_co/wil-eva-cow/wil-eva-cow.component';
+import { WilSubmittedQueryComponent } from './wil_co/wil-submitted-query/wil-submitted-query.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +104,7 @@ import { LogSubmittedComponent } from './components/log-submitted/log-submitted.
     HomeComponent,
     RegulationsComponent,
     
+    InternlifeComponent,
     ActivitiesComponent,
     SystemSupportComponent,
     TopnavComponent,
@@ -86,6 +134,12 @@ import { LogSubmittedComponent } from './components/log-submitted/log-submitted.
     SuccessRespondComponent,
     RegistrationDataComponent,
     
+    PlacementLetterComponent,
+    ReAdmissionComponent,
+    DeclarationComponent,
+    SuccessRespondComponent,
+    RegistrationDataComponent,
+    
     PracticeComponent,
           ReAdmissionFormComponent,
           LogEntriesInternalComponent,
@@ -93,11 +147,56 @@ import { LogSubmittedComponent } from './components/log-submitted/log-submitted.
           LogEntriesSavedComponent,
           LogEntriesAprrovalStatusComponent,
           LogEntriesClosedComponent,
-          LogSubmittedComponent
+          LogSubmittedComponent,
+          SystemDocumentationComponent,
+          NavbarComponent,
+          SysDocSubmittedComponent,
+          AdminHomeComponent,
+          AdminNavbarComponent,
+          ApplicantsComponent,
+          AdminViewComponent,
+          AdminRejectComponent,
+          MentorInvitedComponent,
+          WorkPlaceSavedComponent,
+          MenteeListComponent,
+          MenteeLogsComponent,
+          MenteeRatingComponent,
+          StudentEvaluationComponent,
+          MentorHomeComponent,
+          MentorNavbarComponent,
+          MentorActivitiesComponent,
+          MentorNotificationComponent,
+          MentorInvitesComponent,
+          MentorLoginComponent,
+          SubmittedEvaluationComponent,
+          SubmittedQueryComponent,
+          WilHomeComponent,
+          WilActivitiesComponent,
+          WilRegulationsComponent,
+          WilSystemSuppComponent,
+          WilInternsComponent,
+          WilTopnavComponent,
+          InternActivitiesComponent,
+          StudentActivitiesComponent,
+          WilAssessmentsComponent,
+          WilCoReportComponent,
+          
+          RegistrarHomeComponent,
+          RegistrarNavbarComponent,
+          RegistrarApplicantsComponent,
+          RegistrarViewComponent,
+          WilEvaSuperComponent,
+          WilEvaCowComponent,
+          LogApprovedComponent,
+          LogRejectedComponent,
+          MentorSystemSupportComponent,
+          UpdateMentorComponent,
+          WilSubmittedQueryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // Add AppRoutingModule here
+    RouterModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,

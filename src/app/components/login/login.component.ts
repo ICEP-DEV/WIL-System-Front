@@ -22,6 +22,7 @@ ngOnInit(): void{
     admin_no: new FormControl(''),
     student_no: new FormControl(''),
     registrar_no: new FormControl(''),
+    wilCoord_id: new FormControl(''),
     itsPin: new FormControl('', [Validators.required]),
   })
 
@@ -50,7 +51,7 @@ signIn(){
           localStorage.setItem("user", JSON.stringify(myobject.data));
           localStorage.setItem("auth-token", myobject.token);
         }
-        this.router.navigate(['/']);
+        this.router.navigate(['/admin-home']);
       }
     })
   } else if (userType === "student") {
@@ -86,10 +87,29 @@ signIn(){
           console.log(myobject.token);
           
         }
-        this.router.navigate(['/']);
+        this.router.navigate(['/registrar-home']);
       }
     })
-  } else {
+  } else if (userType === "wil_coordinator") {
+    this.service.login({userType, wilCoord_id: this.loginForm.value.wilCoord_id, itsPin: this.loginForm.value.itsPin}).subscribe({
+      next: res =>{
+        var myobject: any = {
+          token: "", wil_coordinator: {}
+        };
+
+        myobject = res;
+        console.log(myobject);
+
+        if (myobject) {
+          localStorage.setItem("user", JSON.stringify(myobject.data));
+          localStorage.setItem("auth-token", myobject.token);
+          console.log(myobject.token);
+          
+        }
+        this.router.navigate(['/w_Home']);
+      }
+    })
+  }else {
     console.log("Invalid user type");
   }
 }

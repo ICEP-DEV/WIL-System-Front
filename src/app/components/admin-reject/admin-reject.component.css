@@ -1,0 +1,101 @@
+body{
+    font-family: "Montserrat";
+  }
+
+.container{
+    margin: 0;
+}
+
+ img{
+    width:35%
+}
+
+h2{
+    font-size: 2vw;
+    font-weight: bold;
+    /* padding-left: 10%; */
+    color: rgb(87, 85, 85);
+    text-shadow: 2px 2px 4px rgb(87, 85, 85);
+    margin-left: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+  }
+
+  .app-stud p{
+    font-weight: bold;
+    margin-left: 83vh;
+    margin-top: 4vh;
+    font-size: 1vw;
+  }
+  
+  .app-stud span{
+    margin-left: 11vh;
+  }
+  h4{
+    font-weight: bold;
+    margin-left: 78vh;
+    margin-top: 4vh;
+    font-size: 1vw; 
+  }
+
+  .confirm {
+    margin-top: 3%;
+    margin-left: 72vh;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+.confirm input{
+  padding: 0.5vw;
+}
+  .confirm input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .confirm input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: black;
+    visibility: hidden;
+  }
+  
+  .confirm input[type="checkbox"]:checked::before {
+    visibility: visible;
+  }
+  
+  .confirm label{
+    margin-left: 1%;
+    padding: 1vw;
+  }
+
+  textarea{
+    font-weight: bold;
+    margin-left: 70vh;
+    margin-top: 4vh;
+    font-size: 1vw; 
+    width: 35vw;
+    height: 35vh;
+
+    /* border-top: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); 
+    border-right: transparent transparent #ccc transparent;
+    margin-bottom: 4%;  */
+  border-width: 0px 3px 6px 2px; /* top, right, bottom, left */
+  border-style: solid;
+  border-color: transparent transparent transparent black; /* top, right, bottom, left */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4%;
+  border-top: none;
+  }
+  

@@ -18,10 +18,14 @@
         of student rules and regulations)and decisions of the Tshwane <br> 
         University of Technology, as well as any amendments applicable of <br> 
         students in general. Should you be registered incorrectly as a result of <br>
-        incorrect information that you provided,you accept full <br><span style="margin-left: 20%;"> responsibility.</span> </p>
-    
-  
-    <button [routerLink]="['/success-respond']">Register Me!</button>
+        incorrect information that you provided,you accept full <br><span style="margin-left: 23%;"> responsibility.</span> </p>
+
+        <div class="confirm">
+  <input type="checkbox" id="confirm" name="confirm" value="confirm" [(ngModel)]="isConfirmed">
+  <label for="confirm"> I confirm</label><br>
+</div>
+        
+    <button [routerLink]="['/success-respond']" [disabled]="!isConfirmed">Register Me!</button>
     
   
       <img  src="../../../assets/footer 1.png" alt=""/>

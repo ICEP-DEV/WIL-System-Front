@@ -1,0 +1,9 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.main{
+    margin-left: 10%;
+    margin-top: 2%;
+    border-radius: 15px;
+}

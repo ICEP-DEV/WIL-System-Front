@@ -1,0 +1,164 @@
+<body>
+       <app-wil-topnav></app-wil-topnav> 
+    <h4 style="text-align: center;  margin-top: 2%;">Intern's Activities</h4>
+    <div class="main">
+        <div class="instr">
+        <h4 style="color: #FFB300;">Profile of:</h4>
+        <h4 style="color: black; margin-left: 1%;">{{studentNo}}  {{initials}} {{surname}} </h4>
+        </div>
+            <div class="progressbar">
+                <h4 style="color: #FFB300; margin-top: 2%;">Progress Status:</h4><br>
+                    <div class="progress-bar">
+                        <div class="progress" [style.width.%]="calculateProgress()"></div>
+                    </div>
+        </div>
+        <h4   style="color: #FFB300; margin-top: 2%;" >Placement Information</h4>
+                <table>
+                    <tr>
+                    <th>Company Name</th>
+                    <th>Province</th>
+                    <th>Postal Address</th>
+                    <th>Department Name</th>
+                    <th>Role</th>
+                    </tr>
+                    
+                    <tr *ngFor="let data of Placementdata">
+                    <td>{{data.companyName}}</td>
+                    <td>{{data.province}}</td>
+                    <td>{{data.address}}</td>
+                    <td>{{data.departmentName}}</td>
+                    <td>{{data.role}}</td>
+                    </tr> 
+                </table> 
+            <!-- <div *ngFor="let data of mydata" >
+                <p>{{data.student_no}}</p>
+            </div>  -->
+
+        <h4 style="color: #FFB300; margin-top: 2%;">Mentor/ Supervisor Information</h4>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <!-- <th>Evaluation</th> -->
+                </tr>
+                <tr  *ngFor="let data of Mentordata">
+                    <td>{{data.title}}</td>
+                    <td>{{data.m_name}}</td>
+                    <td>{{data.m_surname}}</td>
+                    <td>{{data.mobileNo}}</td>
+                    <td>{{data.email_address}}</td>
+                    <!-- <td>{{data.title}}</td> -->
+                </tr>
+            </table>
+
+        <h4 style="color: #FFB300;  margin-top: 2%;">Documentation</h4>
+            <table>
+                <tr>
+                <th>Title</th>
+                <th>Date Submitted</th>
+                <th>Submission Status</th>
+                <th>Action</th>
+                <th>Rate</th>
+                </tr>
+                <tr>
+                <td>Log Book</td>
+                <td>Not Completed</td>
+                <td>Not Completed</td>
+                <td><button href=".\assets\TestP.pdf" (click)="newtabpdf()"> View</button></td>
+                <td>
+                    <select (click) = "d_SubTot()" id="logbook" style="border-radius: 15px;">
+                        <option value="">Rate Work</option>
+                        <option value="100">100%</option>
+                        <option value="75">75%</option>
+                        <option value="50">50%</option>
+                        <option value="25">25%</option>
+                        <option value="0">0%</option>
+                    </select>
+                </td>
+                </tr>
+
+                <tr>
+                    <td>Report</td>
+                    <td>Not Completed</td>
+                    <td>Not Completed</td>
+                    <td><button routerLink="/report"> View</button></td>
+                    <td>
+                        <select (click) = "d_SubTot()" id="systemDoc" style="border-radius: 15px;">
+                            <option value="">Rate Work</option>
+                            <option value="100">100%</option>
+                            <option value="75">75%</option>
+                            <option value="50">50%</option>
+                            <option value="25">25%</option>
+                            <option value="0">0%</option>
+                        </select>
+                    </td>
+                    </tr>
+                
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Sub-total:</td>
+                <td>{{Dtotal}}</td>
+                </tr>
+            </table>
+        
+
+        <h4 style="color: #FFB300; margin-top: 2%;">Evaluation</h4>
+        <table>
+            <tr>
+                <th>Type</th>
+            <th>Completion Status</th>
+            <th>Action</th>
+            <th>Rate</th>
+            </tr>
+            <tr style="margin-top: 2%;">
+            <td>Supervisor Evaluation</td>
+            <td>Not Completed</td>
+            <td><button routerLink="/super_eva">View</button></td>
+            <td>
+                <select (click) = "e_SubTot()" id="Super_rate" style="border-radius: 15px;">
+                    <option value="">Rate Work</option>
+                    <option value="100">100</option>
+                    <option value="75">75</option>
+                    <option value="50">50</option>
+                    <option value="25">25</option>
+                    <option value="0">0</option>
+                    </select>
+            </td>
+            </tr>
+            
+            <tr>
+            <td style="margin-top: 1%;">Co-Workers Evaluation</td>
+            <td>Not Completed</td>
+            <td><button routerLink="/co_eva">View</button></td>
+            <td>
+                <select (click) = "e_SubTot()" id="co_W_rate" style="border-radius: 15px;">
+                    <option value="">Rate Work</option>
+                    <option value="100">100</option>
+                    <option value="75">75</option>
+                    <option value="50">50</option>
+                    <option value="25">25</option>
+                    <option value="0">0</option>
+                    </select>
+            </td>
+            </tr>
+            
+            <tr>
+            <td></td>
+            <td></td>
+            <td>Sub-total:</td>
+            <td>{{Etotal}}</td>
+            </tr>
+        </table>
+        
+        <div style="display: flex;">
+                <h3>TOTAL:</h3><h3 class="total" style="margin-left: 1%;">{{final}}%</h3>
+            </div>
+            <button class="saveChanges">Save Changes</button>
+            <img  class = "footerimg"src="../../../assets/footer 1.png" alt="" />
+    </div>
+</body>

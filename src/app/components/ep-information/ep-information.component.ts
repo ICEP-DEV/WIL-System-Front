@@ -32,6 +32,8 @@ export class EpInformationComponent {
       city: ['', Validators.required],
       studyPeriod: new FormControl(''),
       student_no: "",
+      applicationStatus: "PENDING",
+      reg_app_status:"Pending"
     });
 
 

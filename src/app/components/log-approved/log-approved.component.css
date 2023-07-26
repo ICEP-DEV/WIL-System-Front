@@ -1,0 +1,133 @@
+body{
+    font-family: "Montserrat";
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+.container{
+    margin: 0;
+}
+
+.heading{
+	margin-left: 30%;
+    margin-top: -3%;
+}
+.heading h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+ 
+
+h2{
+    font-size: 2vw;
+    font-weight: bold;
+    /* padding-left: 10%; */
+    color: rgb(87, 85, 85);
+    text-shadow: 2px 2px 4px rgb(87, 85, 85);
+    margin-left: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+
+  }
+
+  h3 {
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    margin-left: 37%;
+    padding: 1vw;
+    padding-left: 4vw;
+   
+  }
+
+  p {
+    font-size: 24px;
+    
+  }
+.everything
+{
+  margin-left:10%;
+}
+
+ .inst{
+  color: red;
+ }
+
+ .men{
+    color: orange;
+    font-weight: bold;
+    
+  }
+
+  .footer{
+    margin-left:15.5%;
+    margin-top: 10%;
+    width:100%;
+  }
+
+  .content p {
+    margin-top: 80px;
+    margin-left: 120px;
+    font-family: "inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-left: 30%;
+    margin-top:12% ;
+  }
+  
+  .circle {
+    display: flex;
+    border-radius: 50%;
+    width: 143px;
+    height: 133px;
+    margin-top: 30px;
+    margin-left: 30%;
+    background: -webkit-radial-gradient(65% 15%, circle, white 1px, rgb(60, 255, 0) 3%, darkgreen 60%, rgb(60, 255, 0) 100%);
+  }
+  
+  .checkmark {
+    transform: rotate(45deg) translate(-50%, -50%);
+    margin-left: 30%;
+    margin-top: 45%;
+    width: 35px;
+    height: 60px;
+    border-bottom: 20px solid white;
+    border-right: 20px solid white;
+    
+  }
+
+  .save {
+    margin-left: 60%;
+    margin-top: 3vh;
+    margin-bottom: 30vh;
+    width: 14%;
+    height: 40px;
+    border: 0ch;
+    border-radius: 31px;
+    background-color:green;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+  
+    color: #ffffff;
+  }
+
+  .S{
+    height: 70px;
+  }
+
+  .I{
+    margin-left:27% ;
+  }
