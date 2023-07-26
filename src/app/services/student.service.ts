@@ -45,12 +45,17 @@ logentries: any;
 entries(data: any): Observable<any>
 {
  return this.http.post<any>(`${this.baseUrl}/subLogbook`, data)
- return this.http.post<any>(`${this.baseUrl}/subLogbook/:month`, data)
+
 };
 
 getStatus(student_no:any): Observable<any>
 {
  return this.http.get<any>(`${this.baseUrl}/getMonthlyStatus/${student_no}`)
+};
+
+getOpen(student_no:any): Observable<any>
+{
+ return this.http.get<any>(`${this.baseUrl}/open/${student_no}`)
 };
 
 }
